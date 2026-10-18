@@ -1,0 +1,6 @@
+interface:
+  display_name: "Test Case Generator"
+  short_description: "Sinh bộ test case có truy vết từ tài liệu yêu cầu (vận dụng kỹ thuật ISTQB)"
+  default_prompt: "Sinh bộ test case cho tài liệu trong input/"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,50 @@
+﻿TC_ID,Module,Req_ID,Title,Test_Type,Scenario,Technique,Priority,Preconditions,Test_Data,Steps,Expected_Result,Automation,Status,Notes
+TC-CART-048,Giỏ hàng,AC06;BR-03,"Kiểm tra tự điều chỉnh qty, giữ tick và checkout được khi tồn kho giảm dưới qty trước lúc khách mở lại Cart",Functional,Boundary,ST,P1,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A qty = 2 (thêm khi Saleable Qty = 10)
+3. Khách đã mở Giỏ hàng, SP-A đang được tick (tick nếu chưa được tick), rồi rời sang Trang chủ
+4. Theo SETUP-02: Saleable Qty SP-A = 1 (đặt sau khi khách rời Giỏ hàng, trước khi mở lại)",SP-A: Saleable Qty 10 → 1; qty trong Cart = 2; giá bán 15.780.000 ₫,"1. Truy cập trang ""Giỏ hàng""
+2. Quan sát dòng SP-A và nút ""Mua hàng""
+3. Nhấn nút ""Mua hàng""","2. Qty SP-A = 1; SP-A vẫn được tick; hiển thị thông báo ""Sản phẩm này chỉ còn số lượng là 1""; nút ""Mua hàng"" Enable
+3. Chuyển tới trang Checkout với SP-A qty 1 (15.780.000 ₫); không hiển thị banner ""Sản phẩm vừa được cập nhật lại.""",Candidate,Not Run,[Đề xuất review] F-03 · CO-62 (EV-01 × thiếu số lượng). Bản chạy được ngay (chỉ SETUP-02) của AC06 — TC-CART-016/017 chỉ phủ trigger F5 khi tab đang mở
+TC-CART-049,Giỏ hàng,AC02;AC06;BR-02;BR-03;AC10,Kiểm tra xử lý đồng thời 1 sản phẩm hết hàng và 1 sản phẩm thiếu số lượng khi khách mở lại Cart,Functional,Edge,DT,P2,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Thêm vào Cart lần lượt SP-A qty 1, SP-B qty 1, SP-C qty 3 (Saleable Qty = 10)
+3. Khách đã mở Giỏ hàng, SP-A, SP-B, SP-C đang được tick (tick nếu chưa được tick), rồi rời sang Trang chủ
+4. Theo SETUP-02: Saleable Qty SP-B = 0 và SP-C = 2 (đặt sau khi khách rời Giỏ hàng, trước khi mở lại)","SP-A: Saleable Qty 10, qty 1; SP-B: Saleable Qty 10 → 0, qty 1; SP-C: Saleable Qty 10 → 2, qty 3","1. Truy cập trang ""Giỏ hàng""
+2. Quan sát dòng SP-B, SP-C và nút ""Mua hàng""","2. SP-B nằm cuối danh sách, bỏ tick, checkbox Disable, bên dưới SP-B có đúng 1 thông báo hết hàng (nội dung chờ Q-01); SP-C qty = 2, vẫn được tick, bên dưới SP-C (không phải dưới SP-B) có thông báo ""Sản phẩm này chỉ còn số lượng là 2""; SP-C không có thông báo hết hàng; nút ""Mua hàng"" Enable",Candidate,Not Run,[Đề xuất review] F-04 · CO-63 — tập phần tử ≥2 rule khác nhau ở trigger vào trang / tải lại (CO-48 chỉ phủ trigger bấm Mua hàng). Không assert tick SP-A (phụ thuộc việc lưu trạng thái tick giữa hai lần mở Cart — xem review F-01). [Cần xác nhận Q-01] câu thông báo hết hàng
+TC-CART-050,Giỏ hàng,AC08,Kiểm tra chuyển thẳng sang Checkout khi tồn kho giảm đúng bằng qty đã chọn (biên đủ hàng) lúc bấm Mua hàng,Functional,Boundary,BVA,P2,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A qty = 3, đang được tick
+3. Theo SETUP-02: Saleable Qty SP-A = 5 (đặt sau khi đã thêm SP vào Cart, trước khi mở Giỏ hàng)
+4. Đang mở trang Giỏ hàng (không tải lại)
+5. Theo SETUP-03: admin đổi tồn kho ở trình duyệt khác trong lúc tab khách đang mở Giỏ hàng",SP-A: Saleable Qty 5 → 3; qty = 3 (biên: Saleable Qty = qty; TC-CART-025 phủ Saleable Qty = qty − 1),"1. Admin cập nhật Saleable Qty SP-A = 3
+2. Trên tab khách, xác nhận SP-A vẫn hiển thị qty 3, được tick, không có thông báo số lượng
+3. Nhấn nút ""Mua hàng""","3. Chuyển tới trang Checkout với SP-A qty 3; không tải lại Cart, không hiển thị banner ""Sản phẩm vừa được cập nhật lại.""",Candidate,Not Run,"[Đề xuất review] F-05 · CO-64 — DT2-R1 đang gộp ""không có thay đổi"" với ""tồn kho giảm nhưng vẫn đủ""; phát hiện lỗi reload khi chỉ cần có thay đổi tồn kho"
+TC-CART-051,Giỏ hàng,AC08;AC06;BR-03,Kiểm tra bấm Mua hàng lần 2 sau khi revalidate tự điều chỉnh qty thì sang Checkout với qty đã điều chỉnh,Functional,Positive,UC,P1,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A qty = 3, đang được tick
+3. Theo SETUP-02: Saleable Qty SP-A = 3 (đặt sau khi đã thêm SP vào Cart, trước khi mở Giỏ hàng)
+4. Đang mở trang Giỏ hàng (không tải lại)
+5. Theo SETUP-03: admin đổi tồn kho ở trình duyệt khác trong lúc tab khách đang mở Giỏ hàng",SP-A: Saleable Qty 3 → 2; qty = 3,"1. Admin cập nhật Saleable Qty SP-A = 2
+2. Trên tab khách, xác nhận SP-A vẫn hiển thị qty 3, được tick, không có thông báo số lượng
+3. Nhấn nút ""Mua hàng""
+4. Nhấn nút ""Mua hàng"" lần nữa","3. Không chuyển sang Checkout; Cart tải lại với banner ""Sản phẩm vừa được cập nhật lại.""; qty SP-A = 2, vẫn được tick
+4. Chuyển tới trang Checkout với SP-A qty 2 (không phải 3); không hiển thị lại banner ""Sản phẩm vừa được cập nhật lại.""",Candidate,Not Run,"[Đề xuất review] F-06 · CO-65 — AC08-c7 cho nhánh thiếu số lượng (TC-CART-027 chỉ phủ nhánh hết hàng); AC06-c5 ""không keep theo số lượng KH chọn"""
+TC-CART-052,Giỏ hàng,AC08;AC10;AC01,Kiểm tra sau revalidate sản phẩm vừa hết hàng xuống cuối Cart và trạng thái tick đi theo đúng sản phẩm,Functional,Edge,ST,P2,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A, SP-C, SP-E (qty 1), tất cả còn hàng
+3. Đang mở trang Giỏ hàng (không tải lại)
+4. Theo SETUP-03: admin đổi tồn kho ở trình duyệt khác trong lúc tab khách đang mở Giỏ hàng","X, Y, Z = SP ở vị trí 1, 2, 3 trong thứ tự hiển thị quan sát được; Saleable Qty của X: → 0","1. Ghi lại SP ở vị trí 1, 2, 3 là X, Y, Z
+2. Tick X, bỏ tick Y, tick Z
+3. Admin cập nhật Saleable Qty của X = 0
+4. Trên tab khách, xác nhận X vẫn ở vị trí 1, được tick, không có thông báo hết hàng
+5. Nhấn nút ""Mua hàng""
+6. Nhấn nút ""Mua hàng"" lần nữa","5. Cart tải lại với banner ""Sản phẩm vừa được cập nhật lại.""; X ở cuối danh sách, bỏ tick, checkbox Disable; Y vẫn bỏ tick; Z vẫn được tick
+6. Chuyển tới trang Checkout chỉ với Z; không có X và Y",Candidate,Not Run,"[Đề xuất review] F-07 · CO-66 / IX-13 (AC08 × AC10 × AC01) — IX-09 / TC-CART-047 chỉ phủ trigger F5; không assert thứ tự Y/Z (đã có TC-CART-047, phụ thuộc Q-15)"
+TC-CART-053,Giỏ hàng,AC04;BR-01;AC05,Kiểm tra nút Mua hàng chuyển Disable khi xoá sản phẩm còn hàng duy nhất được tick và Cart chỉ còn sản phẩm hết hàng,Functional,Edge,DT,P2,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A qty 1 (còn hàng) và SP-B
+3. Theo SETUP-02: Saleable Qty SP-B = 0 (đặt sau khi đã thêm SP vào Cart, trước khi mở Giỏ hàng)
+4. Đang ở trang Giỏ hàng; SP-A được tick (tick nếu chưa được tick), nút ""Mua hàng"" Enable",SP-A (Saleable Qty = 10); SP-B (Saleable Qty = 0),"1. Nhấn icon xoá (thùng rác) trên dòng SP-A
+2. Click nút ""Mua hàng""","1. SP-A bị xoá khỏi Cart; Cart chỉ còn SP-B, bỏ tick, checkbox Disable; nút ""Mua hàng"" chuyển sang Disable
+2. Không chuyển sang trang Checkout, vẫn ở Giỏ hàng",Candidate,Not Run,"[Đề xuất review] F-08 · CO-67 / IX-14 — tập phần tử: phần tử duy nhất rời tập qua sự kiện xoá dòng (E6), Cart chuyển sang trạng thái AC05; DT1-R3"
+TC-CART-054,Giỏ hàng,AC10;AC06,Kiểm tra sản phẩm thiếu số lượng (còn hàng) không bị đẩy xuống cuối Cart như sản phẩm hết hàng,Functional,Positive,ST,P3,"1. Theo SETUP-01 (customer01@test.com đã đăng nhập)
+2. Cart có SP-A, SP-C, SP-E, mỗi SP qty = 2, tất cả còn hàng (Saleable Qty = 10, SP-E = 5)","X, Y, Z = SP ở vị trí 1, 2, 3 trong thứ tự hiển thị quan sát được; Saleable Qty của X → 1 (qty 2)","1. Truy cập trang ""Giỏ hàng""; ghi lại SP ở vị trí 1, 2, 3 là X, Y, Z
+2. Đi tới Trang chủ
+3. Admin cập nhật Saleable Qty của X = 1 (theo SETUP-02, trước khi mở lại Giỏ hàng)
+4. Mở lại trang ""Giỏ hàng""","4. X vẫn ở vị trí 1 (không bị đưa xuống cuối), qty X = 1, checkbox X Enable, có thông báo ""Sản phẩm này chỉ còn số lượng là 1"", không có thông báo hết hàng; Y, Z ở vị trí 2, 3",Candidate,Not Run,"[Đề xuất review] F-13 · CO-68 / IX-15 (AC06 × AC10) — AC06 ""Insufficient Stock khác với hết hàng""; thông báo cũ ""Số lượng sản phẩm không có sẵn"" là lỗi chung cho cả hai trường hợp nên dễ bị xử lý nhầm. [Cần xác nhận Q-15] thứ tự giữ nguyên giữa hai lần mở Cart"

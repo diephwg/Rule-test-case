@@ -1,0 +1,214 @@
+===== A_default ['01/10/2026', '18/10/2026'] toast None
+  filters {'date_from': '2026-10-01', 'date_to': '2026-10-18', 'store_ids': None} metrics {'total_customers': 6, 'new_store_customers': 3, 'existing_store_customers': 3, 'store_repeat_rate': 50, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 7 {'as_of': 1792321083979}
+    1 TEST AUTO 3 tier None rec {'bucket': 'A7', 'days': 5} n 6 first 30/09/2026 11:13 last 13/10/2026 15:44 sales 48800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    2 AUYO4 tier None rec {'bucket': 'A7', 'days': 2} n 4 first 30/09/2026 11:13 last 16/10/2026 11:48 sales 32000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    3 Nguyễn Thị Bích Ngọc tier Member rec {'bucket': 'A7', 'days': 5} n 2 first 13/10/2026 15:08 last 13/10/2026 15:39 sales 16800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 Le Thanh Tun tier None rec {'bucket': 'A7', 'days': 4} n 2 first 14/10/2026 15:25 last 14/10/2026 15:27 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    5 Hoàng Thị Lan Anh tier Member rec {'bucket': 'A7', 'days': 4} n 1 first 14/10/2026 10:09 last 14/10/2026 10:09 sales 8800000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    6 Debug Probe 6 tier None rec {'bucket': 'A7', 'days': 2} n 1 first 16/10/2026 11:24 last 16/10/2026 11:24 sales 8000000 pics [('-', None, None)]
+    7 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec {'bucket': 'A7', 'days': 5} n 1 first 30/09/2026 11:13 last 13/10/2026 16:33 sales 8000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 2 sum total 6 AS+AA ok True
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 2, 'advisor_selected': 2, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 4, 'advisor_selected': 1, 'auto_assigned': 3}
+  engagement [{'store_id': 136, 'pic_id': 104, 'contacted_customers': 2, 'contacted_rate': 100}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 4, 'contacted_rate': 100}]
+  composition [{'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 2, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 3, 'new_customers': 1, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+  mismatch rows (AS+AA!=Total): [(None, 208, 0, 0), ('Nguyễn Phan Tùng', 23, 11, 7), (None, 3, 0, 0)]
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 316, 'pic_name': None, 'a7': 17, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'a7': 11, 'a30': 7, 'a60': 1, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 306, 'pic_name': 'Nguyễn Thị Thu Huyền', 'a7': 10, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 332, 'pic_name': 'Nguyễn Phan Tùng', 'a7': 10, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 280, 'pic_name': 'Lê Thanh Tùng STS', 'a7': 7, 'a30': 2, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'a7': 5, 'a30': 2, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': None, 'pic_name': None, 'a7': 3, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 657, 'pic_name': 'Hang', 'a7': 2, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 142, 'store_name': 'Hermès Metropole HN Store', 'pic_id': 415, 'pic_name': 'Lê Mạnh Cường', 'a7': 1, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 346, 'pic_name': 'Nguyễn Nhật Vy', 'a7': 0, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'a7': 0, 'a30': 2, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 655, 'pic_name': 'Nguyễn Thị Thu Huyền', 'a7': 0, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 142, 'store_name': 'Hermès Metropole HN Store', 'pic_id': None, 'pic_name': None, 'a7': 0, 'a30': 0, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 142, 'store_name': 'Hermès Metropole HN Store', 'pic_id': 380, 'pic_name': 'Lê Mạnh Cường', 'a7': 0, 'a30': 3, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+   status {'store_id': 142, 'store_name': 'Hermès Metropole HN Store', 'pic_id': 648, 'pic_name': 'Lê Thanh Tùng STS', 'a7': 0, 'a30': 1, 'a60': 0, 'a90': 0, 'a180': 0, 'a360': 0, 'inactive': 0}
+  tt order [(None, None, 208), ('Nguyễn Phan Tùng', 332, 50), (None, 316, 49), ('Lê Thanh Tùng STS', 280, 45), ('Nguyễn Thị Thu Huyền', 306, 41), ('Nguyễn Phan Tùng', 636, 23), ('Nguyễn Thị Thu Huyền', 655, 22), ('Nguyễn Ngọc Trinh', 104, 7), ('Hoàng Bá Bình', 447, 3), (None, None, 3), ('Lê Mạnh Cường', 380, 3), ('Hang', 657, 2), ('Nguyễn Nhật Vy', 346, 1), ('Lê Mạnh Cường', 415, 1), ('Lê Thanh Tùng STS', 648, 1)]
+===== B_thang_truoc ['01/09/2026', '30/09/2026'] toast 0
+  filters {'date_from': '2026-09-01', 'date_to': '2026-09-30', 'store_ids': None} metrics {'total_customers': 12, 'new_store_customers': 10, 'existing_store_customers': 2, 'store_repeat_rate': 16.666666666666664, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 12 {'as_of': 1792320894475}
+    1 Duong Hang tier Silver rec None n 38 first 30/10/2025 13:16 last 19/09/2026 13:16 sales 718304000 pics [('-', None, 'auto-assigned'), ('Boss 4', 'Hoàng Bá Bình', 'advisor-selected')]
+    2 QA SearchFilter Store200 CreatedViaAPI tier None rec None n 21 first 10/09/2026 13:40 last 15/09/2026 14:08 sales 168000000 pics [('-', None, None)]
+    3 QA Appt NoPIC Probe tier None rec None n 6 first 05/09/2026 10:00 last 21/09/2026 17:10 sales 155810000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 QA Appt Probe 3323 tier None rec None n 4 first 08/09/2026 11:18 last 21/09/2026 13:00 sales 140936000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    5 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 18000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    6 QA ADDR-01 tier None rec None n 3 first 30/09/2026 11:57 last 30/09/2026 13:57 sales 16000000 pics [('Boss 4', 'Lê Thanh Tùng STS', 'advisor-selected')]
+    7 AUTO DON HANG 2 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    8 hang tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 12:57 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    9 TEST AUTO 3 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 12:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    10 QA ADDR-04 tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 11:57 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    11 AUYO4 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 11:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    12 QA Automation Customer tier None rec None n 2 first 30/09/2026 12:57 last 30/09/2026 13:57 sales 13000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 5 sum total 12 AS+AA ok False
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 280, 'pic_name': 'Lê Thanh Tùng STS', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 7, 'advisor_selected': 2, 'auto_assigned': 5}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 2, 'advisor_selected': 2, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': None, 'pic_name': None, 'total_customers': 1, 'advisor_selected': 0, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 447, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 280, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 104, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': None, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 447, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 280, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 0, 'new_customers': 7, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 2, 'vic_customers': 0}, {'store_id': 136, 'pic_id': None, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== C_tuan_nay ['18/10/2026', '18/10/2026'] toast 0
+  filters {'date_from': '2026-10-18', 'date_to': '2026-10-18', 'store_ids': None} metrics {'total_customers': 0, 'new_store_customers': 0, 'existing_store_customers': 0, 'store_repeat_rate': None, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 0 {'as_of': 1792320899485}
+  periodTbl rows 0 sum total 0 AS+AA ok True
+  engagement None
+  composition None
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== D_nam_nay ['01/01/2026', '18/10/2026'] toast 0
+  filters {'date_from': '2026-01-01', 'date_to': '2026-10-18', 'store_ids': None} metrics {'total_customers': 15, 'new_store_customers': 13, 'existing_store_customers': 2, 'store_repeat_rate': 13.333333333333334, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 16 {'as_of': 1792320904579}
+    1 Duong Hang tier Silver rec {'bucket': 'A30', 'days': 29} n 53 first 30/10/2025 13:16 last 19/09/2026 13:16 sales 3704936000 pics [('-', None, 'auto-assigned'), ('Boss 4', 'Hoàng Bá Bình', 'advisor-selected')]
+    2 QA SearchFilter Store200 CreatedViaAPI tier None rec {'bucket': 'A60', 'days': 33} n 21 first 10/09/2026 13:40 last 15/09/2026 14:08 sales 168000000 pics [('-', None, None)]
+    3 QA Appt NoPIC Probe tier None rec {'bucket': 'A30', 'days': 27} n 6 first 05/09/2026 10:00 last 21/09/2026 17:10 sales 155810000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 QA Appt Probe 3323 tier None rec {'bucket': 'A30', 'days': 27} n 4 first 08/09/2026 11:18 last 21/09/2026 13:00 sales 140936000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    5 TEST AUTO 3 tier None rec {'bucket': 'A7', 'days': 5} n 8 first 30/09/2026 11:13 last 13/10/2026 15:44 sales 64800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    6 AUYO4 tier None rec {'bucket': 'A7', 'days': 2} n 6 first 30/09/2026 11:13 last 16/10/2026 11:48 sales 48000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    7 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec {'bucket': 'A7', 'days': 5} n 4 first 30/09/2026 11:13 last 13/10/2026 16:33 sales 26000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    8 Nguyễn Thị Bích Ngọc tier Member rec {'bucket': 'A7', 'days': 5} n 2 first 13/10/2026 15:08 last 13/10/2026 15:39 sales 16800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    9 Le Thanh Tun tier None rec {'bucket': 'A7', 'days': 4} n 2 first 14/10/2026 15:25 last 14/10/2026 15:27 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    10 QA ADDR-01 tier None rec {'bucket': 'A30', 'days': 18} n 3 first 30/09/2026 11:57 last 30/09/2026 13:57 sales 16000000 pics [('Boss 4', 'Lê Thanh Tùng STS', 'advisor-selected')]
+    11 AUTO DON HANG 2 tier None rec {'bucket': 'A30', 'days': 18} n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    12 hang tier None rec {'bucket': 'A30', 'days': 18} n 2 first 30/09/2026 11:57 last 30/09/2026 12:57 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    13 QA ADDR-04 tier None rec {'bucket': 'A30', 'days': 18} n 2 first 30/09/2026 11:57 last 30/09/2026 11:57 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    14 QA Automation Customer tier None rec {'bucket': 'A30', 'days': 18} n 2 first 30/09/2026 12:57 last 30/09/2026 13:57 sales 13000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    15 Hoàng Thị Lan Anh tier Member rec {'bucket': 'A7', 'days': 4} n 1 first 14/10/2026 10:09 last 14/10/2026 10:09 sales 8800000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    16 Debug Probe 6 tier None rec {'bucket': 'A7', 'days': 2} n 1 first 16/10/2026 11:24 last 16/10/2026 11:24 sales 8000000 pics [('-', None, None)]
+  periodTbl rows 5 sum total 15 AS+AA ok False
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 280, 'pic_name': 'Lê Thanh Tùng STS', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 8, 'advisor_selected': 3, 'auto_assigned': 5}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 4, 'advisor_selected': 4, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': None, 'pic_name': None, 'total_customers': 1, 'advisor_selected': 0, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 447, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 280, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 4, 'contacted_rate': 50}, {'store_id': 136, 'pic_id': 104, 'contacted_customers': 2, 'contacted_rate': 50}, {'store_id': 136, 'pic_id': None, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 447, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 280, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 0, 'new_customers': 8, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 4, 'vic_customers': 0}, {'store_id': 136, 'pic_id': None, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== F_custom_thang3 ['01/03/2026', '31/03/2026'] toast 0
+  filters {'date_from': '2026-03-01', 'date_to': '2026-03-31', 'store_ids': None} metrics {'total_customers': 1, 'new_store_customers': 0, 'existing_store_customers': 1, 'store_repeat_rate': 100, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 1 {'as_of': 1792320910138}
+    1 Duong Hang tier Silver rec None n 2 first 30/10/2025 13:16 last 19/03/2026 13:16 sales 282420000 pics [('-', None, 'auto-assigned'), ('Boss 4', 'Hoàng Bá Bình', 'advisor-selected')]
+  periodTbl rows 1 sum total 1 AS+AA ok True
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 447, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 447, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== G_custom_future_end ['01/10/2026', '31/10/2026'] toast 0
+  filters {'date_from': '2026-10-01', 'date_to': '2026-10-31', 'store_ids': None} metrics {'total_customers': 7, 'new_store_customers': 4, 'existing_store_customers': 3, 'store_repeat_rate': 42.857142857142854, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 8 {'as_of': 1792321136840}
+    1 TEST AUTO 3 tier None rec {'bucket': 'A7', 'days': 5} n 6 first 30/09/2026 11:13 last 13/10/2026 15:44 sales 48800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    2 AUYO4 tier None rec {'bucket': 'A7', 'days': 2} n 4 first 30/09/2026 11:13 last 16/10/2026 11:48 sales 32000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    3 Nguyễn Thị Bích Ngọc tier Member rec {'bucket': 'A7', 'days': 5} n 2 first 13/10/2026 15:08 last 13/10/2026 15:39 sales 16800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 Le Thanh Tun tier None rec {'bucket': 'A7', 'days': 4} n 2 first 14/10/2026 15:25 last 14/10/2026 15:27 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    5 Hoàng Thị Lan Anh tier Member rec {'bucket': 'A7', 'days': 4} n 1 first 14/10/2026 10:09 last 14/10/2026 10:09 sales 8800000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    6 Phạm Minh Đức tier Member rec {'bucket': 'A7', 'days': 0} n 1 first 31/10/2026 23:59 last 31/10/2026 23:59 sales 8000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'auto-assigned')]
+    7 Debug Probe 6 tier None rec {'bucket': 'A7', 'days': 2} n 1 first 16/10/2026 11:24 last 16/10/2026 11:24 sales 8000000 pics [('-', None, None)]
+    8 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec {'bucket': 'A7', 'days': 5} n 1 first 30/09/2026 11:13 last 13/10/2026 16:33 sales 8000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 2 sum total 7 AS+AA ok True
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 3, 'advisor_selected': 2, 'auto_assigned': 1}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 4, 'advisor_selected': 1, 'auto_assigned': 3}
+  engagement [{'store_id': 136, 'pic_id': 104, 'contacted_customers': 2, 'contacted_rate': 66.66666666666666}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 4, 'contacted_rate': 100}]
+  composition [{'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 3, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 3, 'new_customers': 1, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== H_custom_1day_yesterday ['17/10/2026', '17/10/2026'] toast 0
+  filters {'date_from': '2026-10-17', 'date_to': '2026-10-17', 'store_ids': None} metrics {'total_customers': 0, 'new_store_customers': 0, 'existing_store_customers': 0, 'store_repeat_rate': None, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 0 {'as_of': 1792320923205}
+  periodTbl rows 0 sum total 0 AS+AA ok True
+  engagement None
+  composition None
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== K_empty_period ['01/01/2020', '31/01/2020'] toast 0
+  filters {'date_from': '2020-01-01', 'date_to': '2020-01-31', 'store_ids': None} metrics {'total_customers': 0, 'new_store_customers': 0, 'existing_store_customers': 0, 'store_repeat_rate': None, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 0 {'as_of': 1792320929100}
+  periodTbl rows 0 sum total 0 AS+AA ok True
+  engagement None
+  composition None
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== E_custom_367days ['01/03/2025', '02/03/2026'] toast 0
+  filters None metrics None brand_metrics None brand_scope None
+  top n= 0 {'message': 'Khoảng ngày không được vượt quá 366 ngày', 'error': 'Bad Request', 'statusCode': 400, 'path': '/api/v1/resources/tam-son/customers/dashboard/top-customers', 'timestamp': '2026-10-18T10:59:29.938Z'}
+  periodTbl rows 0 sum total 0 AS+AA ok True
+  engagement None
+  composition None
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== E2_custom_366days ['01/03/2025', '01/03/2026'] toast 0
+  filters {'date_from': '2025-03-01', 'date_to': '2026-03-01', 'store_ids': None} metrics {'total_customers': 2, 'new_store_customers': 2, 'existing_store_customers': 0, 'store_repeat_rate': 0, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 1 {'as_of': 1792321182282}
+    1 Duong Hang tier Silver rec None n 4 first 30/10/2025 13:16 last 23/01/2026 13:16 sales 622512000 pics [('-', None, 'auto-assigned'), ('Boss 4', 'Hoàng Bá Bình', 'advisor-selected')]
+  periodTbl rows 2 sum total 2 AS+AA ok False
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': None, 'pic_name': None, 'total_customers': 1, 'advisor_selected': 0, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 447, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': None, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 447, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}, {'store_id': 136, 'pic_id': None, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== E3_custom_579days ['01/03/2025', '30/09/2026'] toast 0
+  filters None metrics None brand_metrics None brand_scope None
+  top n= 0 {'message': 'Khoảng ngày không được vượt quá 366 ngày', 'error': 'Bad Request', 'statusCode': 400, 'path': '/api/v1/resources/tam-son/customers/dashboard/top-customers', 'timestamp': '2026-10-18T10:59:51.362Z'}
+  periodTbl rows 0 sum total 0 AS+AA ok True
+  engagement None
+  composition None
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== M_sep ['01/09/2026', '30/09/2026'] toast 0
+  filters {'date_from': '2026-09-01', 'date_to': '2026-09-30', 'store_ids': None} metrics {'total_customers': 12, 'new_store_customers': 10, 'existing_store_customers': 2, 'store_repeat_rate': 16.666666666666664, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 12 {'as_of': 1792321202833}
+    1 Duong Hang tier Silver rec None n 38 first 30/10/2025 13:16 last 19/09/2026 13:16 sales 718304000 pics [('-', None, 'auto-assigned'), ('Boss 4', 'Hoàng Bá Bình', 'advisor-selected')]
+    2 QA SearchFilter Store200 CreatedViaAPI tier None rec None n 21 first 10/09/2026 13:40 last 15/09/2026 14:08 sales 168000000 pics [('-', None, None)]
+    3 QA Appt NoPIC Probe tier None rec None n 6 first 05/09/2026 10:00 last 21/09/2026 17:10 sales 155810000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 QA Appt Probe 3323 tier None rec None n 4 first 08/09/2026 11:18 last 21/09/2026 13:00 sales 140936000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    5 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 18000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    6 QA ADDR-01 tier None rec None n 3 first 30/09/2026 11:57 last 30/09/2026 13:57 sales 16000000 pics [('Boss 4', 'Lê Thanh Tùng STS', 'advisor-selected')]
+    7 AUTO DON HANG 2 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    8 hang tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 12:57 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    9 TEST AUTO 3 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 12:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    10 QA ADDR-04 tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 11:57 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    11 AUYO4 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 11:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    12 QA Automation Customer tier None rec None n 2 first 30/09/2026 12:57 last 30/09/2026 13:57 sales 13000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 5 sum total 12 AS+AA ok False
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 447, 'pic_name': 'Hoàng Bá Bình', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 280, 'pic_name': 'Lê Thanh Tùng STS', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 7, 'advisor_selected': 2, 'auto_assigned': 5}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 2, 'advisor_selected': 2, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': None, 'pic_name': None, 'total_customers': 1, 'advisor_selected': 0, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 447, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 280, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 104, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': None, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 447, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 280, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 0, 'new_customers': 7, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 2, 'vic_customers': 0}, {'store_id': 136, 'pic_id': None, 'existing_customers': 1, 'new_customers': 0, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== N_30sep ['30/09/2026', '30/09/2026'] toast 0
+  filters {'date_from': '2026-09-30', 'date_to': '2026-09-30', 'store_ids': None} metrics {'total_customers': 8, 'new_store_customers': 8, 'existing_store_customers': 0, 'store_repeat_rate': 0, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 8 {'as_of': 1792321213447}
+    1 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 18000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    2 QA ADDR-01 tier None rec None n 3 first 30/09/2026 11:57 last 30/09/2026 13:57 sales 16000000 pics [('Boss 4', 'Lê Thanh Tùng STS', 'advisor-selected')]
+    3 AUTO DON HANG 2 tier None rec None n 3 first 30/09/2026 11:13 last 30/09/2026 13:13 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    4 hang tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 12:57 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    5 TEST AUTO 3 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 12:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    6 QA ADDR-04 tier None rec None n 2 first 30/09/2026 11:57 last 30/09/2026 11:57 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    7 AUYO4 tier None rec None n 2 first 30/09/2026 11:13 last 30/09/2026 11:13 sales 16000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    8 QA Automation Customer tier None rec None n 2 first 30/09/2026 12:57 last 30/09/2026 13:57 sales 13000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 3 sum total 8 AS+AA ok True
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 280, 'pic_name': 'Lê Thanh Tùng STS', 'total_customers': 1, 'advisor_selected': 1, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 5, 'advisor_selected': 0, 'auto_assigned': 5}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 2, 'advisor_selected': 2, 'auto_assigned': 0}
+  engagement [{'store_id': 136, 'pic_id': 280, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 0, 'contacted_rate': 0}, {'store_id': 136, 'pic_id': 104, 'contacted_customers': 0, 'contacted_rate': 0}]
+  composition [{'store_id': 136, 'pic_id': 280, 'existing_customers': 0, 'new_customers': 1, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 0, 'new_customers': 5, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 2, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15
+===== Z_back_thang_nay ['01/10/2026', '18/10/2026'] toast 0
+  filters {'date_from': '2026-10-01', 'date_to': '2026-10-18', 'store_ids': None} metrics {'total_customers': 6, 'new_store_customers': 3, 'existing_store_customers': 3, 'store_repeat_rate': 50, 'vic_customers': 0} brand_metrics None brand_scope {'brand_count': 4, 'is_multi_brand': True, 'brand_name': None}
+  top n= 7 {'as_of': 1792321083979}
+    1 TEST AUTO 3 tier None rec {'bucket': 'A7', 'days': 5} n 6 first 30/09/2026 11:13 last 13/10/2026 15:44 sales 48800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    2 AUYO4 tier None rec {'bucket': 'A7', 'days': 2} n 4 first 30/09/2026 11:13 last 16/10/2026 11:48 sales 32000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+    3 Nguyễn Thị Bích Ngọc tier Member rec {'bucket': 'A7', 'days': 5} n 2 first 13/10/2026 15:08 last 13/10/2026 15:39 sales 16800000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'advisor-selected')]
+    4 Le Thanh Tun tier None rec {'bucket': 'A7', 'days': 4} n 2 first 14/10/2026 15:25 last 14/10/2026 15:27 sales 16000000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    5 Hoàng Thị Lan Anh tier Member rec {'bucket': 'A7', 'days': 4} n 1 first 14/10/2026 10:09 last 14/10/2026 10:09 sales 8800000 pics [('Boss 4', 'Nguyễn Ngọc Trinh', 'advisor-selected')]
+    6 Debug Probe 6 tier None rec {'bucket': 'A7', 'days': 2} n 1 first 16/10/2026 11:24 last 16/10/2026 11:24 sales 8000000 pics [('-', None, None)]
+    7 TEST AUTO ASIGNEE DƠN HÀNG 1 tier None rec {'bucket': 'A7', 'days': 5} n 1 first 30/09/2026 11:13 last 13/10/2026 16:33 sales 8000000 pics [('Boss 4', 'Nguyễn Phan Tùng', 'auto-assigned')]
+  periodTbl rows 2 sum total 6 AS+AA ok True
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 104, 'pic_name': 'Nguyễn Ngọc Trinh', 'total_customers': 2, 'advisor_selected': 2, 'auto_assigned': 0}
+     {'store_id': 136, 'store_name': 'Boss 46 Tràng Tiền HN', 'pic_id': 636, 'pic_name': 'Nguyễn Phan Tùng', 'total_customers': 4, 'advisor_selected': 1, 'auto_assigned': 3}
+  engagement [{'store_id': 136, 'pic_id': 104, 'contacted_customers': 2, 'contacted_rate': 100}, {'store_id': 136, 'pic_id': 636, 'contacted_customers': 4, 'contacted_rate': 100}]
+  composition [{'store_id': 136, 'pic_id': 104, 'existing_customers': 0, 'new_customers': 2, 'vic_customers': 0}, {'store_id': 136, 'pic_id': 636, 'existing_customers': 3, 'new_customers': 1, 'vic_customers': 0}]
+  totalTbl rows 15 AS+AA==Total all? False statuses rows 15

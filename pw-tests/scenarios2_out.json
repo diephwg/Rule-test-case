@@ -1,0 +1,6825 @@
+{
+ "rows_top_oct": [
+  [
+   "1",
+   "TEST AUTO 3",
+   "—",
+   "A7 5 ngày",
+   "6",
+   "30/09/2026",
+   "13/10/2026",
+   "48 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "2",
+   "AUYO4",
+   "—",
+   "A7 2 ngày",
+   "4",
+   "30/09/2026",
+   "16/10/2026",
+   "32 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "3",
+   "Nguyễn Thị Bích Ngọc",
+   "Member",
+   "A7 5 ngày",
+   "2",
+   "13/10/2026",
+   "13/10/2026",
+   "16 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "4",
+   "Le Thanh Tun",
+   "—",
+   "A7 4 ngày",
+   "2",
+   "14/10/2026",
+   "14/10/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "5",
+   "Hoàng Thị Lan Anh",
+   "Member",
+   "A7 4 ngày",
+   "1",
+   "14/10/2026",
+   "14/10/2026",
+   "8 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "6",
+   "Debug Probe 6",
+   "—",
+   "A7 2 ngày",
+   "1",
+   "16/10/2026",
+   "16/10/2026",
+   "8 000 000",
+   "Chưa có PIC"
+  ],
+  [
+   "7",
+   "TEST AUTO ASIGNEE DƠN HÀNG 1",
+   "—",
+   "A7 5 ngày",
+   "1",
+   "30/09/2026",
+   "13/10/2026",
+   "8 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ]
+ ],
+ "S_oct_boss": {
+  "overview": {
+   "metrics": {
+    "total_customers": 6,
+    "new_store_customers": 3,
+    "existing_store_customers": 3,
+    "store_repeat_rate": 50,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 0,
+    "existing_customers": 6,
+    "repeat_rate": 100
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321422196
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791881049934,
+     "sales_value": 48800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 2
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1792126104861,
+     "sales_value": 32000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR01",
+     "name": "Nguyễn Thị Bích Ngọc",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791878921371,
+     "last_transaction_date": 1791880772260,
+     "sales_value": 16800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000WM4ddIAD",
+     "name": "Le Thanh Tun",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791966349857,
+     "last_transaction_date": 1791966474652,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR05",
+     "name": "Hoàng Thị Lan Anh",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1791947351078,
+     "last_transaction_date": 1791947351078,
+     "sales_value": 8800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791883999522,
+     "sales_value": 8000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 6
+    }
+   ],
+   "as_of": 1792321421944
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 4,
+     "advisor_selected": 1,
+     "auto_assigned": 3
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422995,
+   "total": 2
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 2,
+     "contacted_rate": 100
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 4,
+     "contacted_rate": 100
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321423021,
+   "total": 2
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 2,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 3,
+     "new_customers": 1,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321423083,
+   "total": 2
+  },
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "TEST AUTO 3",
+    "—",
+    "A7 5 ngày",
+    "6",
+    "30/09/2026",
+    "13/10/2026",
+    "48 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "2",
+    "AUYO4",
+    "—",
+    "A7 2 ngày",
+    "4",
+    "30/09/2026",
+    "16/10/2026",
+    "32 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "3",
+    "Nguyễn Thị Bích Ngọc",
+    "Member",
+    "A7 5 ngày",
+    "2",
+    "13/10/2026",
+    "13/10/2026",
+    "16 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "Le Thanh Tun",
+    "—",
+    "A7 4 ngày",
+    "2",
+    "14/10/2026",
+    "14/10/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "5",
+    "Hoàng Thị Lan Anh",
+    "Member",
+    "A7 4 ngày",
+    "1",
+    "14/10/2026",
+    "14/10/2026",
+    "8 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "6",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "A7 5 ngày",
+    "1",
+    "30/09/2026",
+    "13/10/2026",
+    "8 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "4",
+    "1",
+    "3",
+    "3",
+    "1",
+    "0",
+    "4",
+    "100.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "0",
+    "2",
+    "0",
+    "2",
+    "100.0%"
+   ]
+  ]
+ },
+ "S_oct_hermes": {
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 3,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     142
+    ]
+   },
+   "as_of": 1792321429678
+  },
+  "top": {
+   "data": [],
+   "as_of": 1792321429492
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 3
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429675,
+   "total": 5
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 0,
+     "a30": 3,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 0,
+     "a30": 1,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429741,
+   "total": 5
+  },
+  "periodTbl": {
+   "data": [],
+   "next_cursor": null,
+   "as_of": 1792321429683,
+   "total": 0
+  },
+  "engagement": null,
+  "composition": null,
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "tags": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "tagsAfter": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "rowsTop": [],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "3",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "1",
+    "0",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": []
+ },
+ "S_oct_both": {
+  "overview": {
+   "metrics": {
+    "total_customers": 6,
+    "new_store_customers": 3,
+    "existing_store_customers": 3,
+    "store_repeat_rate": 50,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 0,
+    "existing_customers": 6,
+    "repeat_rate": 100
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321436888
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791881049934,
+     "sales_value": 48800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 2
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1792126104861,
+     "sales_value": 32000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR01",
+     "name": "Nguyễn Thị Bích Ngọc",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791878921371,
+     "last_transaction_date": 1791880772260,
+     "sales_value": 16800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000WM4ddIAD",
+     "name": "Le Thanh Tun",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791966349857,
+     "last_transaction_date": 1791966474652,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR05",
+     "name": "Hoàng Thị Lan Anh",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1791947351078,
+     "last_transaction_date": 1791947351078,
+     "sales_value": 8800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791883999522,
+     "sales_value": 8000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 6
+    }
+   ],
+   "as_of": 1792321421944
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 4,
+     "advisor_selected": 1,
+     "auto_assigned": 3
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321437458,
+   "total": 2
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 2,
+     "contacted_rate": 100
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 4,
+     "contacted_rate": 100
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321437538,
+   "total": 2
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 2,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 3,
+     "new_customers": 1,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321437557,
+   "total": 2
+  },
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "TEST AUTO 3",
+    "—",
+    "A7 5 ngày",
+    "6",
+    "30/09/2026",
+    "13/10/2026",
+    "48 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "2",
+    "AUYO4",
+    "—",
+    "A7 2 ngày",
+    "4",
+    "30/09/2026",
+    "16/10/2026",
+    "32 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "3",
+    "Nguyễn Thị Bích Ngọc",
+    "Member",
+    "A7 5 ngày",
+    "2",
+    "13/10/2026",
+    "13/10/2026",
+    "16 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "Le Thanh Tun",
+    "—",
+    "A7 4 ngày",
+    "2",
+    "14/10/2026",
+    "14/10/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "5",
+    "Hoàng Thị Lan Anh",
+    "Member",
+    "A7 4 ngày",
+    "1",
+    "14/10/2026",
+    "14/10/2026",
+    "8 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "6",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "A7 5 ngày",
+    "1",
+    "30/09/2026",
+    "13/10/2026",
+    "8 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "4",
+    "1",
+    "3",
+    "3",
+    "1",
+    "0",
+    "4",
+    "100.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "0",
+    "2",
+    "0",
+    "2",
+    "100.0%"
+   ]
+  ]
+ },
+ "rows_top_sep": [
+  [
+   "1",
+   "Duong Hang",
+   "Silver",
+   "Inactive",
+   "38",
+   "30/10/2025",
+   "19/09/2026",
+   "718 304 000",
+   "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+  ],
+  [
+   "2",
+   "QA SearchFilter Store200 CreatedViaAPI",
+   "—",
+   "Inactive",
+   "21",
+   "10/09/2026",
+   "15/09/2026",
+   "168 000 000",
+   "Chưa có PIC"
+  ],
+  [
+   "3",
+   "QA Appt NoPIC Probe",
+   "—",
+   "Inactive",
+   "6",
+   "05/09/2026",
+   "21/09/2026",
+   "155 810 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "4",
+   "QA Appt Probe 3323",
+   "—",
+   "Inactive",
+   "4",
+   "08/09/2026",
+   "21/09/2026",
+   "140 936 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "5",
+   "TEST AUTO ASIGNEE DƠN HÀNG 1",
+   "—",
+   "Inactive",
+   "3",
+   "30/09/2026",
+   "30/09/2026",
+   "18 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "6",
+   "QA ADDR-01",
+   "—",
+   "Inactive",
+   "3",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+  ],
+  [
+   "7",
+   "AUTO DON HANG 2",
+   "—",
+   "Inactive",
+   "3",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "8",
+   "hang",
+   "—",
+   "Inactive",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "9",
+   "TEST AUTO 3",
+   "—",
+   "Inactive",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "10",
+   "QA ADDR-04",
+   "—",
+   "Inactive",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "11",
+   "AUYO4",
+   "—",
+   "Inactive",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "12",
+   "QA Automation Customer",
+   "—",
+   "Inactive",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "13 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ]
+ ],
+ "S_sep_boss": {
+  "overview": {
+   "metrics": {
+    "total_customers": 12,
+    "new_store_customers": 10,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 16.666666666666664,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 3,
+    "existing_customers": 9,
+    "repeat_rate": 75
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321456035
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001000000000001AAA",
+     "name": "Duong Hang",
+     "member_tier_name": "Silver",
+     "recency": null,
+     "transaction_count": 33,
+     "first_transaction_date": 1764396981229,
+     "last_transaction_date": 1789798581229,
+     "sales_value": 256904000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 447,
+       "pic_name": "Hoàng Bá Bình",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XIOyZIAX",
+     "name": "QA Appt NoPIC Probe",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 6,
+     "first_transaction_date": 1788577200000,
+     "last_transaction_date": 1789985400000,
+     "sales_value": 155810000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001A800000XIawTIAT",
+     "name": "QA Appt Probe 3323",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 4,
+     "first_transaction_date": 1788841080000,
+     "last_transaction_date": 1789970400000,
+     "sales_value": 140936000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 18000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001A800000VmPkLIAV",
+     "name": "QA ADDR-01",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 280,
+       "pic_name": "Lê Thanh Tùng STS",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaPJXIA3",
+     "name": "AUTO DON HANG 2",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 6
+    },
+    {
+     "sf_global_account_id": "001A800000VxTJXIA3",
+     "name": "hang",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790747853522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 7
+    },
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790745225889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 8
+    },
+    {
+     "sf_global_account_id": "001A800000VmehGIAR",
+     "name": "QA ADDR-04",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790744253522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 9
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790741625889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 10
+    },
+    {
+     "sf_global_account_id": "001A800000Wy547IAB",
+     "name": "QA Automation Customer",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790747853522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 13000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 11
+    }
+   ],
+   "as_of": 1792321455989
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 7,
+     "advisor_selected": 2,
+     "auto_assigned": 5
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321456350,
+   "total": 5
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321456442,
+   "total": 5
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "existing_customers": 0,
+     "new_customers": 1,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 0,
+     "new_customers": 7,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 2,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321456458,
+   "total": 5
+  },
+  "inputs": [
+   "01/09/2026",
+   "30/09/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "Duong Hang",
+    "Silver",
+    "Inactive",
+    "33",
+    "29/11/2025",
+    "19/09/2026",
+    "256 904 000",
+    "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+   ],
+   [
+    "2",
+    "QA Appt NoPIC Probe",
+    "—",
+    "Inactive",
+    "6",
+    "05/09/2026",
+    "21/09/2026",
+    "155 810 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "3",
+    "QA Appt Probe 3323",
+    "—",
+    "Inactive",
+    "4",
+    "08/09/2026",
+    "21/09/2026",
+    "140 936 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "18 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "5",
+    "QA ADDR-01",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+   ],
+   [
+    "6",
+    "AUTO DON HANG 2",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "7",
+    "hang",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "8",
+    "TEST AUTO 3",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "9",
+    "QA ADDR-04",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "10",
+    "AUYO4",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "11",
+    "QA Automation Customer",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "13 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "2",
+    "5",
+    "0",
+    "7",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "···",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ]
+  ]
+ },
+ "S_sep_hermes": {
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 3,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "store_ids": [
+     142
+    ]
+   },
+   "as_of": 1792321466174
+  },
+  "top": {
+   "data": [],
+   "as_of": 1792321466236
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 3
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429675,
+   "total": 5
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 0,
+     "a30": 3,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 0,
+     "a30": 1,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429741,
+   "total": 5
+  },
+  "periodTbl": {
+   "data": [],
+   "next_cursor": null,
+   "as_of": 1792321466270,
+   "total": 0
+  },
+  "engagement": null,
+  "composition": null,
+  "inputs": [
+   "01/09/2026",
+   "30/09/2026"
+  ],
+  "tags": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "tagsAfter": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "rowsTop": [],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "3",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "1",
+    "0",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": []
+ },
+ "S_sep_both": {
+  "overview": {
+   "metrics": {
+    "total_customers": 12,
+    "new_store_customers": 10,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 16.666666666666664,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 3,
+    "existing_customers": 9,
+    "repeat_rate": 75
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321473343
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001000000000001AAA",
+     "name": "Duong Hang",
+     "member_tier_name": "Silver",
+     "recency": null,
+     "transaction_count": 33,
+     "first_transaction_date": 1764396981229,
+     "last_transaction_date": 1789798581229,
+     "sales_value": 256904000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 447,
+       "pic_name": "Hoàng Bá Bình",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XIOyZIAX",
+     "name": "QA Appt NoPIC Probe",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 6,
+     "first_transaction_date": 1788577200000,
+     "last_transaction_date": 1789985400000,
+     "sales_value": 155810000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001A800000XIawTIAT",
+     "name": "QA Appt Probe 3323",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 4,
+     "first_transaction_date": 1788841080000,
+     "last_transaction_date": 1789970400000,
+     "sales_value": 140936000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 18000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001A800000VmPkLIAV",
+     "name": "QA ADDR-01",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 280,
+       "pic_name": "Lê Thanh Tùng STS",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaPJXIA3",
+     "name": "AUTO DON HANG 2",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 6
+    },
+    {
+     "sf_global_account_id": "001A800000VxTJXIA3",
+     "name": "hang",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790747853522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 7
+    },
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790745225889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 8
+    },
+    {
+     "sf_global_account_id": "001A800000VmehGIAR",
+     "name": "QA ADDR-04",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790744253522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 9
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790741625889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 10
+    },
+    {
+     "sf_global_account_id": "001A800000Wy547IAB",
+     "name": "QA Automation Customer",
+     "member_tier_name": null,
+     "recency": null,
+     "transaction_count": 2,
+     "first_transaction_date": 1790747853522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 13000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 11
+    }
+   ],
+   "as_of": 1792321473137
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 7,
+     "advisor_selected": 2,
+     "auto_assigned": 5
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321473584,
+   "total": 5
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321473594,
+   "total": 5
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "existing_customers": 0,
+     "new_customers": 1,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 0,
+     "new_customers": 7,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 2,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321473603,
+   "total": 5
+  },
+  "inputs": [
+   "01/09/2026",
+   "30/09/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "Duong Hang",
+    "Silver",
+    "Inactive",
+    "33",
+    "29/11/2025",
+    "19/09/2026",
+    "256 904 000",
+    "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+   ],
+   [
+    "2",
+    "QA Appt NoPIC Probe",
+    "—",
+    "Inactive",
+    "6",
+    "05/09/2026",
+    "21/09/2026",
+    "155 810 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "3",
+    "QA Appt Probe 3323",
+    "—",
+    "Inactive",
+    "4",
+    "08/09/2026",
+    "21/09/2026",
+    "140 936 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "18 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "5",
+    "QA ADDR-01",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+   ],
+   [
+    "6",
+    "AUTO DON HANG 2",
+    "—",
+    "Inactive",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "7",
+    "hang",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "8",
+    "TEST AUTO 3",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "9",
+    "QA ADDR-04",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "10",
+    "AUYO4",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "11",
+    "QA Automation Customer",
+    "—",
+    "Inactive",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "13 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "2",
+    "5",
+    "0",
+    "7",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "···",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ]
+  ]
+ },
+ "rows_top_year": [
+  [
+   "1",
+   "Duong Hang",
+   "Silver",
+   "A30 29 ngày",
+   "53",
+   "30/10/2025",
+   "19/09/2026",
+   "3 704 936 000",
+   "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+  ],
+  [
+   "2",
+   "QA SearchFilter Store200 CreatedViaAPI",
+   "—",
+   "A60 33 ngày",
+   "21",
+   "10/09/2026",
+   "15/09/2026",
+   "168 000 000",
+   "Chưa có PIC"
+  ],
+  [
+   "3",
+   "QA Appt NoPIC Probe",
+   "—",
+   "A30 27 ngày",
+   "6",
+   "05/09/2026",
+   "21/09/2026",
+   "155 810 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "4",
+   "QA Appt Probe 3323",
+   "—",
+   "A30 27 ngày",
+   "4",
+   "08/09/2026",
+   "21/09/2026",
+   "140 936 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "5",
+   "TEST AUTO 3",
+   "—",
+   "A7 5 ngày",
+   "8",
+   "30/09/2026",
+   "13/10/2026",
+   "64 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "6",
+   "AUYO4",
+   "—",
+   "A7 2 ngày",
+   "6",
+   "30/09/2026",
+   "16/10/2026",
+   "48 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "7",
+   "TEST AUTO ASIGNEE DƠN HÀNG 1",
+   "—",
+   "A7 5 ngày",
+   "4",
+   "30/09/2026",
+   "13/10/2026",
+   "26 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "8",
+   "Nguyễn Thị Bích Ngọc",
+   "Member",
+   "A7 5 ngày",
+   "2",
+   "13/10/2026",
+   "13/10/2026",
+   "16 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+  ],
+  [
+   "9",
+   "Le Thanh Tun",
+   "—",
+   "A7 4 ngày",
+   "2",
+   "14/10/2026",
+   "14/10/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "10",
+   "QA ADDR-01",
+   "—",
+   "A30 18 ngày",
+   "3",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+  ],
+  [
+   "11",
+   "AUTO DON HANG 2",
+   "—",
+   "A30 18 ngày",
+   "3",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "12",
+   "hang",
+   "—",
+   "A30 18 ngày",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ],
+  [
+   "13",
+   "QA ADDR-04",
+   "—",
+   "A30 18 ngày",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "16 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "14",
+   "QA Automation Customer",
+   "—",
+   "A30 18 ngày",
+   "2",
+   "30/09/2026",
+   "30/09/2026",
+   "13 000 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+  ],
+  [
+   "15",
+   "Hoàng Thị Lan Anh",
+   "Member",
+   "A7 4 ngày",
+   "1",
+   "14/10/2026",
+   "14/10/2026",
+   "8 800 000",
+   "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+  ]
+ ],
+ "S_year_boss": {
+  "overview": {
+   "metrics": {
+    "total_customers": 15,
+    "new_store_customers": 13,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 13.333333333333334,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 3,
+    "existing_customers": 12,
+    "repeat_rate": 80
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321492999
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001000000000001AAA",
+     "name": "Duong Hang",
+     "member_tier_name": "Silver",
+     "recency": {
+      "bucket": "A30",
+      "days": 29
+     },
+     "transaction_count": 40,
+     "first_transaction_date": 1764396981229,
+     "last_transaction_date": 1789798581229,
+     "sales_value": 311336000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 447,
+       "pic_name": "Hoàng Bá Bình",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XIOyZIAX",
+     "name": "QA Appt NoPIC Probe",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 27
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1788577200000,
+     "last_transaction_date": 1789985400000,
+     "sales_value": 155810000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001A800000XIawTIAT",
+     "name": "QA Appt Probe 3323",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 27
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1788841080000,
+     "last_transaction_date": 1789970400000,
+     "sales_value": 140936000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 8,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791881049934,
+     "sales_value": 64800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 2
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1792126104861,
+     "sales_value": 48000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791883999522,
+     "sales_value": 26000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 6
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR01",
+     "name": "Nguyễn Thị Bích Ngọc",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791878921371,
+     "last_transaction_date": 1791880772260,
+     "sales_value": 16800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 7
+    },
+    {
+     "sf_global_account_id": "001A800000WM4ddIAD",
+     "name": "Le Thanh Tun",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791966349857,
+     "last_transaction_date": 1791966474652,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 8
+    },
+    {
+     "sf_global_account_id": "001A800000VmPkLIAV",
+     "name": "QA ADDR-01",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 3,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 280,
+       "pic_name": "Lê Thanh Tùng STS",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 9
+    },
+    {
+     "sf_global_account_id": "001A800000XaPJXIA3",
+     "name": "AUTO DON HANG 2",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 10
+    },
+    {
+     "sf_global_account_id": "001A800000VxTJXIA3",
+     "name": "hang",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790747853522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 11
+    },
+    {
+     "sf_global_account_id": "001A800000VmehGIAR",
+     "name": "QA ADDR-04",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790744253522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 12
+    },
+    {
+     "sf_global_account_id": "001A800000Wy547IAB",
+     "name": "QA Automation Customer",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790747853522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 13000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 13
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR05",
+     "name": "Hoàng Thị Lan Anh",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1791947351078,
+     "last_transaction_date": 1791947351078,
+     "sales_value": 8800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 14
+    }
+   ],
+   "as_of": 1792321492883
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 8,
+     "advisor_selected": 3,
+     "auto_assigned": 5
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 4,
+     "advisor_selected": 4,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321493882,
+   "total": 5
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 4,
+     "contacted_rate": 50
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 2,
+     "contacted_rate": 50
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321493899,
+   "total": 5
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "existing_customers": 0,
+     "new_customers": 1,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 0,
+     "new_customers": 8,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 4,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321493913,
+   "total": 5
+  },
+  "inputs": [
+   "01/01/2026",
+   "18/10/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "Duong Hang",
+    "Silver",
+    "A30 29 ngày",
+    "40",
+    "29/11/2025",
+    "19/09/2026",
+    "311 336 000",
+    "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+   ],
+   [
+    "2",
+    "QA Appt NoPIC Probe",
+    "—",
+    "A30 27 ngày",
+    "6",
+    "05/09/2026",
+    "21/09/2026",
+    "155 810 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "3",
+    "QA Appt Probe 3323",
+    "—",
+    "A30 27 ngày",
+    "4",
+    "08/09/2026",
+    "21/09/2026",
+    "140 936 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "TEST AUTO 3",
+    "—",
+    "A7 5 ngày",
+    "8",
+    "30/09/2026",
+    "13/10/2026",
+    "64 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "5",
+    "AUYO4",
+    "—",
+    "A7 2 ngày",
+    "6",
+    "30/09/2026",
+    "16/10/2026",
+    "48 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "6",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "A7 5 ngày",
+    "4",
+    "30/09/2026",
+    "13/10/2026",
+    "26 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "7",
+    "Nguyễn Thị Bích Ngọc",
+    "Member",
+    "A7 5 ngày",
+    "2",
+    "13/10/2026",
+    "13/10/2026",
+    "16 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "8",
+    "Le Thanh Tun",
+    "—",
+    "A7 4 ngày",
+    "2",
+    "14/10/2026",
+    "14/10/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "9",
+    "QA ADDR-01",
+    "—",
+    "A30 18 ngày",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+   ],
+   [
+    "10",
+    "AUTO DON HANG 2",
+    "—",
+    "A30 18 ngày",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "11",
+    "hang",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "12",
+    "QA ADDR-04",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "13",
+    "QA Automation Customer",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "13 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "14",
+    "Hoàng Thị Lan Anh",
+    "Member",
+    "A7 4 ngày",
+    "1",
+    "14/10/2026",
+    "14/10/2026",
+    "8 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "8",
+    "3",
+    "5",
+    "0",
+    "8",
+    "0",
+    "4",
+    "50.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "4",
+    "4",
+    "0",
+    "0",
+    "4",
+    "0",
+    "2",
+    "50.0%"
+   ],
+   [
+    "···",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ]
+  ]
+ },
+ "S_year_hermes": {
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 3,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     142
+    ]
+   },
+   "as_of": 1792321502643
+  },
+  "top": {
+   "data": [],
+   "as_of": 1792321502640
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 3,
+     "advisor_selected": 0,
+     "auto_assigned": 3
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429675,
+   "total": 5
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 415,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 1,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 380,
+     "pic_name": "Lê Mạnh Cường",
+     "a7": 0,
+     "a30": 3,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 142,
+     "store_name": "Hermès Metropole HN Store",
+     "pic_id": 648,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 0,
+     "a30": 1,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321429741,
+   "total": 5
+  },
+  "periodTbl": {
+   "data": [],
+   "next_cursor": null,
+   "as_of": 1792321502642,
+   "total": 0
+  },
+  "engagement": null,
+  "composition": null,
+  "inputs": [
+   "01/01/2026",
+   "18/10/2026"
+  ],
+  "tags": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "tagsAfter": "Hermès Metropole HN Store Hermès Metropole HN Store",
+  "rowsTop": [],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "3",
+    "0",
+    "3",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Mạnh Cường",
+    "Hermès Metropole HN Store",
+    "1",
+    "0",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Hermès Metropole HN Store",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": []
+ },
+ "S_year_both": {
+  "overview": {
+   "metrics": {
+    "total_customers": 15,
+    "new_store_customers": 13,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 13.333333333333334,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 3,
+    "existing_customers": 12,
+    "repeat_rate": 80
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792321509136
+  },
+  "top": {
+   "data": [
+    {
+     "sf_global_account_id": "001000000000001AAA",
+     "name": "Duong Hang",
+     "member_tier_name": "Silver",
+     "recency": {
+      "bucket": "A30",
+      "days": 29
+     },
+     "transaction_count": 40,
+     "first_transaction_date": 1764396981229,
+     "last_transaction_date": 1789798581229,
+     "sales_value": 311336000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 447,
+       "pic_name": "Hoàng Bá Bình",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 1
+    },
+    {
+     "sf_global_account_id": "001A800000XIOyZIAX",
+     "name": "QA Appt NoPIC Probe",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 27
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1788577200000,
+     "last_transaction_date": 1789985400000,
+     "sales_value": 155810000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 2
+    },
+    {
+     "sf_global_account_id": "001A800000XIawTIAT",
+     "name": "QA Appt Probe 3323",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 27
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1788841080000,
+     "last_transaction_date": 1789970400000,
+     "sales_value": 140936000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 3
+    },
+    {
+     "sf_global_account_id": "001A800000XafEXIAZ",
+     "name": "TEST AUTO 3",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 8,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791881049934,
+     "sales_value": 64800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 4
+    },
+    {
+     "sf_global_account_id": "001A800000XaR8ZIAV",
+     "name": "AUYO4",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 2
+     },
+     "transaction_count": 6,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1792126104861,
+     "sales_value": 48000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 5
+    },
+    {
+     "sf_global_account_id": "001A800000XaMdWIAV",
+     "name": "TEST AUTO ASIGNEE DƠN HÀNG 1",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 4,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1791883999522,
+     "sales_value": 26000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 6
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR01",
+     "name": "Nguyễn Thị Bích Ngọc",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 5
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791878921371,
+     "last_transaction_date": 1791880772260,
+     "sales_value": 16800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 7
+    },
+    {
+     "sf_global_account_id": "001A800000WM4ddIAD",
+     "name": "Le Thanh Tun",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1791966349857,
+     "last_transaction_date": 1791966474652,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 8
+    },
+    {
+     "sf_global_account_id": "001A800000VmPkLIAV",
+     "name": "QA ADDR-01",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 3,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 280,
+       "pic_name": "Lê Thanh Tùng STS",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 9
+    },
+    {
+     "sf_global_account_id": "001A800000XaPJXIA3",
+     "name": "AUTO DON HANG 2",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 3,
+     "first_transaction_date": 1790741625889,
+     "last_transaction_date": 1790748825889,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 10
+    },
+    {
+     "sf_global_account_id": "001A800000VxTJXIA3",
+     "name": "hang",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790747853522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 11
+    },
+    {
+     "sf_global_account_id": "001A800000VmehGIAR",
+     "name": "QA ADDR-04",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790744253522,
+     "last_transaction_date": 1790744253522,
+     "sales_value": 16000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 12
+    },
+    {
+     "sf_global_account_id": "001A800000Wy547IAB",
+     "name": "QA Automation Customer",
+     "member_tier_name": null,
+     "recency": {
+      "bucket": "A30",
+      "days": 18
+     },
+     "transaction_count": 2,
+     "first_transaction_date": 1790747853522,
+     "last_transaction_date": 1790751453522,
+     "sales_value": 13000000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 636,
+       "pic_name": "Nguyễn Phan Tùng",
+       "pic_type": "auto-assigned"
+      }
+     ],
+     "rank": 13
+    },
+    {
+     "sf_global_account_id": "001TK00001hpVDNQAR05",
+     "name": "Hoàng Thị Lan Anh",
+     "member_tier_name": "Member",
+     "recency": {
+      "bucket": "A7",
+      "days": 4
+     },
+     "transaction_count": 1,
+     "first_transaction_date": 1791947351078,
+     "last_transaction_date": 1791947351078,
+     "sales_value": 8800000,
+     "pics": [
+      {
+       "store_id": 136,
+       "store_name": "Boss 46 Tràng Tiền HN",
+       "pic_id": 104,
+       "pic_name": "Nguyễn Ngọc Trinh",
+       "pic_type": "advisor-selected"
+      }
+     ],
+     "rank": 14
+    }
+   ],
+   "as_of": 1792321492883
+  },
+  "totalTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 208,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 50,
+     "advisor_selected": 2,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "total_customers": 49,
+     "advisor_selected": 1,
+     "auto_assigned": 48
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 45,
+     "advisor_selected": 7,
+     "auto_assigned": 38
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 41,
+     "advisor_selected": 7,
+     "auto_assigned": 34
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 23,
+     "advisor_selected": 11,
+     "auto_assigned": 7
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "total_customers": 22,
+     "advisor_selected": 22,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 7,
+     "advisor_selected": 6,
+     "auto_assigned": 1
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 3,
+     "advisor_selected": 3,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "total_customers": 2,
+     "advisor_selected": 2,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321419897,
+   "total": 11
+  },
+  "statuses": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 316,
+     "pic_name": null,
+     "a7": 17,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 11,
+     "a30": 7,
+     "a60": 1,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 306,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 332,
+     "pic_name": "Nguyễn Phan Tùng",
+     "a7": 10,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "a7": 7,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "a7": 5,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "a7": 3,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 657,
+     "pic_name": "Hang",
+     "a7": 2,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 346,
+     "pic_name": "Nguyễn Nhật Vy",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "a7": 0,
+     "a30": 2,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 655,
+     "pic_name": "Nguyễn Thị Thu Huyền",
+     "a7": 0,
+     "a30": 0,
+     "a60": 0,
+     "a90": 0,
+     "a180": 0,
+     "a360": 0,
+     "inactive": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321422142,
+   "total": 11
+  },
+  "periodTbl": {
+   "data": [
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 447,
+     "pic_name": "Hoàng Bá Bình",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 280,
+     "pic_name": "Lê Thanh Tùng STS",
+     "total_customers": 1,
+     "advisor_selected": 1,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 636,
+     "pic_name": "Nguyễn Phan Tùng",
+     "total_customers": 8,
+     "advisor_selected": 3,
+     "auto_assigned": 5
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": 104,
+     "pic_name": "Nguyễn Ngọc Trinh",
+     "total_customers": 4,
+     "advisor_selected": 4,
+     "auto_assigned": 0
+    },
+    {
+     "store_id": 136,
+     "store_name": "Boss 46 Tràng Tiền HN",
+     "pic_id": null,
+     "pic_name": null,
+     "total_customers": 1,
+     "advisor_selected": 0,
+     "auto_assigned": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321509409,
+   "total": 5
+  },
+  "engagement": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "contacted_customers": 4,
+     "contacted_rate": 50
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "contacted_customers": 2,
+     "contacted_rate": 50
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "contacted_customers": 0,
+     "contacted_rate": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321509497,
+   "total": 5
+  },
+  "composition": {
+   "data": [
+    {
+     "store_id": 136,
+     "pic_id": 447,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 280,
+     "existing_customers": 0,
+     "new_customers": 1,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 636,
+     "existing_customers": 0,
+     "new_customers": 8,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": 104,
+     "existing_customers": 0,
+     "new_customers": 4,
+     "vic_customers": 0
+    },
+    {
+     "store_id": 136,
+     "pic_id": null,
+     "existing_customers": 1,
+     "new_customers": 0,
+     "vic_customers": 0
+    }
+   ],
+   "next_cursor": null,
+   "as_of": 1792321509513,
+   "total": 5
+  },
+  "inputs": [
+   "01/01/2026",
+   "18/10/2026"
+  ],
+  "tags": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "tagsAfter": "Boss 46 Tràng Tiền HN Boss 46 Tràng Tiền HN",
+  "rowsTop": [
+   [
+    "1",
+    "Duong Hang",
+    "Silver",
+    "A30 29 ngày",
+    "40",
+    "29/11/2025",
+    "19/09/2026",
+    "311 336 000",
+    "Boss 46 Tràng Tiền HN Hoàng Bá Bình Advisor-Selected"
+   ],
+   [
+    "2",
+    "QA Appt NoPIC Probe",
+    "—",
+    "A30 27 ngày",
+    "6",
+    "05/09/2026",
+    "21/09/2026",
+    "155 810 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "3",
+    "QA Appt Probe 3323",
+    "—",
+    "A30 27 ngày",
+    "4",
+    "08/09/2026",
+    "21/09/2026",
+    "140 936 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "4",
+    "TEST AUTO 3",
+    "—",
+    "A7 5 ngày",
+    "8",
+    "30/09/2026",
+    "13/10/2026",
+    "64 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "5",
+    "AUYO4",
+    "—",
+    "A7 2 ngày",
+    "6",
+    "30/09/2026",
+    "16/10/2026",
+    "48 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "6",
+    "TEST AUTO ASIGNEE DƠN HÀNG 1",
+    "—",
+    "A7 5 ngày",
+    "4",
+    "30/09/2026",
+    "13/10/2026",
+    "26 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "7",
+    "Nguyễn Thị Bích Ngọc",
+    "Member",
+    "A7 5 ngày",
+    "2",
+    "13/10/2026",
+    "13/10/2026",
+    "16 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Advisor-Selected"
+   ],
+   [
+    "8",
+    "Le Thanh Tun",
+    "—",
+    "A7 4 ngày",
+    "2",
+    "14/10/2026",
+    "14/10/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "9",
+    "QA ADDR-01",
+    "—",
+    "A30 18 ngày",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Lê Thanh Tùng STS Advisor-Selected"
+   ],
+   [
+    "10",
+    "AUTO DON HANG 2",
+    "—",
+    "A30 18 ngày",
+    "3",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "11",
+    "hang",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ],
+   [
+    "12",
+    "QA ADDR-04",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "16 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "13",
+    "QA Automation Customer",
+    "—",
+    "A30 18 ngày",
+    "2",
+    "30/09/2026",
+    "30/09/2026",
+    "13 000 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Phan Tùng Auto-assigned"
+   ],
+   [
+    "14",
+    "Hoàng Thị Lan Anh",
+    "Member",
+    "A7 4 ngày",
+    "1",
+    "14/10/2026",
+    "14/10/2026",
+    "8 800 000",
+    "Boss 46 Tràng Tiền HN Nguyễn Ngọc Trinh Advisor-Selected"
+   ]
+  ],
+  "rowsTotal": [
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "208",
+    "0",
+    "0",
+    "3",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "50",
+    "2",
+    "48",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Chưa gán PIC",
+    "Boss 46 Tràng Tiền HN",
+    "49",
+    "1",
+    "48",
+    "17",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "45",
+    "7",
+    "38",
+    "7",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "41",
+    "7",
+    "34",
+    "10",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "23",
+    "11",
+    "7",
+    "11",
+    "7",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Thị Thu Huyền",
+    "Boss 46 Tràng Tiền HN",
+    "22",
+    "22",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "7",
+    "6",
+    "1",
+    "5",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "3",
+    "3",
+    "0",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Hang",
+    "Boss 46 Tràng Tiền HN",
+    "2",
+    "2",
+    "0",
+    "2",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ],
+   [
+    "Nguyễn Nhật Vy",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+   ]
+  ],
+  "rowsPeriod": [
+   [
+    "Nguyễn Phan Tùng",
+    "Boss 46 Tràng Tiền HN",
+    "8",
+    "3",
+    "5",
+    "0",
+    "8",
+    "0",
+    "4",
+    "50.0%"
+   ],
+   [
+    "Nguyễn Ngọc Trinh",
+    "Boss 46 Tràng Tiền HN",
+    "4",
+    "4",
+    "0",
+    "0",
+    "4",
+    "0",
+    "2",
+    "50.0%"
+   ],
+   [
+    "···",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Lê Thanh Tùng STS",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0.0%"
+   ],
+   [
+    "Hoàng Bá Bình",
+    "Boss 46 Tràng Tiền HN",
+    "1",
+    "1",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0.0%"
+   ]
+  ]
+ }
+}

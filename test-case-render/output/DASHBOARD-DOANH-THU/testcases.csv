@@ -1,0 +1,1020 @@
+﻿TC_ID,Module,Req_ID,Title,Test_Type,Scenario,Technique,Priority,Preconditions,Test_Data,Steps,Expected_Result,Automation,Status,Notes
+TC-FLT-001,01. Bộ lọc kỳ & thuế,REQ-UI-01;REQ-UI-02,"Kiểm tra khối bộ lọc hiển thị đủ Kỳ xem, Từ ngày – Đến ngày, Store, Client Advisor, Giá trị tiền",UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Quan sát khối bộ lọc trên cùng màn hình","2. Có nhóm Kỳ xem gồm 5 nút ""Hôm nay"", ""Tuần này"", ""Tháng này"", ""Tháng trước"", ""Năm này""
+- Có ô Từ ngày – Đến ngày kèm icon lịch, bộ chọn Store, bộ lọc Client Advisor
+- Góc phải có nhóm Giá trị tiền với 2 nút ""Sau thuế"" và ""Trước thuế""",No,Not Run,"Mockup image1–3: Kỳ xem, Từ ngày – Đến ngày, Store, Giá trị tiền"
+TC-FLT-002,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra preset Hôm nay đặt kỳ đúng 1 ngày là ngày hiện tại,Functional,Positive,EP,P2,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Hôm nay""","2. Nút Hôm nay ở trạng thái đang chọn; Từ ngày = Đến ngày = ngày hiện tại (dd/mm/yyyy)
+- Khối biểu đồ Sales theo thời gian không vẽ cột (kỳ 1 ngày)",Candidate,Not Run,
+TC-FLT-003,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra preset Tuần này đặt kỳ từ Thứ Hai của tuần hiện tại đến hôm nay,Functional,Positive,EP,P2,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Tuần này""",2. Từ ngày = Thứ Hai của tuần chứa hôm nay; Đến ngày = hôm nay,Candidate,Not Run,[Giả định AS-05] ngày kết thúc của Tuần này. Nếu hôm nay là Thứ Hai: kỳ 1 ngày
+TC-FLT-004,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra preset Tháng này đặt kỳ từ ngày 01 của tháng hiện tại đến hôm nay,Functional,Positive,EP,P2,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Tháng này""",2. Từ ngày = 01/<tháng hiện tại>/<năm>; Đến ngày = hôm nay (ví dụ nguồn: Tháng này 01/10–14/10 khi hôm nay 14/10),Candidate,Not Run,
+TC-FLT-005,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra preset Tháng trước đặt kỳ trọn tháng dương lịch liền trước,Functional,Positive,EP,P2,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Tháng trước""",2. Từ ngày = ngày 01 của tháng trước; Đến ngày = ngày cuối của tháng trước (ví dụ nguồn: 01/09–30/09),Candidate,Not Run,
+TC-FLT-006,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra preset Năm này đặt kỳ từ 01/01 năm hiện tại đến hôm nay,Functional,Positive,EP,P2,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Năm này""",2. Từ ngày = 01/01/<năm hiện tại>; Đến ngày = hôm nay (ví dụ nguồn: Năm này 01/01–14/10),Candidate,Not Run,
+TC-FLT-007,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra chọn khoảng Từ ngày – Đến ngày 01/09/2026 – 30/09/2026 áp dụng cho mọi khối,Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-08: có truy vấn Sales, Transactions toàn Tam Sơn kỳ 01/09–30/09/2026",Từ ngày: 01/09/2026; Đến ngày: 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Xem thẻ Sales, Transactions và biểu đồ Sales theo thời gian","2. Ô hiển thị 01/09/2026 – 30/09/2026
+3. Sales và Transactions bằng kết quả truy vấn SETUP-08 cùng kỳ; biểu đồ có 30 cột từ 01/09 đến 30/09",Candidate,Not Run,"Truy vấn đối soát: tính đơn 0đ [Giả định AS-01], tính đơn B2B [Cần xác nhận Q-16], loại ecom [Giả định AS-09]; trạng thái nút preset khi khoảng trùng Tháng trước: Q-45 (không kiểm)"
+TC-FLT-008,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra chấp nhận khoảng 366 ngày (biên tối đa) 01/01/2025 – 01/01/2026,Validation,Boundary,BVA,P2,1. Theo SETUP-01: đăng nhập U-CRM,Từ ngày: 01/01/2025; Đến ngày: 01/01/2026 (366 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/01/2025, Đến ngày 01/01/2026 trên lịch chọn khoảng","2. Kỳ được áp dụng, không có thông báo lỗi; ô hiển thị 01/01/2025 – 01/01/2026; KPI và biểu đồ tính lại (biểu đồ tự chọn Tháng, 13 cột)",Candidate,Not Run,
+TC-FLT-009,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra chặn khoảng 367 ngày: báo lỗi và giữ nguyên kỳ đang xem,Validation,Boundary,BVA,P2,1. Theo SETUP-01: đăng nhập U-CRM,Kỳ ban đầu: Tháng này; Từ ngày: 01/01/2025; Đến ngày: 02/01/2026 (367 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm nút ""Tháng này"" và ghi lại giá trị thẻ Sales
+3. Nhập Từ ngày 01/01/2025, Đến ngày 02/01/2026 trên lịch chọn khoảng","3. Hiển thị thông báo lỗi về khoảng vượt tối đa 366 ngày [Cần xác nhận Q-07]
+- Kỳ vẫn là Tháng này; ô Từ ngày – Đến ngày, thẻ Sales và biểu đồ giữ nguyên như bước 2",Candidate,Not Run,Nội dung lỗi: [Cần xác nhận Q-07]
+TC-FLT-010,01. Bộ lọc kỳ & thuế,REQ-UI-01,Kiểm tra kỳ mặc định khi mở dashboard lần đầu là Tháng này,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Phiên đăng nhập mới (chưa mở dashboard trong phiên)",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng","1. Nút Tháng này ở trạng thái đang chọn; Từ ngày = 01 tháng hiện tại, Đến ngày = hôm nay",Candidate,Not Run,[Giả định AS-05] theo mockup
+TC-FLT-011,01. Bộ lọc kỳ & thuế,REQ-UI-02,Kiểm tra cách nhìn thuế mặc định khi mở dashboard là Sau thuế,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Phiên đăng nhập mới",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng","1. Nút ""Sau thuế"" ở trạng thái đang chọn; thẻ Sales, AOV, Avg Spending/Customer gắn nhãn ""Sau thuế""",Candidate,Not Run,[Giả định AS-04] theo mockup; OQ-SPM-15
+TC-FLT-012,01. Bộ lọc kỳ & thuế,FR-SPM-009,Kiểm tra đổi Sau thuế sang Trước thuế không gọi lại API dữ liệu và hai số cùng snapshot,Integration,Positive,EG,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-09: mở DevTools tab Network",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", chờ tải xong, xoá log Network
+3. Ghi lại Sales sau thuế và dòng phụ Trước thuế trên thẻ Sales
+4. Bấm ""Trước thuế""","4. Tab Network không phát sinh request tải lại dữ liệu chỉ số
+- Số chính thẻ Sales bằng giá trị dòng phụ Trước thuế ghi ở bước 3; dòng phụ mới bằng số Sau thuế ở bước 3",Candidate,Not Run,AC-SPM-009-09
+TC-SCOPE-001,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,"Kiểm tra Store Manager 2 store chỉ thấy số liệu ST1 + ST2, không gồm ST3",Security,Positive,PERM,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1, ST2, ST3 có đơn ngày D)",Kỳ: D – D,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Xem bộ chọn Store và các thẻ KPI","3. Bộ chọn Store chỉ có ST1, ST2 (đã chọn cả hai)
+- Transactions = 7 (ST1: 5, ST2: 2); Sales sau thuế = 46 600 000; không có đơn OC1, OC2 của ST3",Candidate,Not Run,AC-SPM-001-01
+TC-SCOPE-002,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra Store Manager chọn riêng ST2 thì mọi chỉ số chỉ tính trên ST2,Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Sales sau thuế = 4 000 000; Transactions = 2; Total Customers = 2; Coupon % = 50.0%; AOV = 2 000 000; UPT = 0.50; Frequency = 1.00; Avg Spending = 2 000 000,Candidate,Not Run,AC-SPM-001-02
+TC-SCOPE-003,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,"Kiểm tra Client Advisor chỉ thấy bill mình đứng tên, không thấy số cấp store",Security,Positive,PERM,P1,"1. Theo SETUP-01: đăng nhập U-CA-A
+2. Theo SETUP-02",Kỳ: D – D,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Xem thẻ Transactions và các khối trên màn hình","3. Transactions = 4 (O1, O2, O5, O6); không có O3 (chỉ CA-B đứng tên)
+- Không có số cấp store ST1 (Transactions store = 5) ở bất kỳ khối nào; bộ chọn Store/lọc CA không cho xem phạm vi khác [Cần xác nhận Q-40]",Candidate,Not Run,AC-SPM-001-03; [Cần xác nhận Q-40] hiển thị bộ lọc ở mức Cá nhân
+TC-SCOPE-004,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,"Kiểm tra bill có 2 Client Advisor đứng tên được tính trọn cho cả hai, tổng 2 người lớn hơn store",Functional,Edge,DT,P1,"1. Theo SETUP-01: tài khoản U-CA-A, U-CA-B, U-SM12
+2. Theo SETUP-02",Kỳ: D – D; bill chung: O2,"1. Đăng nhập U-CA-A, mở menu dashboard, vào màn hình dashboard doanh thu & đơn hàng, chọn kỳ D – D, ghi Transactions
+2. Đăng xuất, đăng nhập U-CA-B, chọn kỳ D – D, ghi Transactions
+3. Đăng xuất, đăng nhập U-SM12, chọn kỳ D – D, chọn riêng ST1, ghi Transactions","1. CA-A: Transactions = 4 (gồm O2)
+2. CA-B: Transactions = 2 (gồm O2)
+3. ST1: Transactions = 5; tổng CA-A + CA-B = 6 > 5 vì O2 tính trọn cho cả hai",Candidate,Not Run,AC-SPM-001-04; Sales mức Cá nhân phụ thuộc cách gán đơn trả [Cần xác nhận Q-31] nên dùng Transactions
+TC-SCOPE-005,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra CRM Team thấy số toàn Tam Sơn khớp truy vấn đối soát,Integration,Positive,PERM,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-08: truy vấn Σ total đơn bán CO, đơn trả, số đơn bán toàn bộ store (trừ ecom) kỳ 01/09–30/09/2026",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. So sánh thẻ Sales sau thuế, Transactions với kết quả truy vấn",3. Sales sau thuế = Σ total đơn bán − Σ total đơn trả của mọi store; Transactions = số đơn bán hợp lệ của mọi store,Candidate,Not Run,Ecom loại khỏi truy vấn theo [Giả định AS-09]; đơn 0đ tính là transaction [Giả định AS-01]; đơn B2B tính [Cần xác nhận Q-16]
+TC-SCOPE-006,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra tài khoản nhiều Position nhận phạm vi lớn nhất được cấp,Security,Positive,PERM,P2,"1. Theo SETUP-01: đăng nhập U-MULTI (Store Manager ST1 + Retail Manager Brand BR-1; BR-1 gồm ST1, ST3)",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store","2. Danh sách gồm toàn bộ store Brand BR-1 (ST1, ST3 và store BR-1 khác) — phạm vi lớn nhất là Retail Manager BR-1; mặc định chọn tất cả; không có ST2 (BR-2)",Candidate,Not Run,
+TC-SCOPE-007,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001;FR-SPM-003,Kiểm tra đơn đã huỷ (VO) không vào Sales và Transactions,Functional,Negative,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (O7 3 000 000 đã chuyển VO)",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. Transactions = 5 (không có O7); Sales sau thuế = 42 600 000 (không cộng 3 000 000 của O7),Candidate,Not Run,AC-SPM-001-07
+TC-SCOPE-008,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn nháp/đang xử lý chưa hoàn tất không vào Sales và Transactions,Functional,Negative,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (O8 2 000 000 để trạng thái chưa hoàn tất)",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. Transactions = 5 (không có O8); Sales sau thuế = 42 600 000 (không cộng 2 000 000 của O8),Candidate,Not Run,AC-SPM-001-07
+TC-SCOPE-009,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn từ warehouse ecom 1000332 không xuất hiện ở phạm vi store nào,Functional,Negative,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: 1 đơn CO warehouse 1000332, total 7 000 000, hoàn tất ngày E",Kỳ: E – E,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Xem Sales và Transactions của ST1, ST2 và bảng Theo Store",3. Không store nào có thêm 7 000 000 / 1 đơn; số liệu bằng số trước khi đẩy đơn ecom,Candidate,Not Run,AC-SPM-001-06
+TC-SCOPE-010,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn ecom không được tính ở mức Toàn Tam Sơn,Functional,Negative,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-03: 1 đơn CO warehouse 1000333, total 7 000 000, hoàn tất ngày E",Kỳ: E – E,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. So sánh Sales toàn Tam Sơn với truy vấn SETUP-08 có và không có đơn ecom",3. Sales toàn Tam Sơn bằng giá trị không gồm đơn ecom [Giả định AS-09],Candidate,Not Run,[Giả định AS-09] OQ-SPM-06
+TC-SCOPE-011,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn hoàn tất 23:50 ngày 30/09 (UTC+7) thuộc kỳ tháng 9,Functional,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO tại ST2, total 1 234 000, hoàn tất 30/09/2026 23:50:00 +07:00",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Sales và Transactions của ST2 gồm đơn này (+1 234 000; +1),Candidate,Not Run,AC-SPM-001-05
+TC-SCOPE-012,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn hoàn tất 00:00:30 ngày 01/10 (UTC+7) không thuộc kỳ tháng 9,Functional,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO tại ST2, total 4 321 000, hoàn tất 01/10/2026 00:00:30 +07:00",Kỳ 1: 01/09/2026 – 30/09/2026; Kỳ 2: 01/10/2026 – 01/10/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, chỉ chọn ST2
+3. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+4. Nhập Từ ngày 01/10/2026, Đến ngày 01/10/2026 trên lịch chọn khoảng","3. Sales tháng 9 của ST2 không gồm 4 321 000
+4. Sales ngày 01/10 của ST2 gồm 4 321 000",Candidate,Not Run,
+TC-SCOPE-013,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra gọi API số liệu với store ngoài phạm vi (ST3) bị từ chối,Security,Negative,PERM,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-09: DevTools tab Network",Store ngoài phạm vi: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Trong Network, copy request lấy số liệu dashboard (Copy as fetch/cURL)
+3. Sửa tham số store thành ID của ST3, gửi lại bằng phiên của U-SM12","3. Hệ thống từ chối: response không chứa Sales/Transactions của ST3 (lỗi phân quyền hoặc dữ liệu rỗng), không trả số của ST3",Yes,Not Run,AC-SPM-001-08; BR-SPM-001 áp dụng ở tầng truy vấn
+TC-SCOPE-014,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra Client Advisor gọi API lấy số store hoặc số của CA khác bị từ chối,Security,Negative,PERM,P1,"1. Theo SETUP-01: đăng nhập U-CA-A
+2. Theo SETUP-09: DevTools tab Network",Phạm vi thử: ST1 cấp store; nhân viên U-CA-B,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Copy request lấy số liệu dashboard
+3. Sửa tham số phạm vi thành cấp store ST1, gửi lại
+4. Sửa tham số nhân viên thành U-CA-B, gửi lại","3. Không trả số cấp store ST1
+4. Không trả số của U-CA-B",Yes,Not Run,BR-SPM-001
+TC-SCOPE-015,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001;FR-SPM-011,Kiểm tra bộ chọn Store không cho tìm hoặc chọn store ngoài phạm vi,Security,Negative,PERM,P1,1. Theo SETUP-01: đăng nhập U-SM12,Từ khoá: tên ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, gõ tên ST3 vào ô tìm kiếm","2. Không có kết quả ST3; danh sách chỉ có thể chứa ST1, ST2",Candidate,Not Run,BR-SPM-020: không mở rộng ngoài phạm vi
+TC-SCOPE-016,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đơn không có nhân viên đứng tên tính ở mức store nhưng không ở mức Cá nhân,Functional,Edge,EP,P2,"1. Theo SETUP-01: U-SM12, U-CA-A, U-CA-B
+2. Theo SETUP-03: đơn CO tại ST1, list_employees = [], total 2 222 000, hoàn tất ngày E",Kỳ: E – E,"1. Đăng nhập U-SM12, mở dashboard, chọn kỳ E – E, chọn riêng ST1
+2. Đăng nhập lần lượt U-CA-A, U-CA-B, chọn kỳ E – E","1. Sales ST1 gồm 2 222 000, Transactions gồm đơn này
+2. Không Client Advisor nào có đơn này trong Sales/Transactions",Candidate,Not Run,AC-SPM-001-09
+TC-SCOPE-017,02. Phạm vi dữ liệu & phân quyền,REQ-UI-05;FR-SPM-011,Kiểm tra giao diện vai trò Cá nhân chỉ có biểu đồ thời gian và thẻ giải thích thay bảng,UI,Positive,PERM,P2,1. Theo SETUP-01: đăng nhập U-CA-A,Kỳ: Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Cuộn qua khối biểu đồ và khối bảng","2. Có biểu đồ Sales theo thời gian; không có panel Xếp hạng Top 10 / Bottom 10
+- Không có bảng breakdown; thay bằng thẻ giải thích nội dung ""tính trọn bill mình đứng tên""",Candidate,Not Run,
+TC-SCOPE-018,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra đăng xuất rồi đăng nhập vai trò khác không giữ phạm vi store cũ,Security,Edge,EG,P2,"1. Theo SETUP-01: U-CRM, U-SM12",-,"1. Đăng nhập U-CRM, mở dashboard, chọn riêng 1 store ngoài ST1/ST2
+2. Đăng xuất
+3. Đăng nhập U-SM12 trên cùng trình duyệt, mở dashboard","3. Bộ chọn Store chỉ có ST1, ST2 và đang chọn cả hai; không còn store chọn ở bước 1",Candidate,Not Run,
+TC-SCOPE-019,02. Phạm vi dữ liệu & phân quyền,FR-SPM-009,Kiểm tra đơn đồng bộ chậm từ HUB thuộc kỳ cũ làm thay đổi số của kỳ cũ,Integration,Edge,EG,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đẩy qua HUB 1 đơn CO tại ST2, total 3 333 000, ngày hoàn tất 15/09/2026, sau khi đã ghi số tháng 9",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2, ghi Sales
+4. Đẩy đơn chậm qua HUB, chờ đồng bộ, tải lại dashboard với cùng kỳ","4. Sales tháng 9 của ST2 tăng 3 333 000, Transactions tăng 1 (không có ngày chốt số liệu)",Candidate,Not Run,
+TC-SCOPE-020,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra mức Cá nhân không phụ thuộc PIC: bill của khách có PIC là CA-A nhưng chỉ CA-B đứng tên chỉ tính cho CA-B,Security,Edge,DT,P1,"1. Theo SETUP-01: tài khoản U-CA-A, U-CA-B
+2. Theo SETUP-05: khách KP có PIC = U-CA-A tại ST1
+3. Theo SETUP-11: ngày G (U-CA-A, U-CA-B không có đơn khác ngày G), tạo tại ST1 bill BP của KP, total 3 000 000, chỉ U-CA-B đứng tên",Kỳ: G – G; bill BP 3 000 000; đứng tên: U-CA-B; PIC của khách: U-CA-A,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng bằng U-CA-A
+2. Nhập Từ ngày G, Đến ngày G trên lịch chọn khoảng
+3. Đăng xuất, đăng nhập U-CA-B, mở dashboard, nhập kỳ G – G","2. U-CA-A: Transactions = 0, Sales = 0 (bill BP không tính dù U-CA-A là PIC của khách)
+3. U-CA-B: Transactions = 1, Sales = 3 000 000",Candidate,Not Run,Review R-08; BR-SPM-002
+TC-SCOPE-021,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001;FR-SPM-011,"Kiểm tra Store Manager chỉ được gán 1 store: nhãn là tên store, xếp hạng Client Advisor, không có tab Theo Store",Functional,Positive,PERM,P2,"1. Theo SETUP-01: đăng nhập U-SM1 (Store Manager chỉ ST1)
+2. Theo SETUP-02",Kỳ: D – D,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, bỏ chọn ST1
+4. Xem panel xếp hạng, bảng breakdown và bộ lọc Client Advisor","2. Nhãn bộ chọn Store là tên ST1; Sales = 42 600 000, Transactions = 5
+3. ST1 vẫn được chọn (không bỏ được store cuối)
+4. Panel xếp hạng Client Advisor của ST1; bảng không có tab Theo Store, có tab Theo Client Advisor; bộ lọc Client Advisor khả dụng (1 store ≤ 5)",Candidate,Not Run,Review R-09; BR-SPM-020…023
+TC-SCOPE-022,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,"Kiểm tra biên dưới của kỳ: đơn 00:00:00 ngày đầu kỳ thuộc kỳ, đơn 23:59:59 ngày liền trước không thuộc",Functional,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: tại ST2, đơn A total 1 111 000 hoàn tất (H−1) 23:59:59 +07:00; đơn B total 2 222 000 hoàn tất H 00:00:00 +07:00; ST2 không có đơn khác ngày H−1, H",Kỳ 1: H – H; Kỳ 2: H−1 – H−1; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, chỉ chọn ST2
+3. Nhập Từ ngày H, Đến ngày H trên lịch chọn khoảng
+4. Nhập Từ ngày H−1, Đến ngày H−1 trên lịch chọn khoảng","3. Sales = 2 222 000; Transactions = 1 (chỉ đơn B)
+4. Sales = 1 111 000; Transactions = 1 (chỉ đơn A)",Candidate,Not Run,Review R-18
+TC-SCOPE-023,02. Phạm vi dữ liệu & phân quyền,FR-SPM-001,Kiểm tra truy cập dashboard và API số liệu khi chưa đăng nhập bị chặn,Security,Negative,PERM,P1,"1. Chưa đăng nhập (xoá cookie phiên)
+2. Theo SETUP-09: đã copy URL dashboard và request API số liệu từ một phiên hợp lệ trước đó",URL dashboard; request API số liệu,"1. Mở URL dashboard trên trình duyệt chưa đăng nhập
+2. Gửi lại request API số liệu không kèm phiên","1. Chuyển tới màn hình đăng nhập, không hiển thị số liệu
+2. Không trả số liệu (lỗi xác thực)",Yes,Not Run,Review R-35; BR-SPM-001
+TC-SALES-001,03. Sales (số đo nền),FR-SPM-002,Kiểm tra Sales sau thuế ST1 ngày D = 42 600 000 (đã trừ đơn trả R1),Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1; bán 48 000 000; trả R1 5 400 000,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Đảm bảo đang chọn ""Sau thuế"", xem thẻ Sales","4. Thẻ Sales = 42 600 000 (12 525 500 + 10 000 000 + 9 474 500 + 8 000 000 + 8 000 000 − 5 400 000), nhãn Sau thuế",Candidate,Not Run,AC-SPM-002-01
+TC-SALES-002,03. Sales (số đo nền),FR-SPM-002,Kiểm tra Sales trước thuế ST1 ngày D = Sales sau thuế − (Σ tax_total đơn bán − Σ tax_total đơn trả),Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02
+3. Theo SETUP-08: đã ghi tax_total của O1, O2, O3, O5, O6, R1",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm ""Trước thuế"", xem thẻ Sales","4. Thẻ Sales = 42 600 000 − (Σ tax_total O1, O2, O3, O5, O6 − tax_total R1), nhãn Trước thuế; giá trị ≤ 42 600 000
+- Không bằng Σ subtotal (không dùng subtotal)",Candidate,Not Run,"AC-SPM-002-07, 08; đơn trả: [Cần xác nhận Q-18]"
+TC-SALES-003,03. Sales (số đo nền),FR-SPM-002;FR-SPM-001,"Kiểm tra đơn trả cross-period trừ vào kỳ của ngày trả, kỳ của đơn bán giữ nguyên",Functional,Edge,DT,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (O0 bán ngày D−1 3 200 000; R2 trả 1 sp O0 ngày D+1 1 600 000)",Store: ST1; Kỳ 1: D−1 – D−1; Kỳ 2: D+1 – D+1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, chỉ chọn ST1
+3. Nhập Từ ngày D−1, Đến ngày D−1 trên lịch chọn khoảng
+4. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng","3. Sales ngày D−1 = 3 200 000 (không bị trừ R2)
+4. Sales ngày D+1 = −6 600 000 (gồm −1 600 000 của R2 và −5 000 000 của R3)",Candidate,Not Run,"AC-SPM-002-02, BR-SPM-004"
+TC-SALES-004,03. Sales (số đo nền),FR-SPM-002;FR-SPM-009,Kiểm tra kỳ chỉ có đơn trả hiển thị Sales âm −6 600 000 có dấu − và màu Error,Functional,Edge,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D+1 – D+1; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Thẻ Sales hiển thị −6 600 000 (dấu −, tách nghìn khoảng trắng), chữ màu Error; không hiển thị 0",Candidate,Not Run,"AC-SPM-002-03, AC-SPM-009-05"
+TC-SALES-005,03. Sales (số đo nền),FR-SPM-002,Kiểm tra đơn trả toàn bộ trong cùng kỳ đóng góp 0 vào Sales ở cả hai cách nhìn,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2: OB1 4 000 000; OB2 6 000 000 trả toàn bộ RB2 cùng ngày D)
+3. Theo SETUP-08: đã ghi tax_total OB1",Kỳ: D – D; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""","3. Sales sau thuế = 4 000 000 (OB2 và RB2 triệt tiêu)
+4. Sales trước thuế = 4 000 000 − tax_total OB1 (OB2 đóng góp 0)",Candidate,Not Run,AC-SPM-002-06; đơn trả: [Cần xác nhận Q-18]
+TC-SALES-006,03. Sales (số đo nền),FR-SPM-002,Kiểm tra đơn 0đ không làm thay đổi Sales ở cả hai cách nhìn,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ coupon 100%; OB6 2 000 000)
+3. Theo SETUP-08: đã ghi tax_total OB6",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""","3. Sales sau thuế = 2 000 000
+4. Sales trước thuế = 2 000 000 − tax_total OB6",Candidate,Not Run,AC-SPM-002-13 (phần Sales)
+TC-SALES-007,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra header subtotal = 0, tax_total = 0, total 3 836 000: cả hai cách nhìn +3 836 000 và ghi log thiếu VAT",Integration,Edge,EG,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO tại ST2 ngày E, subtotal 0, discount_total 0, tax_total 0, total 3 836 000 (ST2 không có đơn khác ngày E)",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""
+5. Theo SETUP-08: đọc log cảnh báo của lần tính số","3. Sales sau thuế = 3 836 000
+4. Sales trước thuế = 3 836 000
+5. Có log cảnh báo thiếu VAT cho đơn này; số không bị tự sửa",Candidate,Not Run,"AC-SPM-002-04, BR-SPM-003"
+TC-SALES-008,03. Sales (số đo nền),FR-SPM-002,Kiểm tra đơn đã tính vào Sales sau đó chuyển VO thì tự rời khỏi Sales,Functional,Edge,ST,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO tại ST2 ngày E total 5 555 000 đã hiển thị trong Sales; ERP chuyển đơn sang VO",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2, ghi Sales và Transactions
+4. Chuyển đơn sang VO qua HUB, chờ đồng bộ, tải lại dashboard","4. Sales giảm 5 555 000, Transactions giảm 1; không phát sinh bút toán âm riêng",Candidate,Not Run,AC-SPM-002-05
+TC-SALES-009,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra đơn thật subtotal 11 386 818, tax 1 138 682, total 12 525 500 đóng góp đúng hai cách nhìn",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO duy nhất tại ST2 ngày E với header như Test_Data",subtotal 11 386 818; discount_total 0; tax_total 1 138 682; total 12 525 500,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""","3. Sales sau thuế = 12 525 500
+4. Sales trước thuế = 11 386 818",Candidate,Not Run,AC-SPM-002-09
+TC-SALES-010,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra đơn có giảm giá: Sales trước thuế 11 000 000, không phải subtotal 12 000 000",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO duy nhất tại ST2 ngày E",subtotal 12 000 000; discount_total 1 000 000; tax_total 880 000; total 11 880 000,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""","3. Sales sau thuế = 11 880 000
+4. Sales trước thuế = 11 000 000",Candidate,Not Run,AC-SPM-002-10
+TC-SALES-011,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra đơn 2 thuế suất dùng tax_total ERP: trước thuế 15 000 000, không phải 14 909 091",Functional,Edge,EG,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO duy nhất tại ST2 ngày E, 2 dòng thuế suất 10% và 8%",tax_total 1 400 000; total 16 400 000,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""",4. Sales trước thuế = 15 000 000,Candidate,Not Run,AC-SPM-002-11
+TC-SALES-012,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra đơn trả total 5 400 000, tax 400 000 trừ −5 400 000 sau thuế và −5 000 000 trước thuế",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ngày E tại ST2 chỉ có 1 đơn trả hoàn tất (total 5 400 000, tax_total 400 000)",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""","3. Sales sau thuế = −5 400 000
+4. Sales trước thuế = −5 000 000",Candidate,Not Run,AC-SPM-002-12; [Cần xác nhận Q-18]
+TC-SALES-013,03. Sales (số đo nền),FR-SPM-002,Kiểm tra lệch công thức header đúng 1đ không ghi log cảnh báo,Integration,Boundary,BVA,P3,"1. Theo SETUP-03: đơn CO subtotal 10 000 000, discount_total 0, tax_total 1 000 000, total 11 000 001",Lệch: 1đ,"1. Chờ job tính số xử lý đơn
+2. Theo SETUP-08: đọc log cảnh báo kiểm tra chéo
+3. Xem Sales sau thuế của store/ngày chứa đơn","2. Không có log cảnh báo kiểm tra chéo cho đơn này
+3. Đơn đóng góp 11 000 001 vào Sales sau thuế",Candidate,Not Run,
+TC-SALES-014,03. Sales (số đo nền),FR-SPM-002,Kiểm tra lệch công thức header 2đ ghi log cảnh báo nhưng số vẫn theo total ERP,Integration,Boundary,BVA,P3,"1. Theo SETUP-03: đơn CO subtotal 10 000 000, discount_total 0, tax_total 1 000 000, total 11 000 002",Lệch: 2đ,"1. Chờ job tính số xử lý đơn
+2. Theo SETUP-08: đọc log cảnh báo kiểm tra chéo
+3. Xem Sales sau thuế của store/ngày chứa đơn","2. Có log cảnh báo lệch công thức header
+3. Đơn đóng góp 11 000 002 vào Sales sau thuế (không tự sửa)",Candidate,Not Run,
+TC-SALES-015,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra tax_total lớn hơn total ghi log cảnh báo, số vẫn lấy theo ERP",Integration,Edge,EG,P3,"1. Theo SETUP-03: đơn CO duy nhất tại ST2 ngày E, total 1 000 000, tax_total 1 200 000",Kỳ: E – E; Store: ST2,"1. Theo SETUP-08: đọc log cảnh báo kiểm tra chéo
+2. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng, chọn kỳ E – E, chọn riêng ST2, bấm ""Trước thuế""","1. Có log cảnh báo tax_total lớn hơn total
+2. Sales trước thuế = −200 000 (1 000 000 − 1 200 000), không bị tự sửa",Candidate,Not Run,
+TC-SALES-016,03. Sales (số đo nền),FR-SPM-002,Kiểm tra đơn của khách B2B được tính vào Sales,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-05: khách B2B KB
+3. Ngày E: tạo trên POS tại ST2 1 đơn của KB total 9 000 000 (ST2 không có đơn khác ngày E)",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Sales sau thuế = 9 000 000; Transactions = 1 [Cần xác nhận Q-16],Candidate,Not Run,[Cần xác nhận Q-16] OQ-SPM-05 đề xuất tính
+TC-SALES-017,03. Sales (số đo nền),FR-SPM-002,"Kiểm tra tax_total âm ghi log cảnh báo kiểm tra chéo, số trước thuế vẫn lấy theo ERP",Integration,Edge,EG,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: đơn CO duy nhất tại ST2 ngày E, total 1 000 000, tax_total −100 000",Kỳ: E – E; Store: ST2,"1. Theo SETUP-08: đọc log cảnh báo kiểm tra chéo
+2. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng, chọn kỳ E – E, chọn riêng ST2
+3. Bấm ""Trước thuế""","1. Có log cảnh báo tax_total âm cho đơn này
+2. Sales sau thuế = 1 000 000
+3. Sales trước thuế = 1 100 000 (1 000 000 − (−100 000)), không bị tự sửa",Candidate,Not Run,Review R-19; BR-SPM-014
+TC-TRX-001,04. Transactions,FR-SPM-003,"Kiểm tra Transactions ST1 ngày D = 5, gồm đơn của khách lẻ O5",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Transactions = 5 (O1, O2, O3, O5 của Khách lẻ, O6); đơn trả R1 không làm giảm",Candidate,Not Run,AC-SPM-003-05
+TC-TRX-002,04. Transactions,FR-SPM-003,"Kiểm tra đơn 6 dòng sản phẩm, 3 nhân viên đứng tên chỉ đóng góp 1 transaction",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D: OC1 6 dòng, 3 nhân viên; OC2)",Kỳ: D – D; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3","3. Transactions = 2 (OC1 đếm 1, OC2 đếm 1)",Candidate,Not Run,AC-SPM-003-02
+TC-TRX-003,04. Transactions,FR-SPM-003,Kiểm tra đơn bán đã trả toàn bộ trong kỳ vẫn đếm 1 transaction,Functional,Edge,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D: OB1; OB2 trả toàn bộ)",Kỳ: D – D; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Transactions = 2 (OB2 vẫn đếm dù đã trả toàn bộ),Candidate,Not Run,"AC-SPM-003-03, BR-SPM-005"
+TC-TRX-004,04. Transactions,FR-SPM-003,Kiểm tra đơn 0đ (coupon 100%) được đếm vào Transactions,Functional,Edge,DT,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ; OB6 2 000 000)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Transactions = 2 (gồm OB5 0đ) [Giả định AS-01],Candidate,Not Run,"[Giả định AS-01] AC-SPM-003-01, 06"
+TC-FREQ-001,05. Frequency,FR-SPM-004,Kiểm tra Frequency ST1 ngày D = 5 ÷ 4 = 1.25,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02","Kỳ: D – D; Store: ST1; khách: K1, K2 (2 đơn), K3, K7","1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. Total Customers = 4; Frequency = 1.25,Candidate,Not Run,AC-SPM-004-02
+TC-FREQ-002,05. Frequency,FR-SPM-004,Kiểm tra tài khoản Khách lẻ chung 3 đơn và K1 1 đơn cho Frequency 2.00,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1 ngày D+2: O10, O11, O12 của K7; O13 của K1)",Kỳ: D+2 – D+2; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+2, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. Transactions = 4; Total Customers = 2; Frequency = 2.00,Candidate,Not Run,AC-SPM-004-03
+TC-FREQ-003,05. Frequency,FR-SPM-004,Kiểm tra khách chỉ có đơn trả trong kỳ không vào mẫu số Frequency,Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D+2: OC6 của K12; RC1 trả 1 sp OC1 của K10)",Kỳ: D+2 – D+2; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+2, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3",3. Total Customers = 1 (chỉ K12); Frequency = 1.00 [Giả định AS-06],Candidate,Not Run,[Giả định AS-06] AC-SPM-004-05
+TC-FREQ-004,05. Frequency,FR-SPM-004;FR-SPM-008,Kiểm tra mẫu số Frequency và Avg Spending bằng Total Customers của dashboard Khách hàng,Integration,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026; phạm vi toàn Tam Sơn,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng, ghi Total Customers
+3. Mở dashboard Cấu trúc & Sức khỏe Khách hàng (tab Customer), cùng kỳ và phạm vi, ghi Total Customers",2. Hai giá trị Total Customers bằng nhau; Frequency = Transactions ÷ giá trị đó (2 chữ số lẻ),Candidate,Not Run,"AC-SPM-008-03, BR-SPM-013"
+TC-FREQ-005,05. Frequency,FR-SPM-004,Kiểm tra khách chỉ có đơn 0đ được tính 1 transaction trong Frequency,Functional,Edge,DT,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ của K11; OB6 của K8)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Total Customers = 2; Frequency = 1.00 (2 ÷ 2) [Giả định AS-01],Candidate,Not Run,[Giả định AS-01] BR-SPM-012
+TC-CPN-001,06. Coupon %,FR-SPM-005,"Kiểm tra Coupon % ST1 ngày D = 40.0% (đơn 3 mã đếm 1, giảm giá không mã không tính)",Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (O2 dùng 3 mã coupon; O6 1 mã; O3 giảm giá chương trình không mã)",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Coupon % = 40.0% (2 đơn O2, O6 ÷ 5); không phải 80.0% (đếm theo lượt mã) hay 60.0% (tính cả O3)",Candidate,Not Run,"AC-SPM-005-01, 02, 04"
+TC-CPN-002,06. Coupon %,FR-SPM-005,Kiểm tra đơn giảm 100% bằng coupon được tính cả tử số và mẫu số Coupon %,Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ coupon 100%; OB6 không coupon)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Coupon % = 50.0% (1 ÷ 2) [Giả định AS-01],Candidate,Not Run,[Giả định AS-01] AC-SPM-005-03
+TC-CPN-003,06. Coupon %,FR-SPM-005,Kiểm tra đơn có coupon bị trả toàn bộ vẫn nằm trong tử số và mẫu số,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D: OB2 có coupon, trả toàn bộ RB2; OB1 không coupon)",Kỳ: D – D; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Coupon % = 50.0% (1 ÷ 2),Candidate,Not Run,AC-SPM-005-06
+TC-AOV-001,07. AOV,FR-SPM-006,Kiểm tra AOV sau thuế ST1 ngày D = 42 600 000 ÷ 5 = 8 520 000 (gồm đơn khách lẻ),Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. AOV = 8 520 000, nhãn Sau thuế",Candidate,Not Run,"AC-SPM-006-01, 04"
+TC-AOV-002,07. AOV,FR-SPM-006,Kiểm tra AOV trước thuế = Sales trước thuế ÷ 5 và không lớn hơn AOV sau thuế,Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02
+3. Theo SETUP-08: tax_total các đơn ST1 ngày D",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm ""Trước thuế""","4. AOV = Sales trước thuế ÷ 5 (làm tròn half-up, 0 số lẻ), nhãn Trước thuế; ≤ 8 520 000; Transactions vẫn = 5",Candidate,Not Run,"AC-SPM-006-06, 07"
+TC-AOV-003,07. AOV,FR-SPM-006,Kiểm tra đơn trả của đơn kỳ trước kéo AOV về 0,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+1: OB3 4 000 000; RB3 trả toàn bộ OB1 4 000 000 bán ngày D)",Kỳ: D+1 – D+1; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Sales = 0; Transactions = 1; AOV = 0,Candidate,Not Run,AC-SPM-006-02
+TC-AOV-004,07. AOV,FR-SPM-006,Kiểm tra kỳ chỉ có đơn trả hiển thị AOV là —,Functional,Negative,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02","Kỳ: D+1 – D+1; Store: ST1 (chỉ R2, R3)","1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Xem AOV ở Sau thuế rồi Trước thuế","3. Transactions = 0; AOV hiển thị —
+4. AOV vẫn hiển thị — ở Trước thuế",Candidate,Not Run,"AC-SPM-006-03, AC-SPM-009-10"
+TC-AOV-005,07. AOV,FR-SPM-006,Kiểm tra đối soát AOV × Transactions = Sales ở cả hai cách nhìn trên dữ liệu thật,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", ghi Sales, AOV, Transactions
+3. Bấm ""Trước thuế"", ghi Sales, AOV, Transactions","2. |AOV × Transactions − Sales| ≤ Transactions × 0,5 (sai số làm tròn hiển thị)
+3. Điều kiện trên cũng đúng ở Trước thuế; Transactions bằng bước 2",Yes,Not Run,"AC-SPM-006-05, BR-SPM-009"
+TC-AOV-006,07. AOV,FR-SPM-006,Kiểm tra AOV âm −3 000 000 khi Sales âm và có 1 transaction,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+2: OB4 1 000 000; RB4 trả toàn bộ OB3 4 000 000)",Kỳ: D+2 – D+2; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+2, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2","3. Sales = −3 000 000; AOV = −3 000 000 có dấu −, màu Error",Candidate,Not Run,
+TC-AOV-007,07. AOV,FR-SPM-006,Kiểm tra đơn 0đ kéo AOV xuống còn 1 000 000,Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ; OB6 2 000 000)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. AOV = 1 000 000 (2 000 000 ÷ 2) [Giả định AS-01],Candidate,Not Run,[Giả định AS-01] BR-SPM-006
+TC-UPT-001,08. UPT,FR-SPM-007,"Kiểm tra UPT ST1 ngày D = 9 ÷ 5 = 1.80 (trừ sản phẩm trả, không cộng dòng giảm giá)",Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1; bán 10 sp; R1 trả 1 sp,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. UPT = 1.80; không phải 2.00 (không trừ trả) hay 2.00 trở lên (cộng dòng giảm giá của O3),Candidate,Not Run,"AC-SPM-007-01, 03, 07"
+TC-UPT-002,08. UPT,FR-SPM-007,Kiểm tra dòng phí ship không được cộng vào số lượng UPT,Functional,Negative,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D: OC1 6 sp; OC2 4 sp + 1 dòng phí ship productparent_id 1051644)",Kỳ: D – D; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3",3. UPT = 5.00 (10 ÷ 2); không phải 5.50,Candidate,Not Run,AC-SPM-007-06
+TC-UPT-003,08. UPT,FR-SPM-007,Kiểm tra dòng dịch vụ khắc tên không được cộng vào số lượng UPT,Functional,Negative,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D+1: OC3 3 sp + dòng dịch vụ khắc tên số lượng 2; OC4 1 sp; OC5 1 sp)",Kỳ: D+1 – D+1; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3",3. UPT = 1.67 (5 ÷ 3); không phải 2.33 [Cần xác nhận Q-17],Candidate,Not Run,"[Cần xác nhận Q-17] AC-SPM-007-02, BR-SPM-011"
+TC-UPT-004,08. UPT,FR-SPM-007,Kiểm tra đơn 0đ góp số lượng vào tử và +1 vào mẫu số UPT,Functional,Edge,DT,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: OB5 0đ 1 sp; OB6 3 sp)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. UPT = 2.00 (4 ÷ 2) [Giả định AS-01],Candidate,Not Run,[Giả định AS-01] AC-SPM-007-05
+TC-UPT-005,08. UPT,FR-SPM-007,Kiểm tra UPT âm −2.00 khi số lượng trả lớn hơn số lượng bán,Functional,Edge,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+2: OB4 1 sp; RB4 trả 3 sp của OB3)",Kỳ: D+2 – D+2; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+2, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. UPT = −2.00 có dấu −,Candidate,Not Run,FR-SPM-009: UPT âm giữ dấu −
+TC-AVGS-001,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra Avg Spending sau thuế ST1 ngày D = 42 600 000 ÷ 4 = 10 650 000,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Avg Spending/Customer = 10 650 000, nhãn Sau thuế; Total Customers = 4 (gồm K7 Khách lẻ)",Candidate,Not Run,"AC-SPM-008-01, 02"
+TC-AVGS-002,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra Avg Spending trước thuế = Sales trước thuế ÷ 4,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02
+3. Theo SETUP-08: tax_total các đơn ST1 ngày D",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm ""Trước thuế""","4. Avg Spending/Customer = Sales trước thuế ÷ 4 (half-up, 0 số lẻ), nhãn Trước thuế",Candidate,Not Run,AC-SPM-008-09
+TC-AVGS-003,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra khách trả toàn bộ đơn trong kỳ vẫn ở mẫu số Avg Spending,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D: K1 mua OB1; K9 mua OB2 rồi trả toàn bộ)",Kỳ: D – D; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Total Customers = 2; Avg Spending = 2 000 000 (4 000 000 ÷ 2),Candidate,Not Run,AC-SPM-008-04
+TC-AVGS-004,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra khách chỉ có đơn trả không vào mẫu số nhưng khoản hoàn vẫn trừ tử số,Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D+2: OC6 2 000 000 của K12; RC1 K10 trả 2 500 000)",Kỳ: D+2 – D+2; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+2, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3",3. Sales = −500 000; Total Customers = 1; Avg Spending = −500 000 [Giả định AS-06],Candidate,Not Run,[Giả định AS-06] AC-SPM-008-05
+TC-AVGS-005,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra khách chỉ có đơn 0đ vẫn ở mẫu số Avg Spending,Functional,Edge,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST2 ngày D+3: K11 chỉ có OB5 0đ; K8 có OB6 2 000 000)",Kỳ: D+3 – D+3; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+3, Đến ngày D+3 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Total Customers = 2; Avg Spending = 1 000 000,Candidate,Not Run,AC-SPM-008-06 (Total Customers không lọc theo giá trị đơn)
+TC-AVGS-006,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra cấp gộp ST1 + ST2 đếm khách K1 mua ở cả 2 store một lần,Functional,Edge,DT,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1 + ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chọn ST1 và ST2",3. Total Customers = 5 (không phải 6); Frequency = 1.40; Avg Spending = 9 320 000 (46 600 000 ÷ 5),Candidate,Not Run,"AC-SPM-008-08, FR-CSD-002"
+TC-AVGS-007,09. Avg Spending/Customer,FR-SPM-008,Kiểm tra đối soát Avg Spending = Frequency × AOV trên dữ liệu thật,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước""; ghi Sales, Transactions, Total Customers, Frequency, AOV, Avg Spending",2. Sales ÷ Total Customers ≈ (Transactions ÷ Total Customers) × (Sales ÷ Transactions); Avg Spending hiển thị bằng Sales ÷ Total Customers làm tròn half-up,Yes,Not Run,BR-CSD-004
+TC-DISP-001,10. Định dạng & nhãn hiển thị,FR-SPM-009;FR-SPM-003;FR-SPM-004;FR-SPM-005;FR-SPM-007;FR-SPM-008,"Kiểm tra kỳ không có đơn: tỷ lệ hiển thị —, Transactions/Sales/Total Customers hiển thị 0 ở cả hai cách nhìn",Functional,Negative,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1 không có đơn ngày D−3, D−2)",Kỳ: D−3 – D−2; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−3, Đến ngày D−2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm ""Trước thuế""","3. Sales = 0; Transactions = 0; Total Customers = 0; Coupon %, AOV, UPT, Frequency, Avg Spending hiển thị — (không phải 0 hay 0%)
+4. AOV và Avg Spending vẫn hiển thị —; Sales = 0",Candidate,Not Run,"AC-SPM-003-04, 004-04, 005-05, 007-04, 008-07, 009-01, 009-10"
+TC-DISP-002,10. Định dạng & nhãn hiển thị,FR-SPM-009,"Kiểm tra UPT và Frequency hiển thị 2 chữ số thập phân, dấu chấm thập phân",UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. UPT hiển thị 1.80 (không phải 1.8); Frequency hiển thị 1.25,Candidate,Not Run,AC-SPM-009-02
+TC-DISP-003,10. Định dạng & nhãn hiển thị,FR-SPM-009,"Kiểm tra Coupon % gốc 66.666…% hiển thị 66.7% (1 chữ số, half-up)",UI,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D+1: 3 đơn, 2 đơn có coupon)",Kỳ: D+1 – D+1; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3",3. Coupon % hiển thị 66.7%,Candidate,Not Run,AC-SPM-009-03
+TC-DISP-004,10. Định dạng & nhãn hiển thị,FR-SPM-009,Kiểm tra số tiền tách nghìn bằng khoảng trắng: AOV 8 520 000,UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Xem thẻ AOV, Sales, Avg Spending và dòng ST1 trong bảng","4. Hiển thị 8 520 000, 42 600 000, 10 650 000 (khoảng trắng tách nghìn, không dấu phẩy/chấm, 0 số lẻ) ở thẻ và bảng",Candidate,Not Run,AC-SPM-009-04; mockup đang không tách nghìn [Cần xác nhận Q-04]
+TC-DISP-005,10. Định dạng & nhãn hiển thị,FR-SPM-009,Kiểm tra giá trị 950 hiển thị không tách nhóm nghìn,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ngày E tại ST2 chỉ có 1 đơn CO total 950",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. Sales hiển thị 950; AOV hiển thị 950,Candidate,Not Run,AC-SPM-009-06
+TC-DISP-006,10. Định dạng & nhãn hiển thị,FR-SPM-009,"Kiểm tra giá trị gốc có phần lẻ ,5 được làm tròn half-up ở bước hiển thị",UI,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ngày E tại ST2 có 2 đơn CO total 1 250 000 và 1 250 001",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2","3. Sales = 2 500 001; AOV = 1 250 001 (gốc 1 250 000.5, half-up)",Candidate,Not Run,
+TC-DISP-007,10. Định dạng & nhãn hiển thị,FR-SPM-009;REQ-UI-02,"Kiểm tra mọi số tiền ở thẻ, bảng, biểu đồ có nhãn Sau thuế/Trước thuế theo bộ chuyển",UI,Positive,CL,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Xem thẻ Sales, AOV, Avg Spending, tiêu đề cột Sales/AOV/Avg Spending của bảng, nhãn panel biểu đồ
+3. Bấm ""Trước thuế"", xem lại các vị trí trên","1. Mọi vị trí số tiền ghi ""Sau thuế""
+2. Mọi vị trí số tiền đổi sang ""Trước thuế""; không có số tiền nào thiếu nhãn",Candidate,Not Run,AC-SPM-009-07
+TC-DISP-008,10. Định dạng & nhãn hiển thị,REQ-UI-02,Kiểm tra thẻ KPI tiền hiển thị số đầy đủ không viết tắt khi giá trị hàng trăm tỷ,UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Năm này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Năm này"", xem số chính thẻ Sales","2. Số chính hiển thị đủ mọi chữ số (dạng 301 852 754 000), không dạng Tỷ/Tr/K",Candidate,Not Run,
+TC-DISP-009,10. Định dạng & nhãn hiển thị,REQ-UI-02,Kiểm tra thẻ KPI tiền có dòng phụ ghi giá trị cách nhìn thuế còn lại,UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02
+3. Theo SETUP-08: Sales trước thuế ST1 ngày D đã tính",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Xem dòng phụ thẻ Sales ở Sau thuế
+5. Bấm ""Trước thuế"", xem dòng phụ thẻ Sales","4. Dòng phụ ghi giá trị Trước thuế bằng giá trị tính từ SETUP-08
+5. Dòng phụ ghi giá trị Sau thuế = 42 600 000",Candidate,Not Run,
+TC-DISP-010,10. Định dạng & nhãn hiển thị,FR-SPM-009;REQ-UI-02,"Kiểm tra đổi Sau thuế/Trước thuế không làm đổi Transactions, Frequency, Coupon %, UPT",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", ghi Transactions, Total Customers, Frequency, Coupon %, UPT
+3. Bấm ""Trước thuế""","3. Transactions, Total Customers, Frequency, Coupon %, UPT giữ nguyên giá trị bước 2; chỉ Sales, AOV, Avg Spending thay đổi",Yes,Not Run,AC-SPM-009-08
+TC-DISP-011,10. Định dạng & nhãn hiển thị,REQ-UI-02,Kiểm tra mỗi thẻ KPI có icon i hiển thị giải thích công thức,UI,Positive,CL,P3,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Rê chuột lần lượt vào icon i của 8 thẻ KPI",2. Cả 8 thẻ có icon i; mỗi icon hiện tooltip mô tả công thức của chỉ số (ví dụ AOV: Sales ÷ Transactions),Candidate,Not Run,
+TC-DISP-012,10. Định dạng & nhãn hiển thị,FR-SPM-009,"Kiểm tra nhãn giải thích bắt buộc trên thẻ Sales, Transactions, Frequency, Avg Spending",UI,Positive,CL,P3,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Đọc dòng mô tả và tooltip icon i của thẻ Sales, Transactions, Frequency, Avg Spending/Customer","2. Sales có nội dung ""Đã trừ hàng trả hoàn tất trong kỳ"" và nêu có/không gồm phí ship [Cần xác nhận Q-15]
+- Transactions có nội dung ""Số đơn bán hoàn tất, không trừ đơn trả; gồm đơn 0đ"" [Cần xác nhận Q-01]
+- Frequency có nội dung ""Số đơn trung bình/khách mua trong kỳ, gồm khách lẻ""
+- Avg Spending/Customer ghi rõ đơn vị đếm là khách có mua trong kỳ, gồm khách lẻ",Candidate,Not Run,[Cần xác nhận Q-01] [Cần xác nhận Q-15]
+TC-DISP-013,10. Định dạng & nhãn hiển thị,REQ-UI-04,"Kiểm tra bố cục 2 nhóm KPI, mỗi nhóm 4 thẻ đúng tên",UI,Positive,CL,P3,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng","1. Nhóm Doanh thu và giao dịch: SALES, TRANSACTIONS, TOTAL CUSTOMERS, COUPON %
+- Nhóm Chỉ số bình quân: AOV, UPT, FREQUENCY, AVG SPENDING / CUSTOMER",No,Not Run,
+TC-ALERT-001,11. Cảnh báo động,REQ-UI-03,Kiểm tra cảnh báo Cross-period hiển thị khi kỳ có đơn trả của đơn bán kỳ trước,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1 ngày D+1: R2 trả đơn O0 ngày D−1; R3 trả đơn O2 ngày D)",Kỳ: D+1 – D+1; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Hiển thị khung cảnh báo nền xanh phía trên KPI: có 2 đơn trả của đơn bán kỳ trước đã trừ vào Sales kỳ này, nêu Sales/AOV/UPT có thể thấp hoặc âm, Transactions không bị trừ",Candidate,Not Run,Mockup image3; nội dung nguyên văn [Cần xác nhận Q-23]
+TC-ALERT-002,11. Cảnh báo động,REQ-UI-03,Kiểm tra cảnh báo Cross-period biến mất khi đổi sang kỳ không có đơn trả của đơn kỳ trước,Functional,Negative,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1 ngày D chỉ có R1 trả đơn O3 cùng ngày)",Store: ST1; Kỳ 1: D+1 – D+1; Kỳ 2: D – D,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, chỉ chọn ST1
+3. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+4. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng","3. Có khung cảnh báo Cross-period
+4. Không còn khung cảnh báo Cross-period (R1 cùng kỳ với đơn bán) [Giả định AS-07]",Candidate,Not Run,[Giả định AS-07]
+TC-ALERT-003,11. Cảnh báo động,REQ-UI-03,Kiểm tra cảnh báo đơn VAT = 0 hiển thị khi xem Trước thuế,Functional,Positive,DT,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ngày E tại ST2 có 1 đơn CO tax_total 0, total 3 836 000",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Trước thuế""",4. Hiển thị cảnh báo có đơn VAT = 0 trong kỳ (trước thuế bằng sau thuế cho đơn đó) [Cần xác nhận Q-23],Candidate,Not Run,[Cần xác nhận Q-23] nội dung
+TC-ALERT-004,11. Cảnh báo động,REQ-UI-03,Kiểm tra cảnh báo đơn VAT = 0 không hiển thị khi xem Sau thuế,Functional,Negative,DT,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ngày E tại ST2 có 1 đơn CO tax_total 0, total 3 836 000",Kỳ: E – E; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E, Đến ngày E trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Bấm ""Sau thuế""",4. Không có cảnh báo VAT = 0,Candidate,Not Run,PRD khối 2: cảnh báo VAT = 0 khi xem trước thuế
+TC-ALERT-005,11. Cảnh báo động,REQ-UI-03,Kiểm tra số đơn trả cross-period trong cảnh báo tính theo tập store đang chọn,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ngày D+1: ST1 có R2, R3; ST2 có RB3 trả đơn OB1 ngày D)",Kỳ: D+1 – D+1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Chọn lại ST1 + ST2","3. Cảnh báo nêu 2 đơn trả của đơn bán kỳ trước
+4. Cảnh báo nêu 3 đơn trả của đơn bán kỳ trước [Cần xác nhận Q-23]",Candidate,Not Run,IX-31; [Cần xác nhận Q-23] nội dung
+TC-CHART-001,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra Tháng này: tự chọn Ngày, cột hôm nay sọc chéo viền nét đứt, nhãn Tự chọn theo độ dài kỳ",Functional,Positive,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay không phải ngày 01",Kỳ: Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng này""
+3. Quan sát biểu đồ Sales theo thời gian","3. Nút Ngày active; nhãn ""Tự chọn theo độ dài kỳ""; số cột = số ngày từ 01 đến hôm nay
+- Cột hôm nay sọc chéo + viền nét đứt; các cột trước đặc (Đủ kỳ); nút Tháng bị khoá",Candidate,Not Run,AC-SPM-010-01
+TC-CHART-002,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 01/09–30/09/2026 đơn vị Ngày: 30 cột Đủ kỳ, nền xám Thứ Bảy/Chủ Nhật, nhãn dd/mm",Functional,Positive,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng","2. Tự chọn Ngày, 30 cột 01/09…30/09, tất cả cột đặc (không cột Chưa kết thúc, không cột xám Bị cắt)
+- Dải xám nhạt sau các cột 05–06, 12–13, 19–20, 26–27/09; nhãn trục X dạng dd/mm
+- Ngày và Tuần bấm được; Tháng bị khoá",Candidate,Not Run,Ví dụ nguồn: Tháng trước 01/09–30/09
+TC-CHART-003,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 01/09–30/09/2026 bấm Tuần: 5 cột, tuần đầu và tuần cuối xám Bị cắt",Functional,Positive,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần","3. 5 cột: 31/08–06/09 xám, 07/09–13/09, 14/09–20/09, 21/09–27/09 đặc, 28/09–04/10 xám
+- Nhãn trục dạng dd/mm–dd/mm; không có dải nền Thứ Bảy/Chủ Nhật
+- Nút Tuần active; nhãn ""Đã chọn tay""",Candidate,Not Run,Bucket Tuần Thứ Hai–Chủ Nhật
+TC-CHART-004,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 11/10–12/10/2026 (CN–T2) đơn vị Tuần: 2 cột đều xám, không có cột Chưa kết thúc",Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay ≥ 13/10/2026",Kỳ: 11/10/2026 – 12/10/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 11/10/2026, Đến ngày 12/10/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần","2. Tự chọn Ngày, 2 cột đặc; Tuần bấm được (kỳ chạm 2 tuần lịch)
+3. 2 cột 05/10–11/10 và 12/10–18/10 đều xám Bị cắt; không cột sọc chéo dù tuần 12/10–18/10 có thể chứa hôm nay [Giả định AS-03]",Candidate,Not Run,[Giả định AS-03] Ví dụ nguồn 11/10–12/10
+TC-CHART-005,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 74 ngày kết thúc hôm nay: tự chọn Tuần, tuần cuối sọc, tuần đầu xám, Ngày bị khoá",Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Ngày bắt đầu (hôm nay − 73 ngày) không phải Thứ Hai, hôm nay không phải Chủ Nhật",Từ ngày: hôm nay − 73; Đến ngày: hôm nay,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày hôm nay − 73 ngày, Đến ngày hôm nay trên lịch chọn khoảng","2. Nút Tuần active, nhãn ""Tự chọn theo độ dài kỳ""; nhãn trục chỉ dd/mm của Thứ Hai (> 10 cột)
+- Cột tuần đầu xám (Bị cắt); cột tuần chứa hôm nay sọc chéo (vừa bị cắt vừa chưa kết thúc → Chưa kết thúc); các tuần giữa đặc
+- Nút Ngày bị khoá (74 > 62 ngày) [Giả định AS-02]",Candidate,Not Run,[Giả định AS-02] AC-SPM-010-02
+TC-CHART-006,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra Năm này: tự chọn Tháng, cột tháng hiện tại sọc, Ngày bị khoá",Functional,Positive,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Năm này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Năm này""","2. Nút Tháng active; số cột = số tháng từ T1 đến tháng hiện tại, nhãn Tn (không /yy)
+- Cột tháng hiện tại sọc chéo; Ngày bị khoá kèm tooltip ""Không khả dụng với kỳ đang chọn""",Candidate,Not Run,AC-SPM-010-03
+TC-CHART-007,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ Hôm nay không vẽ biểu đồ, hiện thông báo và khoá cả 3 đơn vị",Functional,Boundary,BVA,P2,1. Theo SETUP-01: đăng nhập U-CRM,Kỳ: Hôm nay (1 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Hôm nay""","2. Không vẽ cột; hiện khung thông báo ""Kỳ 1 ngày chưa đủ để vẽ biểu đồ theo thời gian. Chọn kỳ từ 2 ngày trở lên (Tuần này, Tháng này...) để xem xu hướng.""
+- Nút Ngày, Tuần, Tháng đều bị khoá",Candidate,Not Run,AC-SPM-010-05
+TC-CHART-008,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra đã chọn tay Ngày ở kỳ 30 ngày rồi đổi sang Năm này thì tự quay về Tháng,Functional,Positive,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ 1: 01/09/2026 – 30/09/2026; Kỳ 2: Năm này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Bấm nút Ngày
+4. Bấm ""Năm này""","3. Nhãn ""Đã chọn tay""
+4. Đơn vị chuyển sang Tháng; nhãn ""Tự chọn theo độ dài kỳ""; Ngày bị khoá",Candidate,Not Run,AC-SPM-010-06
+TC-CHART-009,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra đã chọn tay Tuần rồi đổi kỳ mà Tuần vẫn khả dụng thì giữ Tuần,Functional,Positive,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ 1: 01/09/2026 – 30/09/2026; Kỳ 2: 01/07/2026 – 31/08/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần
+4. Nhập Từ ngày 01/07/2026, Đến ngày 31/08/2026 trên lịch chọn khoảng","4. Vẫn vẽ theo Tuần (10 cột), nút Tuần active, nhãn ""Đã chọn tay""",Candidate,Not Run,
+TC-CHART-010,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra chọn tay Tuần, đổi sang Hôm nay rồi sang Tháng này thì không nhớ lựa chọn tay",Functional,Edge,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay ≥ ngày 08 của tháng (Tháng này chạm ≥ 2 tuần)",Kỳ: 01/09–30/09/2026 → Hôm nay → Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần
+4. Bấm ""Hôm nay""
+5. Bấm ""Tháng này""","4. Không vẽ biểu đồ, 3 nút khoá
+5. Đơn vị là Ngày (tự chọn), nhãn ""Tự chọn theo độ dài kỳ""; không quay lại Tuần",Candidate,Not Run,
+TC-CHART-011,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra bấm đơn vị bị khoá không đổi biểu đồ và hiện tooltip Không khả dụng,UI,Negative,ST,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Rê chuột lên nút Tháng
+4. Bấm nút Tháng","2. Nút Tháng vẫn hiển thị (không bị ẩn), trạng thái disabled
+3. Tooltip ""Không khả dụng với kỳ đang chọn""
+4. Biểu đồ giữ nguyên đơn vị Ngày, 30 cột",Candidate,Not Run,
+TC-CHART-012,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra đổi thuế: giá trị cột đổi, đơn vị và trạng thái cột giữ nguyên",Functional,Positive,ST,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng này"", bấm nút Tuần, rê chuột vào cột đầu ghi Sales
+3. Bấm ""Trước thuế"", rê chuột lại cột đầu","3. Sales trong tooltip đổi sang giá trị trước thuế (nhỏ hơn hoặc bằng); vẫn đơn vị Tuần, nhãn ""Đã chọn tay""; cột đầu/cột cuối giữ trạng thái xám/sọc như bước 2
+- Nhãn panel ghi Trước thuế",Candidate,Not Run,AC-SPM-010-09
+TC-CHART-013,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 31 ngày (01/07–31/07/2026) tự chọn Ngày,Functional,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/07/2026; Đến ngày: 31/07/2026 (31 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 31/07/2026 trên lịch chọn khoảng","2. Nút Ngày active, 31 cột, nhãn ""Tự chọn theo độ dài kỳ""",Candidate,Not Run,
+TC-CHART-014,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 32 ngày (01/07–01/08/2026) tự chọn Tuần và Ngày vẫn bấm được,Functional,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/07/2026; Đến ngày: 01/08/2026 (32 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 01/08/2026 trên lịch chọn khoảng","2. Nút Tuần active, 5 cột, nhãn ""Tự chọn theo độ dài kỳ""
+- Nút Ngày bấm được [Giả định AS-02]",Candidate,Not Run,[Giả định AS-02] theo PRD (2→31) thì Ngày bị khoá
+TC-CHART-015,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 120 ngày (01/05–28/08/2026) tự chọn Tuần,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/05/2026; Đến ngày: 28/08/2026 (120 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/05/2026, Đến ngày 28/08/2026 trên lịch chọn khoảng","2. Nút Tuần active, 18 cột",Candidate,Not Run,
+TC-CHART-016,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 121 ngày (01/05–29/08/2026) tự chọn Tháng,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/05/2026; Đến ngày: 29/08/2026 (121 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/05/2026, Đến ngày 29/08/2026 trên lịch chọn khoảng","2. Nút Tháng active, 4 cột T5…T8; T8 xám (Bị cắt, kết thúc 29/08)",Candidate,Not Run,
+TC-CHART-017,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 62 ngày (01/07–31/08/2026) đơn vị Ngày bấm được và vẽ 62 cột,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/07/2026; Đến ngày: 31/08/2026 (62 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 31/08/2026 trên lịch chọn khoảng
+3. Bấm nút Ngày","3. Vẽ 62 cột theo ngày, nhãn ""Đã chọn tay"" [Giả định AS-02]",Candidate,Not Run,[Giả định AS-02] số cột tối đa 62
+TC-CHART-018,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 63 ngày (01/07–01/09/2026) đơn vị Ngày bị khoá,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/07/2026; Đến ngày: 01/09/2026 (63 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 01/09/2026 trên lịch chọn khoảng","2. Nút Ngày bị khoá kèm tooltip ""Không khả dụng với kỳ đang chọn""; tự chọn Tuần",Candidate,Not Run,"Cả hai phương án ngưỡng Ngày (2–31, 2–62) đều khoá ở 63 ngày"
+TC-CHART-019,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 07/07–08/07/2026 (1 tuần lịch, 1 tháng lịch): Tuần và Tháng bị khoá",Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 07/07/2026 (T3); Đến ngày: 08/07/2026 (T4),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 07/07/2026, Đến ngày 08/07/2026 trên lịch chọn khoảng","2. Tự chọn Ngày, 2 cột; Tuần và Tháng bị khoá",Candidate,Not Run,
+TC-CHART-020,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 366 ngày 06/01/2025–06/01/2026 chạm 53 tuần: Tuần bấm được,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 06/01/2025 (T2); Đến ngày: 06/01/2026 (T3),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 06/01/2025, Đến ngày 06/01/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần","3. Vẽ 53 cột tuần; nhãn trục dd/mm Thứ Hai, ẩn xen kẽ khi dày",Candidate,Not Run,
+TC-CHART-021,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra kỳ 366 ngày 05/01/2025–05/01/2026 chạm 54 tuần: Tuần bị khoá,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 05/01/2025 (CN); Đến ngày: 05/01/2026 (T2),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 05/01/2025, Đến ngày 05/01/2026 trên lịch chọn khoảng","2. Nút Tuần bị khoá; tự chọn Tháng, 13 cột",Candidate,Not Run,
+TC-CHART-022,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 31/07–01/08/2026 (2 ngày, 2 tháng lịch): Tháng bấm được, Tuần khoá",Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 31/07/2026 (T6); Đến ngày: 01/08/2026 (T7),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 31/07/2026, Đến ngày 01/08/2026 trên lịch chọn khoảng
+3. Bấm nút Tháng","2. Tự chọn Ngày, 2 cột; Tuần bị khoá; Tháng bấm được
+3. 2 cột T7, T8 đều xám (Bị cắt)",Candidate,Not Run,
+TC-CHART-023,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 15/09/2025–14/09/2026: Tháng 13 cột, nhãn Tn/yy, cột đầu và cuối Bị cắt",Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 15/09/2025; Đến ngày: 14/09/2026 (365 ngày),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 15/09/2025, Đến ngày 14/09/2026 trên lịch chọn khoảng","2. Tự chọn Tháng, 13 cột nhãn T9/25, T10/25 … T9/26 (có /yy vì vắt 2 năm)
+- Cột T9/25 và T9/26 xám; 11 cột giữa đặc",Candidate,Not Run,
+TC-CHART-024,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra Tuần 10 cột (06/07–13/09/2026) nhãn trục dạng dd/mm–dd/mm,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 06/07/2026 (T2); Đến ngày: 13/09/2026 (CN) — 70 ngày,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 06/07/2026, Đến ngày 13/09/2026 trên lịch chọn khoảng","2. Tự chọn Tuần, 10 cột; nhãn dạng 06/07–12/07 … 07/09–13/09; tất cả cột đặc",Candidate,Not Run,
+TC-CHART-025,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra Tuần 11 cột (06/07–14/09/2026) nhãn trục chỉ dd/mm của Thứ Hai,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 06/07/2026; Đến ngày: 14/09/2026 — 71 ngày,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 06/07/2026, Đến ngày 14/09/2026 trên lịch chọn khoảng","2. Tự chọn Tuần, 11 cột; nhãn chỉ 06/07, 13/07 … 14/09; cột cuối 14/09–20/09 xám",Candidate,Not Run,
+TC-CHART-026,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra 16 cột (01/09–16/09/2026) có nhãn giá trị trên cột cao nhất,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/09/2026; Đến ngày: 16/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 16/09/2026 trên lịch chọn khoảng","2. Cột cao nhất có viền vàng và có nhãn giá trị phía trên (định dạng nhãn: Q-44, không kiểm)",Candidate,Not Run,
+TC-CHART-027,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra 17 cột (01/09–17/09/2026) không có nhãn giá trị trên cột cao nhất,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/09/2026; Đến ngày: 17/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 17/09/2026 trên lịch chọn khoảng",2. Cột cao nhất vẫn có viền vàng nhưng không có nhãn giá trị phía trên,Candidate,Not Run,
+TC-CHART-028,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra cột Sales cao nhất của kỳ có viền vàng,UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Rê chuột qua các cột, tìm cột có Sales lớn nhất trong tooltip",3. Đúng 1 cột có viền vàng 2px nét liền và đó là cột có Sales lớn nhất,Candidate,Not Run,
+TC-CHART-029,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra hai cột cao nhất bằng nhau thì viền vàng ở cột đầu tiên,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ST2 ngày E1 và E2 (liền nhau) mỗi ngày 1 đơn CO total 7 000 000",Kỳ: E1 – E2; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E1, Đến ngày E2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2",3. 2 cột bằng nhau; chỉ cột E1 có viền vàng,Candidate,Not Run,
+TC-CHART-030,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra mọi cột bằng 0: không vẽ thân cột, không viền vàng",UI,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ST1 không có đơn ngày D−3, D−2)",Kỳ: D−3 – D−2; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−3, Đến ngày D−2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1",3. 2 vị trí cột không có thân cột; không cột nào có viền vàng; trục Y có mốc 0,Candidate,Not Run,
+TC-CHART-031,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra cột khác 0 rất nhỏ vẫn cao tối thiểu 1px,UI,Boundary,BVA,P4,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ST2 ngày E1 đơn total 100, ngày E2 đơn total 40 000 000",Kỳ: E1 – E2; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E1, Đến ngày E2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2
+4. Phóng to vùng cột E1 (DevTools → Inspect phần tử cột)",4. Cột E1 có chiều cao ≥ 1px,Candidate,Not Run,
+TC-CHART-032,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra cột âm tô màu Error, mọc xuống dưới 0 và trục Y mở xuống âm",Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D+2; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Cột D+1 (−6 600 000) màu Error, thân mọc xuống dưới đường 0; trục Y có mốc 0 và mốc âm",Candidate,Not Run,AC-SPM-010-08
+TC-CHART-033,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra trục Y thang Tr: mốc 0, mốc âm, khoảng chia đẹp, nhãn N Tr",UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D+2; Store: ST1 (giá trị từ −6 600 000 đến 42 600 000),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Nhãn trục Y dạng N Tr; có mốc 0 và mốc âm; bước chia là bội 1/2/2.5/5 × 10ⁿ (ví dụ bước 20 Tr: −20 Tr, 0, 20 Tr, 40 Tr, 60 Tr); số khoảng chia 4–5 [Cần xác nhận Q-39]",Candidate,Not Run,[Cần xác nhận Q-39] PRD 4–5 khoảng chia / BR-SPM-018 khoảng 4 mốc
+TC-CHART-034,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra trục Y thang Tỷ: mốc 0, nhãn N Tỷ không lẻ khi ≥ 10 tỷ",UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026 (giá trị ngày cỡ chục tỷ),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng","2. Nhãn trục Y dạng N Tỷ, mốc ≥ 10 tỷ không có phần lẻ, có mốc 0, bước là bội 1/2/2.5/5 × 10ⁿ [Cần xác nhận Q-39]; tooltip và thẻ KPI vẫn hiển thị số đầy đủ",Candidate,Not Run,[Cần xác nhận Q-39] số khoảng chia
+TC-CHART-035,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra trục Y khi giá trị dưới 1 triệu hiển thị số đầy đủ,UI,Positive,EP,P4,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-03: ST2 ngày E1, E2 mỗi ngày 1 đơn total 300 000 và 800 000",Kỳ: E1 – E2; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày E1, Đến ngày E2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2","3. Nhãn trục Y là số đầy đủ (ví dụ 0, 200 000, 400 000 …), không dạng Tr",Candidate,Not Run,
+TC-CHART-036,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra ưu tiên màu: cột âm + Chưa kết thúc hiển thị sọc chéo,UI,Edge,DT,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-12: ST3 hôm nay chỉ có đơn trả RC-T 2 500 000",Kỳ: hôm qua – hôm nay; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày hôm qua, Đến ngày hôm nay trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3","3. Cột hôm nay (−2 500 000) sọc chéo + viền nét đứt (không tô đỏ đặc), mọc xuống dưới 0",Candidate,Not Run,
+TC-CHART-037,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra ưu tiên màu Tuần: cột âm bị cắt tô đỏ, cột dương bị cắt tô xám",UI,Edge,DT,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (D+1 là Chủ Nhật, D+2 là Thứ Hai)",Kỳ: D+1 – D+2; Store: ST1; hôm nay ≥ D+9 (tuần chứa D+2 đã qua),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm nút Tuần",4. 2 cột: tuần chứa D+1 (−6 600 000) màu Error; tuần chứa D+2 (5 000 000) màu xám Bị cắt,Candidate,Not Run,
+TC-CHART-038,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra cột cao nhất đang chạy: sọc chéo và viền vàng nét liền đè viền nét đứt,UI,Edge,DT,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02
+3. Theo SETUP-12: ST2 hôm nay có OB7 50 000 000 (OB7 của lần chạy trước đã huỷ)",Kỳ: D – hôm nay; Store: ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày hôm nay trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST2","3. Cột hôm nay là cột cao nhất: nền sọc chéo, viền vàng nét liền (không nét đứt)",Candidate,Not Run,
+TC-CHART-039,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra chú giải và dòng ghi chú ở đơn vị Ngày cho kỳ đã khép,UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Đọc chú giải và dòng ghi chú dưới biểu đồ","3. Chú giải có ""Đủ kỳ"", ""Cao nhất"", ""Nền xám nhạt: Thứ Bảy, Chủ Nhật""; không có Chưa kết thúc, không có Bị cắt theo kỳ lọc
+- Ghi chú nêu Sales ròng đã trừ hàng trả theo ngày hoàn tất đơn trả, cách nhìn thuế đang chọn, cột đỏ = hoàn trả nhiều hơn bán, trục Y chỉ rút gọn; không nêu quy ước tuần",Candidate,Not Run,
+TC-CHART-040,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra chú giải và ghi chú ở đơn vị Tuần có cột Bị cắt và Chưa kết thúc,UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay không phải Chủ Nhật","Kỳ: Tháng này, đơn vị Tuần (ngày 01 không phải Thứ Hai)","1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng này"", bấm nút Tuần
+3. Đọc chú giải và dòng ghi chú","3. Chú giải có ""Đủ kỳ"", ""Cao nhất"", ""Chưa kết thúc — số có thể còn tăng"", ""Bị cắt theo kỳ lọc""; không có Nền xám nhạt
+- Ghi chú có thêm quy ước tuần Thứ Hai – Chủ Nhật",Candidate,Not Run,
+TC-CHART-041,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra nhãn trục X dày được ẩn xen kẽ, không xoay, chữ ≥ 11px, cột ẩn nhãn vẫn có tooltip",UI,Positive,CL,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09: cửa sổ trình duyệt rộng 800px",Kỳ: 01/07/2026 – 31/07/2026 (31 cột),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 31/07/2026 trên lịch chọn khoảng
+3. Quan sát nhãn trục X
+4. Rê chuột vào 1 cột không có nhãn","3. Nhãn 01/07 luôn hiện; các nhãn sau cách đều, một số bị ẩn; chữ nằm ngang; cỡ chữ ≥ 11px (Inspect)
+4. Tooltip của cột đó vẫn hiện đủ",Candidate,Not Run,
+TC-CHART-042,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra đổi kích thước cửa sổ thì biểu đồ vẽ lại theo chiều rộng thật, chữ không co nhỏ",UI,Edge,EG,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09",Kỳ: Tháng trước; rộng 1440px → 1000px,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"" ở cửa sổ 1440px, đo cỡ chữ nhãn trục
+3. Thu cửa sổ về 1000px","3. Biểu đồ vẽ lại vừa khung mới, không thanh cuộn ngang; cỡ chữ nhãn trục bằng bước 2 (≥ 11px), số nhãn hiển thị giảm theo bề rộng",Candidate,Not Run,
+TC-CHART-043,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra tooltip cột Ngày: dd/mm/yyyy (Thứ), Sales đầy đủ, Transactions, Hoàn trả đã trừ",Functional,Positive,CL,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D+2; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D+2 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Rê chuột vào cột ngày D",4. Tooltip: ngày D dạng dd/mm/yyyy (Thứ Bảy); Sales 42 600 000 (Sau thuế); Transactions 5; Hoàn trả đã trừ 5 400 000; không có nhãn trạng thái,Candidate,Not Run,
+TC-CHART-044,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra tooltip cột Tuần bị cắt hiển thị khoảng ngày đã cắt và nhãn Bị cắt theo kỳ lọc,Functional,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026; đơn vị Tuần,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng
+3. Bấm nút Tuần, rê chuột vào cột đầu","3. Khoảng thời gian 01/09/2026 – 06/09/2026 (không phải 31/08/2026); có nhãn ""Bị cắt theo kỳ lọc""",Candidate,Not Run,
+TC-CHART-045,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra tooltip cột Chưa kết thúc có nhãn Chưa kết thúc,Functional,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay không phải ngày 01",Kỳ: Tháng này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng này"", rê chuột vào cột hôm nay","2. Tooltip có khoảng ngày, Sales đầy đủ, Transactions, Hoàn trả đã trừ và nhãn ""Chưa kết thúc · số có thể còn tăng""",Candidate,Not Run,AC-SPM-010-10
+TC-CHART-046,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra tooltip bám con trỏ và tự lật sang trái khi sát mép phải,UI,Positive,CL,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", rê chuột từ cột đầu sang cột cuối","2. Tooltip di chuyển theo con trỏ; ở các cột sát mép phải tooltip hiện bên trái con trỏ, không bị cắt khỏi khung",Candidate,Not Run,
+TC-CHART-047,12. Biểu đồ Sales theo thời gian,FR-SPM-010,Kiểm tra tổng Sales và Transactions các cột Tuần bằng thẻ KPI của kỳ,Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: 01/09/2026 – 30/09/2026; đơn vị Tuần,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/09/2026, Đến ngày 30/09/2026 trên lịch chọn khoảng, ghi Sales và Transactions trên thẻ KPI
+3. Bấm nút Tuần, ghi Sales và Transactions trong tooltip 5 cột",2. Σ Sales 5 cột = Sales thẻ KPI; Σ Transactions 5 cột = Transactions thẻ KPI,Candidate,Not Run,AC-SPM-010-04
+TC-CHART-048,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra đơn trả trừ vào cột ngày hoàn tất đơn trả, không vào cột ngày bán gốc",Functional,Edge,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D+1; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D+1 trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Rê chuột vào cột D−1 và cột D+1","4. Cột D−1: Sales 3 200 000, Hoàn trả đã trừ 0; cột D+1: Sales −6 600 000, Hoàn trả đã trừ 6 600 000",Candidate,Not Run,AC-SPM-010-07
+TC-CHART-049,12. Biểu đồ Sales theo thời gian,FR-SPM-010;FR-SPM-011,Kiểm tra biểu đồ chỉ tính trên store và Client Advisor đang lọc,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D+2; Store: ST1; Client Advisor: U-CA-A,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D+2 trên lịch chọn khoảng
+3. Chọn ST1 + ST2, rê chuột cột D
+4. Mở bộ chọn Store, chỉ chọn ST1, rê chuột cột D
+5. Chọn Client Advisor U-CA-A, rê chuột cột D","3. Cột D: Transactions 7
+4. Cột D: Transactions 5
+5. Cột D: Transactions 4",Candidate,Not Run,
+TC-CHART-050,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra kỳ 32 ngày 01/07–01/08/2026 chạm 2 tháng lịch: Tháng bấm được, bấm tay vẽ T7 đặc và T8 xám",Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ ngày: 01/07/2026; Đến ngày: 01/08/2026,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày 01/07/2026, Đến ngày 01/08/2026 trên lịch chọn khoảng
+3. Bấm nút Tháng","2. Tự chọn Tuần (5 cột); nút Tháng bấm được [Cần xác nhận Q-38]
+3. 2 cột: T7 đặc, T8 xám Bị cắt; nhãn ""Đã chọn tay""",Candidate,Not Run,Review R-06; [Cần xác nhận Q-38]
+TC-CHART-051,12. Biểu đồ Sales theo thời gian,FR-SPM-010,"Kiểm tra Tuần khi kỳ kết thúc hôm qua và tuần cuối chứa hôm nay: cột cuối xám Bị cắt, không sọc chéo",Functional,Edge,DT,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Hôm nay không phải Thứ Hai",Từ ngày: Chủ Nhật tuần trước; Đến ngày: hôm qua,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày Chủ Nhật tuần trước, Đến ngày hôm qua trên lịch chọn khoảng
+3. Bấm nút Tuần","3. 2 cột: tuần trước (chỉ phủ Chủ Nhật) xám; tuần hiện tại (chứa hôm nay, kỳ dừng ở hôm qua) xám Bị cắt, không sọc chéo [Giả định AS-03]",Candidate,Not Run,"Review R-02, R-21 [Giả định AS-03]"
+TC-STORE-001,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,"Kiểm tra CRM mặc định chọn toàn bộ store, nhãn Toàn Tam Sơn và lọc Client Advisor bị khoá",Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Xem nhãn bộ chọn Store và bộ lọc Client Advisor","2. Nhãn ""Toàn Tam Sơn · 100 store"" với số store thực tế của phạm vi; bộ đếm đã chọn = tổng
+- Bộ lọc Client Advisor bị khoá, gợi ý ""Chọn ≤ 5 store để lọc""",Candidate,Not Run,"AC-SPM-011-01, 05"
+TC-STORE-002,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra Retail Manager Hermès chỉ có store Hermès và không thêm được store Brand khác,Security,Negative,PERM,P1,"1. Theo SETUP-01: đăng nhập U-RM-HER
+2. Theo SETUP-07",Từ khoá: Chopard,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, xem danh sách
+3. Gõ Chopard vào ô tìm kiếm","2. Chỉ có các store Hermès (14 store trên môi trường SETUP-07), đã chọn tất cả
+3. Không có kết quả",Candidate,Not Run,AC-SPM-011-11
+TC-STORE-003,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra bấm chip Brand Hermès chỉ chọn store Hermès và KPI tính lại,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Chip: Hermès (14),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, bấm chip Hermès","2. Chỉ 14 store Hermès được chọn; nhãn nút ""Brand Hermès · 14 store"" [Giả định AS-08]
+- KPI, biểu đồ, bảng tính lại chỉ trên 14 store (bảng Theo Store còn 14 dòng)",Candidate,Not Run,[Giả định AS-08] AC-SPM-011-02 ghi 14 store đã chọn
+TC-STORE-004,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra tìm store theo tên (landmark) và theo Brand (chopard),Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ khoá 1: landmark; Từ khoá 2: chopard,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, gõ landmark
+3. Xoá, gõ chopard","2. Chỉ hiện store có landmark trong tên hoặc Brand (ví dụ Hermès Landmark 81)
+3. Hiện các store Brand Chopard",Candidate,Not Run,AC-SPM-011-03
+TC-STORE-005,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra không bỏ chọn được store cuối cùng,Validation,Boundary,BVA,P2,1. Theo SETUP-01: đăng nhập U-SM12,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, bỏ chọn ST2
+3. Bỏ chọn ST1","2. Còn ST1 được chọn; nhãn nút là tên ST1
+3. ST1 vẫn được chọn (không bỏ được); KPI không trống",Candidate,Not Run,AC-SPM-011-04
+TC-STORE-006,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra chọn 3 store hiển thị nhãn 3 store đã chọn,UI,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",3 store bất kỳ,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, bỏ chọn tất cả còn 1, chọn thêm 2 store","2. Nhãn nút ""3 store đã chọn""; bộ đếm 3 / tổng",Candidate,Not Run,
+TC-STORE-007,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra nút chọn tất cả và bộ đếm đã chọn / tổng,UI,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, bấm chip Hermès
+3. Bấm nút chọn tất cả","2. Bộ đếm 14 / tổng
+3. Mọi store được chọn; bộ đếm tổng / tổng; nhãn Toàn Tam Sơn",Candidate,Not Run,
+TC-STORE-008,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,"Kiểm tra thu hẹp ST1 + ST2 xuống ST1 thì KPI, biểu đồ, bảng tính lại",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng, ghi Sales
+3. Mở bộ chọn Store, chỉ chọn ST1","2. Sales = 46 600 000
+3. Sales = 42 600 000; Transactions = 5; Total Customers = 4; bảng không còn tab Theo Store; panel xếp hạng chuyển sang Client Advisor",Candidate,Not Run,
+TC-STORE-009,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra chọn 6 store thì lọc Client Advisor bị khoá kèm gợi ý,Validation,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",6 store,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Chọn đúng 6 store
+3. Bấm vào bộ lọc Client Advisor","3. Bộ lọc không mở; hiển thị gợi ý ""Chọn ≤ 5 store để lọc""",Candidate,Not Run,AC-SPM-011-05
+TC-STORE-010,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra chọn 5 store thì lọc Client Advisor mở và liệt kê CA kèm tên store,Validation,Boundary,BVA,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",5 store,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Chọn đúng 5 store
+3. Mở bộ lọc Client Advisor","3. Bộ lọc mở; danh sách chỉ gồm Client Advisor của 5 store, mỗi người có tên store kèm theo",Candidate,Not Run,AC-SPM-011-06
+TC-STORE-011,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra chọn Client Advisor U-CA-A thì số liệu chỉ gồm bill người đó đứng tên,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1; CA: U-CA-A,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Chọn U-CA-A trong bộ lọc Client Advisor","4. Transactions = 4 (O1, O2, O5, O6); Coupon % = 50.0% (O2, O6)",Candidate,Not Run,
+TC-STORE-012,13. Bộ chọn Store & lọc Client Advisor,FR-SPM-011,Kiểm tra chọn 6 store: lọc Client Advisor bị khoá nhưng vẫn duyệt Client Advisor qua tab Theo Client Advisor,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",6 store có phát sinh trong Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", chọn đúng 6 store
+3. Bấm tab Theo Client Advisor của bảng","2. Bộ lọc Client Advisor khoá kèm gợi ý ""Chọn ≤ 5 store để lọc""
+3. Tab mở được, liệt kê Client Advisor có phát sinh của 6 store đã chọn",Candidate,Not Run,Review R-11; BR-SPM-021
+TC-RANK-001,14. Xếp hạng Top/Bottom,FR-SPM-011,"Kiểm tra Top 10 xếp store theo Sales giảm dần, hạng 1–10, có Brand cạnh tên",Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước""; panel Xếp hạng đang ở Top 10
+3. Sắp bảng Theo Store theo Sales giảm dần","2. 10 dòng hạng 1…10, Sales giảm dần, mỗi dòng có tên store + Brand và Sales đầy đủ
+3. 10 store của panel trùng 10 dòng đầu bảng theo đúng thứ tự",Candidate,Not Run,AC-SPM-011-07
+TC-RANK-002,14. Xếp hạng Top/Bottom,FR-SPM-011,Kiểm tra Bottom 10 hiển thị hạng thực N…N−9 từ thấp lên,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước; N = số store có phát sinh,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", bấm Bottom 10","2. 10 dòng hạng N, N−1 … N−9 (ví dụ 100…91), dòng đầu có Sales thấp nhất",Candidate,Not Run,AC-SPM-011-07
+TC-RANK-003,14. Xếp hạng Top/Bottom,FR-SPM-011,Kiểm tra xếp hạng tính theo cách nhìn thuế đang chọn,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", bấm ""Trước thuế""
+3. Sắp bảng Theo Store theo Sales (Trước thuế) giảm dần","2. Sales trong panel là giá trị trước thuế
+3. Thứ tự Top 10 trùng 10 dòng đầu bảng theo Sales trước thuế",Candidate,Not Run,
+TC-RANK-004,14. Xếp hạng Top/Bottom,FR-SPM-011,Kiểm tra store không phát sinh trong kỳ không xuất hiện trong xếp hạng,Functional,Negative,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02 (ngày D−1: chỉ ST1 có O0; ST2 không có đơn)",Kỳ: D−1 – D−1; Store: ST1 + ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D−1 trên lịch chọn khoảng","2. Panel xếp hạng chỉ có ST1 (hạng 1, 3 200 000); không có ST2",Candidate,Not Run,
+TC-RANK-005,14. Xếp hạng Top/Bottom,FR-SPM-011,Kiểm tra store có Sales âm (chỉ đơn trả) vẫn được xếp hạng ở hạng cuối,Functional,Edge,EG,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D+1 – D+1; Store: ST1 (−6 600 000) + ST2 (0),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D+1, Đến ngày D+1 trên lịch chọn khoảng
+3. Bấm Bottom 10","3. 2 dòng: ST1 hạng 2 với Sales −6 600 000 (dấu −) ở dòng đầu, ST2 hạng 1 với Sales 0; ST1 có mặt dù không có đơn bán (có đơn trả)",Candidate,Not Run,
+TC-RANK-006,14. Xếp hạng Top/Bottom,FR-SPM-011,Kiểm tra phạm vi 1 store thì panel chuyển sang xếp hạng Client Advisor,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1","3. Panel liệt kê Client Advisor của ST1: U-CA-A hạng 1, U-CA-B hạng 2 (không còn xếp hạng store)",Candidate,Not Run,Sales từng CA: [Cần xác nhận Q-31]
+TC-TABLE-001,15. Bảng breakdown,FR-SPM-011,"Kiểm tra bảng mặc định tab Theo Store, trang 1, 15 dòng, hiển thị từ–đến / tổng",Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Xem bảng breakdown",2. Tab Theo Store đang chọn; 15 dòng; chân bảng 1–15 / N store; phân trang 1/⌈N/15⌉ (ví dụ 1/7 với 100 store); Mỗi trang = 15,Candidate,Not Run,AC-SPM-011-01
+TC-TABLE-002,15. Bảng breakdown,FR-SPM-011,Kiểm tra đổi số dòng mỗi trang 30 và 50,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store","Mỗi trang: 30, 50","1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Chọn Mỗi trang = 30
+3. Chọn Mỗi trang = 50","2. 30 dòng; 1–30 / N; số trang ⌈N/30⌉
+3. 50 dòng; 1–50 / N; số trang ⌈N/50⌉",Candidate,Not Run,
+TC-TABLE-003,15. Bảng breakdown,FR-SPM-011,Kiểm tra trang cuối hiển thị đúng phần dòng còn lại,Functional,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Mỗi trang: 15; N = 100 store,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm đến trang cuối","2. Trang 7/7 hiển thị 10 dòng, chân bảng 91–100 / 100; nút trang sau bị khoá",Candidate,Not Run,
+TC-TABLE-004,15. Bảng breakdown,FR-SPM-011,Kiểm tra tìm chopard khi sắp Sales giảm dần: cột # giữ hạng thực,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ khoá: chopard,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Sắp cột Sales giảm dần, ghi hạng # của các store Chopard
+3. Gõ chopard vào ô tìm kiếm của bảng","3. Chỉ còn store Chopard; cột # giữ đúng hạng đã ghi ở bước 2 (ví dụ 2, 5, 9), không đánh số lại từ 1",Candidate,Not Run,AC-SPM-011-08
+TC-TABLE-005,15. Bảng breakdown,FR-SPM-011,Kiểm tra dòng Tổng không đổi khi tìm kiếm và đổi trang,Functional,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ khoá: hermès,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Ghi dòng Tổng; chuyển tới trang 3
+3. Gõ hermès vào ô tìm kiếm","2. Dòng Tổng giống trang 1
+3. Dòng Tổng vẫn bằng giá trị đã ghi (toàn bộ phạm vi đã chọn), không phải tổng các dòng Hermès",Candidate,Not Run,AC-SPM-011-09
+TC-TABLE-006,15. Bảng breakdown,FR-SPM-011,"Kiểm tra Σ Sales, Σ Transactions các dòng store bằng dòng Tổng; Total Customers không cộng dồn",Functional,Positive,EP,P1,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1 + ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Xem tab Theo Store","3. Dòng ST1: Sales 42 600 000, Transactions 5, Total Customers 4; dòng ST2: 4 000 000, 2, 2
+- Dòng Tổng: Sales 46 600 000 (= tổng), Transactions 7 (= tổng), Total Customers 5 (< 6), Frequency 1.40, Avg Spending 9 320 000",Candidate,Not Run,AC-SPM-011-10
+TC-TABLE-007,15. Bảng breakdown,FR-SPM-011,Kiểm tra sắp xếp theo cột và cột # theo thứ tự sắp xếp hiện tại,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Cột: UPT,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm tiêu đề cột UPT (tăng dần)
+3. Bấm lại tiêu đề cột UPT (giảm dần)","2. Các dòng xếp UPT tăng dần; cột # đánh 1 cho dòng UPT nhỏ nhất
+3. Xếp UPT giảm dần; # = 1 cho dòng UPT lớn nhất; dòng Tổng không đổi",Candidate,Not Run,
+TC-TABLE-008,15. Bảng breakdown,FR-SPM-011,Kiểm tra chọn 1 store thì không có tab Theo Store,UI,Negative,EP,P3,1. Theo SETUP-01: đăng nhập U-SM12,Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, chỉ chọn ST1",2. Không có tab Theo Store; có tab Theo Client Advisor; tab Theo Brand không hiển thị (tập đang chọn 1 Brand) [Cần xác nhận Q-37],Candidate,Not Run,[Cần xác nhận Q-37] cho phần tab Theo Brand
+TC-TABLE-009,15. Bảng breakdown,FR-SPM-011,Kiểm tra phạm vi 1 Brand (Retail Manager Hermès) thì không có tab Theo Brand,UI,Negative,EP,P3,1. Theo SETUP-01: đăng nhập U-RM-HER,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng",1. Có tab Theo Store và Theo Client Advisor; không có tab Theo Brand,Candidate,Not Run,AC-SPM-011-11
+TC-TABLE-010,15. Bảng breakdown,FR-SPM-011,Kiểm tra tab Theo Brand với phạm vi 2 Brand hiển thị 2 dòng kèm số store,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1 (BR-1) + ST2 (BR-2),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Bấm tab Theo Brand","3. 2 dòng: BR-1 (Số store 1, Sales 42 600 000), BR-2 (Số store 1, Sales 4 000 000); dòng Tổng 46 600 000",Candidate,Not Run,
+TC-TABLE-011,15. Bảng breakdown,FR-SPM-011;FR-SPM-009,Kiểm tra tab Theo Client Advisor: tổng các dòng lớn hơn dòng Tổng và có ghi chú vàng,Functional,Edge,EP,P2,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D – D; Store: ST1,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST1
+4. Bấm tab Theo Client Advisor","4. Dòng U-CA-A Transactions 4, U-CA-B Transactions 2; dòng Tổng Transactions 5 (4 + 2 > 5)
+- Phía trên bảng có ghi chú nền vàng ""Tổng các nhân viên có thể lớn hơn tổng store do 1 bill có nhiều nhân viên cùng đứng tên""",Candidate,Not Run,BR-SPM-002; Sales từng CA: [Cần xác nhận Q-31]
+TC-TABLE-012,15. Bảng breakdown,FR-SPM-009,Kiểm tra bảng Theo Store cấp gộp có ghi chú Avg Spending và Frequency không cộng dồn,UI,Positive,CL,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Đọc ghi chú quanh bảng Theo Store",2. Có ghi chú Avg Spending/Customer và Frequency không cộng dồn giữa các store,Candidate,Not Run,
+TC-TABLE-013,15. Bảng breakdown,FR-SPM-011,Kiểm tra store không phát sinh trong kỳ không có dòng và có ghi chú,Functional,Negative,EP,P3,"1. Theo SETUP-01: đăng nhập U-SM12
+2. Theo SETUP-02",Kỳ: D−1 – D−1; Store: ST1 + ST2,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D−1, Đến ngày D−1 trên lịch chọn khoảng
+3. Xem tab Theo Store",3. Chỉ có dòng ST1; không có dòng ST2; bảng có ghi chú về store không phát sinh [Cần xác nhận Q-24],Candidate,Not Run,[Cần xác nhận Q-24] nội dung ghi chú
+TC-TABLE-014,15. Bảng breakdown,FR-SPM-011,Kiểm tra tìm theo tên Brand trong tab Theo Store,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Từ khoá: patek,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Gõ patek vào ô tìm kiếm của bảng",2. Chỉ còn store Brand Patek Philippe; chân bảng cập nhật số dòng khớp; dòng Tổng không đổi,Candidate,Not Run,
+TC-TABLE-015,15. Bảng breakdown,FR-SPM-011,Kiểm tra cột Sales có thanh dữ liệu nền tỉ lệ với dòng lớn nhất,UI,Positive,CL,P4,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Quan sát cột Sales của 15 dòng đầu","2. Mỗi ô Sales có thanh nền; dòng lớn nhất có thanh dài nhất, các dòng khác ngắn dần theo tỉ lệ Sales",No,Not Run,
+TC-TABLE-016,15. Bảng breakdown,FR-SPM-001;FR-SPM-011,"Kiểm tra tab Theo Client Advisor ST3 ngày D: mỗi CA thấy trọn Sales bill, tổng Sales các CA lớn hơn dòng Tổng",Functional,Edge,DT,P1,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-02 (ST3 ngày D: OC1 15 000 000 đứng tên CA-D, CA-E, CA-F; OC2 10 000 000 đứng tên CA-D; không có đơn trả)",Kỳ: D – D; Store: ST3,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhập Từ ngày D, Đến ngày D trên lịch chọn khoảng
+3. Mở bộ chọn Store, chỉ chọn ST3
+4. Bấm tab Theo Client Advisor","4. CA-D: Sales 25 000 000, Transactions 2; CA-E: 15 000 000, 1; CA-F: 15 000 000, 1
+- Dòng Tổng: Sales 25 000 000, Transactions 2; tổng Sales các dòng 55 000 000 > 25 000 000
+- Có ghi chú ""Tổng các nhân viên có thể lớn hơn tổng store do 1 bill có nhiều nhân viên cùng đứng tên""",Candidate,Not Run,Review R-12; AC-SPM-001-04 phần Sales
+TC-TABLE-017,15. Bảng breakdown,FR-SPM-011,Kiểm tra CRM bấm chip Hermès (tập đang chọn 1 Brand) thì bảng không còn tab Theo Brand,Functional,Positive,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Chip: Hermès (14),"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Mở bộ chọn Store, bấm chip Hermès
+3. Xem các tab của bảng",3. Có tab Theo Store và Theo Client Advisor; không có tab Theo Brand [Cần xác nhận Q-37],Candidate,Not Run,Review R-05; mockup image2
+TC-TABLE-018,15. Bảng breakdown,FR-SPM-011,"Kiểm tra đổi thuế khi bảng đang sắp theo Sales: thứ tự và cột # tính lại theo Sales thuế mới, dòng Tổng đổi giá trị tiền",Functional,Edge,EP,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước; sắp Sales giảm dần,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước"", sắp cột Sales giảm dần, ghi 15 dòng đầu
+3. Bấm ""Trước thuế""",3. Bảng vẫn sắp theo Sales (Trước thuế) giảm dần; cột # đánh theo thứ tự mới; tiêu đề cột Sales ghi Trước thuế; Transactions từng dòng không đổi,Candidate,Not Run,IX-30
+TC-INC-001,16. Incentive nhân viên,FR-INC-001,Kiểm tra bill 2 dòng Hanoia và Hermès: mỗi dòng chia theo tỷ lệ Brand của chính dòng đó,Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Dòng 1 Hanoia 10 000 000; Dòng 2 Hermès 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B","1. Tạo bill trên POS tại ST1 theo Test_Data, không giảm giá
+2. Xem Incentive theo dòng của bill qua kênh SETUP-06","2. Dòng Hanoia: U-CA-A 7 000 000 (70%), U-CA-B 3 000 000 (30%)
+- Dòng Hermès: U-CA-A 5 000 000 (50%), U-CA-B 5 000 000 (50%)",Candidate,Not Run,AC-INC-001-01; Hermès PIC + 1 Other CA = 50/50 suy từ AC-INC-004-08. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-002,16. Incentive nhân viên,FR-INC-002,Kiểm tra dòng giảm 20% với Threshold mặc định 100% đủ điều kiện tính Incentive,Functional,Positive,EP,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách không có PIC",Gross 10 000 000; Net 8 000 000 (Discount 20%); đứng tên: U-CA-A,"1. Tạo bill 1 dòng tại ST1 theo Test_Data
+2. Xem Incentive của U-CA-A cho dòng",2. Dòng đủ điều kiện; U-CA-A nhận 100% giá trị dòng (8 000 000),Candidate,Not Run,AC-INC-002-01. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-003,16. Incentive nhân viên,FR-INC-002,Kiểm tra dòng giảm 100% bằng Threshold 100% bị loại khỏi Incentive,Functional,Boundary,BVA,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách không có PIC","Gross 10 000 000; Net 0 (Discount 100%); dòng 2: Gross 5 000 000, Net 5 000 000; đứng tên: U-CA-A","1. Tạo bill 2 dòng tại ST1 theo Test_Data
+2. Xem Incentive của U-CA-A",2. Dòng giảm 100% không tính Incentive; U-CA-A chỉ nhận từ dòng 2 (5 000 000),Candidate,Not Run,AC-INC-002-02. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-004,16. Incentive nhân viên,FR-INC-002,"Kiểm tra Threshold Brand X = 30%, dòng giảm 29.99% vẫn đủ điều kiện",Functional,Boundary,BVA,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách không có PIC",Brand X; Gross 10 000 000; Net 7 001 000 (Discount 29.99%); đứng tên: U-CA-A,"1. Tạo bill 1 dòng Brand X theo Test_Data
+2. Xem Incentive của U-CA-A",2. Dòng đủ điều kiện; U-CA-A nhận 7 001 000 [Cần xác nhận Q-12],Candidate,Not Run,[Cần xác nhận Q-12] làm tròn Discount %. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-005,16. Incentive nhân viên,FR-INC-002,"Kiểm tra Threshold Brand X = 30%, dòng giảm đúng 30.00% bị loại",Functional,Boundary,BVA,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách không có PIC",Brand X; Gross 10 000 000; Net 7 000 000 (Discount 30.00%); đứng tên: U-CA-A,"1. Tạo bill 1 dòng Brand X theo Test_Data
+2. Xem Incentive của U-CA-A",2. Dòng không tính Incentive; U-CA-A không nhận gì từ bill,Candidate,Not Run,Discount % ≥ Threshold → loại. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-006,16. Incentive nhân viên,FR-INC-002,Kiểm tra 2 dòng cùng Brand X (15% và 40%) xét độc lập với Threshold 30%,Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách không có PIC","Dòng 1: Gross 10 000 000, Net 8 500 000 (15%); Dòng 2: Gross 10 000 000, Net 6 000 000 (40%); đứng tên: U-CA-A","1. Tạo bill theo Test_Data
+2. Xem Incentive theo dòng",2. Dòng 1 đủ điều kiện (U-CA-A 8 500 000); dòng 2 bị loại; dòng 2 không làm dòng 1 bị loại,Candidate,Not Run,AC-INC-002-03. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-007,16. Incentive nhân viên,FR-INC-002,Kiểm tra 2 dòng khác Brand: dòng Brand A vẫn tính khi dòng Brand X bị loại,Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%, Brand A = 100%
+4. Theo SETUP-05: khách không có PIC","Dòng A: Gross 10 000 000, Net 6 000 000 (40%); Dòng X: Gross 10 000 000, Net 6 000 000 (40%); đứng tên: U-CA-A","1. Tạo bill theo Test_Data
+2. Xem Incentive theo dòng","2. Dòng A đủ điều kiện (40% < 100%), U-CA-A nhận 6 000 000; dòng X bị loại (40% ≥ 30%)",Candidate,Not Run,AC-INC-002-04. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-008,16. Incentive nhân viên,FR-INC-002,Kiểm tra hạ Threshold Brand X không làm thay đổi ngưỡng của Brand khác,Functional,Edge,EG,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: chỉ hạ Threshold Brand X = 30%
+4. Theo SETUP-05: khách không có PIC","Brand Hanoia: Gross 10 000 000, Net 5 000 000 (50%); đứng tên: U-CA-A","1. Tạo bill 1 dòng Hanoia theo Test_Data
+2. Xem Incentive",2. Dòng Hanoia vẫn đủ điều kiện (Threshold Hanoia giữ 100%); U-CA-A nhận 5 000 000,Candidate,Not Run,BR-INC-001. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-009,16. Incentive nhân viên,FR-INC-002;FR-INC-005,Kiểm tra mọi dòng của bill bị loại thì bill không đóng góp Incentive cho ai,Functional,Edge,DT,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách không có PIC","2 dòng Brand X, mỗi dòng Discount 50%; đứng tên: U-CA-A, U-CA-B","1. Tạo bill theo Test_Data
+2. Xem tổng Incentive kỳ của U-CA-A, U-CA-B trước và sau khi tạo bill","2. Tổng Incentive của U-CA-A, U-CA-B không đổi",Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-010,16. Incentive nhân viên,FR-INC-003,Kiểm tra khách không có PIC: chia đều tổng dòng đủ điều kiện 10 000 000 cho 2 CA,Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách B2C không có PIC","Dòng 1: 6 000 000 (0%); Dòng 2: 4 000 000 (0%); Dòng 3 Brand X Discount 50%; đứng tên: U-CA-A, U-CA-B","1. Tạo bill theo Test_Data
+2. Xem Incentive của U-CA-A, U-CA-B","2. Mỗi CA nhận 5 000 000 (10 000 000 ÷ 2), không tính dòng 3",Candidate,Not Run,"AC-INC-003-01, BR-INC-002. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %"
+TC-INC-011,16. Incentive nhân viên,FR-INC-003,"Kiểm tra khách không có PIC, 3 nhân viên đứng tên: chia đều 1/3 tổng dòng đủ điều kiện",Functional,Edge,DT,P3,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách B2C không có PIC","1 dòng 10 000 000; đứng tên: U-CA-A, U-CA-B, CA-C","1. Tạo bill theo Test_Data
+2. Xem Incentive 3 nhân viên",2. Mỗi người nhận 1/3 giá trị (≈ 3 333 333); tổng 3 người = 10 000 000 [Cần xác nhận Q-26],Candidate,Not Run,[Cần xác nhận Q-26] làm tròn. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-012,16. Incentive nhân viên,FR-INC-003;FR-INC-005,"Kiểm tra khách B2B: Incentive N/A, không cộng vào nhân viên nào",Functional,Negative,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách B2B (Business Account)","1 dòng Hermès 10 000 000; đứng tên: U-CA-A, U-CA-B","1. Tạo bill theo Test_Data
+2. Xem Incentive của bill và tổng kỳ của U-CA-A, U-CA-B","2. Incentive bill = N/A; tổng kỳ của U-CA-A, U-CA-B không tăng",Candidate,Not Run,"AC-INC-003-02, BR-INC-005. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị"
+TC-INC-013,16. Incentive nhân viên,FR-INC-003,"Kiểm tra Incentive dùng PIC tại thời điểm bill, không đổi khi PIC thay đổi sau đó",Functional,Edge,ST,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Hanoia 10 000 000; đứng tên: U-CA-A, U-CA-B","1. Tạo bill theo Test_Data, ghi Incentive
+2. Đổi PIC của khách tại ST1 sang U-CA-B
+3. Xem lại Incentive bill (chờ job tính lại)","1. U-CA-A 7 000 000 (PIC 70%), U-CA-B 3 000 000
+3. Không đổi so với bước 1",Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-014,16. Incentive nhân viên,FR-INC-003,Kiểm tra khách có PIC ở store khác store phát sinh bill được coi là không có PIC,Functional,Edge,DT,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC tại ST2, không có PIC tại ST1","Bill tại ST1: 1 dòng Hanoia 10 000 000; đứng tên: U-CA-A, U-CA-B","1. Tạo bill tại ST1 theo Test_Data
+2. Xem Incentive","2. Chia đều: U-CA-A 5 000 000, U-CA-B 5 000 000 (nhánh không PIC)",Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-015,16. Incentive nhân viên,FR-INC-004;FR-INC-003,"Kiểm tra Hanoia, PIC trên bill có Other CA: PIC 70%, Other CA 30%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Hanoia 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B","1. Tạo bill theo Test_Data
+2. Xem Incentive",2. U-CA-A 7 000 000; U-CA-B 3 000 000,Candidate,Not Run,"AC-INC-004-01, AC-INC-003-03. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị"
+TC-INC-016,16. Incentive nhân viên,FR-INC-004,"Kiểm tra Hanoia, PIC không trên bill có Other CA: PIC 0%, Other CA 100%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1",Hanoia 10 000 000; đứng tên: U-CA-B,"1. Tạo bill theo Test_Data
+2. Xem Incentive",2. U-CA-B 10 000 000; U-CA-A 0,Candidate,Not Run,AC-INC-004-02. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-017,16. Incentive nhân viên,FR-INC-004,"Kiểm tra nhóm Kenzo, Marc Jacobs, Rimowa…: PIC trên bill có Other CA nhận 100%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Lặp cho từng Brand: Kenzo, Marc Jacobs, Rimowa, Bang & Olufsen, Devialet, Tâm Sơn Living, Patek Philippe; 1 dòng 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B","1. Với mỗi Brand: tạo bill theo Test_Data
+2. Xem Incentive",2. Mỗi Brand: U-CA-A 10 000 000; U-CA-B 0,Candidate,Not Run,AC-INC-004-03. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-018,16. Incentive nhân viên,FR-INC-004,"Kiểm tra nhóm Chopard, Chaumet, Piaget, JLC, Buccellati: PIC không trên bill vẫn nhận 70%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Lặp cho: Chopard, Chaumet, Piaget, JLC, Buccellati; 1 dòng 10 000 000; đứng tên: U-CA-B","1. Với mỗi Brand: tạo bill theo Test_Data
+2. Xem Incentive",2. Mỗi Brand: U-CA-A (PIC vắng) 7 000 000; U-CA-B 3 000 000,Candidate,Not Run,AC-INC-004-04. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-019,16. Incentive nhân viên,FR-INC-004,"Kiểm tra nhóm Loewe, BV, TB, Sandro, Maje, MK, Longchamp: PIC trên bill có Other CA chia 50/50",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Lặp cho: Loewe, BV, TB, Sandro, Maje, MK, Longchamp; 1 dòng 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B","1. Với mỗi Brand: tạo bill theo Test_Data
+2. Xem Incentive",2. Mỗi Brand: U-CA-A 5 000 000; U-CA-B 5 000 000,Candidate,Not Run,AC-INC-004-05. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-020,16. Incentive nhân viên,FR-INC-004,"Kiểm tra nhóm BOSS, BOSS Green, HUGO, FL, ADLV: PIC không trên bill nhận 0%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Lặp cho: BOSS, BOSS Green, HUGO, FL, ADLV; 1 dòng 10 000 000; đứng tên: U-CA-B","1. Với mỗi Brand: tạo bill theo Test_Data
+2. Xem Incentive",2. Mỗi Brand: U-CA-B 10 000 000; U-CA-A 0,Candidate,Not Run,AC-INC-004-06. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-021,16. Incentive nhân viên,FR-INC-004,"Kiểm tra Hermès, PIC đứng tên một mình nhận 100%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1",Hermès 10 000 000; đứng tên: U-CA-A,"1. Tạo bill theo Test_Data
+2. Xem Incentive",2. U-CA-A 10 000 000,Candidate,Not Run,AC-INC-004-07. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-022,16. Incentive nhân viên,FR-INC-004,"Kiểm tra Hermès, PIC + 2 Other CA: 50% / 25% / 25%",Functional,Positive,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Hermès 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B, CA-C","1. Tạo bill theo Test_Data
+2. Xem Incentive",2. U-CA-A 5 000 000; U-CA-B 2 500 000; CA-C 2 500 000,Candidate,Not Run,"AC-INC-004-08, BR-INC-004. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị"
+TC-INC-023,16. Incentive nhân viên,FR-INC-004,"Kiểm tra Hanoia, PIC + 3 Other CA: 70% / 10% / 10% / 10%",Functional,Positive,DT,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Hanoia 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B, CA-C, CA-D","1. Tạo bill theo Test_Data
+2. Xem Incentive","2. U-CA-A 7 000 000; U-CA-B, CA-C, CA-D mỗi người 1 000 000",Candidate,Not Run,AC-INC-004-11. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-024,16. Incentive nhân viên,FR-INC-004,"Kiểm tra Brand chưa có dòng cấu hình tường minh, PIC đứng tên một mình nhận 100%",Functional,Positive,DT,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Lặp cho: Hanoia, Kenzo, Marc Jacobs, Rimowa, Bang & Olufsen, Devialet, Tâm Sơn Living, Chopard, Patek Philippe; 1 dòng 10 000 000; đứng tên: U-CA-A","1. Với mỗi Brand: tạo bill theo Test_Data
+2. Xem Incentive",2. Mỗi Brand: U-CA-A 10 000 000,Candidate,Not Run,"AC-INC-004-09, BR-INC-003. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị"
+TC-INC-025,16. Incentive nhân viên,FR-INC-004,"Kiểm tra bill có PIC: dòng bị loại không tra cấu hình, dòng còn lại chia bình thường",Functional,Edge,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Dòng Hanoia 10 000 000 (0%); Dòng Brand X Discount 50%; đứng tên: U-CA-A (PIC), U-CA-B","1. Tạo bill theo Test_Data
+2. Xem Incentive theo dòng","2. Dòng Hanoia: U-CA-A 7 000 000, U-CA-B 3 000 000; dòng Brand X không có Incentive",Candidate,Not Run,AC-INC-004-10. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount %
+TC-INC-026,16. Incentive nhân viên,FR-INC-005,Kiểm tra tổng Incentive kỳ của nhân viên cộng dồn từ 3 bill khác nguồn,Functional,Positive,EP,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách P có PIC = U-CA-A; khách N không PIC","Bill 1 (khách P) Hanoia 10 000 000, đứng tên U-CA-A, U-CA-B; Bill 2 (khách P) Hermès 10 000 000, đứng tên U-CA-A; Bill 3 (khách N) 6 000 000, đứng tên U-CA-A, U-CA-B; cùng ngày F","1. Tạo 3 bill theo Test_Data
+2. Xem tổng Incentive ngày F của U-CA-A, U-CA-B",2. U-CA-A = 7 000 000 + 10 000 000 + 3 000 000 = 20 000 000; U-CA-B = 3 000 000 + 3 000 000 = 6 000 000,Candidate,Not Run,AC-INC-005-01. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-50] ngày gán kỳ
+TC-INC-027,16. Incentive nhân viên,FR-INC-005,Kiểm tra dòng bị loại không xuất hiện trong tổng Incentive kỳ của bất kỳ ai,Functional,Negative,EP,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-04: Threshold Brand X = 30%
+4. Theo SETUP-05: khách không PIC","Bill ngày F: dòng A 4 000 000 (0%), dòng Brand X 5 000 000 Discount 40%; đứng tên: U-CA-A","1. Tạo bill theo Test_Data
+2. Xem tổng Incentive ngày F của U-CA-A và drill-down theo dòng/Brand",2. Tổng của U-CA-A tăng đúng 4 000 000; không có khoản nào từ dòng Brand X,Candidate,Not Run,AC-INC-005-02. [Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-41] cơ sở tính Discount % [Cần xác nhận Q-50] ngày gán kỳ
+TC-INC-028,16. Incentive nhân viên,FR-INC-005,Kiểm tra tổng Incentive theo bộ lọc kỳ chỉ gồm bill trong kỳ,Functional,Positive,EP,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách không PIC","Bill ngày F 2 000 000 và ngày F+1 3 000 000, đứng tên U-CA-A","1. Tạo 2 bill theo Test_Data
+2. Xem tổng Incentive U-CA-A kỳ F – F
+3. Xem kỳ F – F+1","2. 2 000 000
+3. 5 000 000",Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-50] ngày gán kỳ
+TC-INC-029,16. Incentive nhân viên,FR-INC-005,Kiểm tra drill-down tổng Incentive của nhân viên theo Brand,Functional,Positive,EP,P3,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A","Bill Hanoia 10 000 000 và bill Hermès 10 000 000 ngày F, đứng tên U-CA-A","1. Tạo 2 bill theo Test_Data
+2. Xem tổng Incentive ngày F của U-CA-A, mở drill-down theo Brand","2. Tổng 20 000 000; drill-down có 2 dòng Hanoia 10 000 000, Hermès 10 000 000",Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị [Cần xác nhận Q-50] ngày gán kỳ
+TC-INC-030,16. Incentive nhân viên,NFR-INC-002,Kiểm tra mỗi khoản Incentive truy vết được về đúng bill và dòng sản phẩm gốc,Integration,Positive,EP,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-08
+4. Theo SETUP-05: khách có PIC = U-CA-A tại ST1","Bill Hanoia 10 000 000 tại ST1, đứng tên U-CA-A (PIC), U-CA-B","1. Tạo bill theo Test_Data, chọn khoản Incentive của U-CA-A
+2. Đối chiếu c_order_id, c_order_line_id với dữ liệu HUB qua SETUP-08",2. Khoản Incentive gắn đúng 1 bill và 1 dòng sản phẩm gốc; Brand và giá trị dòng khớp HUB,Candidate,Not Run,[Cần xác nhận Q-10] base giá trị dòng; [Cần xác nhận Q-09] nơi hiển thị
+TC-INC-031,16. Incentive nhân viên,FR-INC-003,"Kiểm tra khách B2B có PIC đứng trên bill: Incentive vẫn N/A, không áp tỷ lệ PIC/Other CA",Functional,Negative,DT,P1,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách B2B KB được gán PIC = U-CA-A tại ST1","1 dòng Hanoia 10 000 000; đứng tên: U-CA-A (PIC), U-CA-B","1. Tạo bill tại ST1 theo Test_Data
+2. Xem Incentive của bill và tổng kỳ của U-CA-A, U-CA-B","2. Incentive bill = N/A; U-CA-A, U-CA-B không nhận khoản nào từ bill (không áp 70% / 30%)",Candidate,Not Run,Review R-13. [Cần xác nhận Q-10] [Cần xác nhận Q-09]
+TC-INC-032,16. Incentive nhân viên,FR-INC-004;FR-INC-001,Kiểm tra bill PIC vắng có dòng Chopard và dòng BOSS: tra cấu hình theo Brand từng dòng,Functional,Edge,DT,P2,"1. Theo SETUP-06: kênh quan sát Incentive
+2. Theo SETUP-11: bill tạo trên POS
+3. Theo SETUP-05: khách có PIC = U-CA-A tại ST1",Dòng Chopard 10 000 000; dòng BOSS 10 000 000; không giảm giá; đứng tên: U-CA-B,"1. Tạo bill tại ST1 theo Test_Data
+2. Xem Incentive theo dòng và tổng của U-CA-A, U-CA-B","2. Dòng Chopard: U-CA-A 7 000 000, U-CA-B 3 000 000; dòng BOSS: U-CA-B 10 000 000, U-CA-A 0
+- Tổng bill: U-CA-A 7 000 000; U-CA-B 13 000 000",Candidate,Not Run,Review R-33. [Cần xác nhận Q-10] [Cần xác nhận Q-09]
+TC-MIG-001,17. Migrate dữ liệu Incentive,REQ-MIG-01,Kiểm tra record có m_rma_id khác null bị bỏ qua khi migrate,Integration,Negative,EP,P2,1. Theo SETUP-10: công cụ import migrate và file JSONL,"File 2 dòng: dòng mẫu tài liệu (m_rma_id null) và bản sao đổi c_order_line_id 50000102, m_rma_id 700001","1. Import file theo Test_Data
+2. Truy vấn bảng hoa hồng theo c_order_line_id 50000101, 50000102",2. Có bản ghi cho 50000101; không có bản ghi nào cho 50000102,Candidate,Not Run,
+TC-MIG-002,17. Migrate dữ liệu Incentive,REQ-MIG-01,Kiểm tra mỗi phần tử salerep_ids được bung thành một bản ghi hoa hồng,Integration,Positive,EP,P2,1. Theo SETUP-10: công cụ import migrate và file JSONL,"Dòng JSONL mẫu của tài liệu (c_order_line_id 50000101, 2 phần tử salerep_ids)","1. Import dòng mẫu
+2. Truy vấn bảng hoa hồng theo c_order_line_id 50000101","2. 2 bản ghi: erp_user_id 2001, PIC, 171 500, 1.75; erp_user_id 2002, CA_ON_BILL, 73 500, 0.75",Candidate,Not Run,
+TC-MIG-003,17. Migrate dữ liệu Incentive,REQ-MIG-01,"Kiểm tra giá tiền migrate được lưu theo dòng đơn, không gộp thành tổng đơn",Integration,Positive,EP,P3,1. Theo SETUP-10: công cụ import migrate và file JSONL,2 dòng cùng c_order_id 500001: 50000101 (total_amount 9 800 000) và 50000103 (total_amount 5 000 000),"1. Import file theo Test_Data
+2. Truy vấn dữ liệu đã migrate theo c_order_line_id","2. Dòng 50000101 giữ sub_total 10 000 000, tax_amount 800 000, discount 1 000 000, total_amount 9 800 000; dòng 50000103 giữ total_amount 5 000 000; không có giá trị 14 800 000 gán cho một dòng",Candidate,Not Run,
+TC-NFR-001,18. Phi chức năng,NFR-SPM-006,Kiểm tra đổi Sau thuế/Trước thuế phản hồi dưới 400ms,Performance,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09: DevTools Performance",Kỳ: Năm này,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Năm này"", chờ tải xong
+3. Bắt đầu ghi Performance, bấm ""Trước thuế"", dừng ghi khi số đổi","3. Thời gian từ click đến khi thẻ KPI, biểu đồ, bảng cập nhật < 400ms (đo 5 lần, cả 5 lần đạt)",Yes,Not Run,
+TC-NFR-002,18. Phi chức năng,NFR-SPM-006,Kiểm tra chọn store và chip Brand phản hồi dưới 400ms,Performance,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09: DevTools Performance",Chip: Hermès,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Ghi Performance, bấm chip Hermès, dừng ghi khi KPI cập nhật
+3. Ghi Performance, bỏ chọn 1 store, dừng ghi khi KPI cập nhật","2. < 400ms
+3. < 400ms (mỗi thao tác đo 5 lần)",Yes,Not Run,
+TC-NFR-003,18. Phi chức năng,NFR-SPM-006,"Kiểm tra tìm kiếm, sắp xếp, phân trang bảng phản hồi dưới 400ms",Performance,Positive,EP,P2,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09: DevTools Performance",Từ khoá: chopard,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Đo thời gian gõ chopard đến khi bảng lọc xong
+3. Đo thời gian bấm tiêu đề cột Sales đến khi sắp xong
+4. Đo thời gian bấm trang 2 đến khi hiển thị","2. < 400ms
+3. < 400ms
+4. < 400ms",Yes,Not Run,
+TC-NFR-004,18. Phi chức năng,REQ-UI-07,"Kiểm tra bố cục ở cửa sổ 1280px: sidebar đầy đủ, KPI 4 cột, biểu đồ và xếp hạng cạnh nhau",Compatibility,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-09: Device toolbar",Chiều rộng: 1280px,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Đặt chiều rộng 1280px",2. Sidebar có icon + chữ; mỗi nhóm KPI 4 thẻ trên 1 hàng; biểu đồ Sales và xếp hạng nằm cạnh nhau; không thanh cuộn ngang,No,Not Run,
+TC-NFR-005,18. Phi chức năng,REQ-UI-07,"Kiểm tra bố cục ở 1279px và 768px: sidebar thu về icon, KPI 2 cột, biểu đồ xếp 1 cột",Compatibility,Boundary,BVA,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-09: Device toolbar",Chiều rộng: 1279px; 768px,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Đặt chiều rộng 1279px
+3. Đặt chiều rộng 768px","2. Sidebar chỉ còn icon; KPI 2 thẻ mỗi hàng; biểu đồ Sales và xếp hạng xếp chồng 1 cột
+3. Bố cục như bước 2, không thanh cuộn ngang",No,Not Run,
+TC-NFR-006,18. Phi chức năng,REQ-UI-06,Kiểm tra mọi phần tử bấm được có hover state,Usability,Positive,CL,P4,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Rê chuột qua preset kỳ, nút thuế, bộ chọn Store, nút Ngày/Tuần/Tháng, Top 10/Bottom 10, tab bảng, tiêu đề cột, nút phân trang",2. Mỗi phần tử đổi hình thức khi hover (nền/viền/con trỏ tay),No,Not Run,
+TC-NFR-007,18. Phi chức năng,REQ-UI-06,Kiểm tra điều hướng bằng phím Tab có focus ring rõ trên từng phần tử,Accessibility,Positive,CL,P3,1. Theo SETUP-01: đăng nhập U-CRM,-,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Nhấn Tab lần lượt từ đầu trang tới bảng breakdown
+3. Nhấn Enter/Space trên nút Trước thuế khi đang focus","1. Mỗi phần tử nhận focus có vòng focus nhìn rõ; thứ tự focus theo bố cục từ trên xuống
+2. Cách nhìn thuế đổi sang Trước thuế",No,Not Run,
+TC-NFR-008,18. Phi chức năng,REQ-UI-06,"Kiểm tra tooltip hiện khi focus bằng bàn phím (icon i, cột biểu đồ, nút đơn vị bị khoá)",Accessibility,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store",Kỳ: Tháng trước,"1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng trước""; dùng Tab focus icon i của thẻ Sales
+3. Tab tới cột biểu đồ
+4. Tab tới nút Tháng (bị khoá)","1. Tooltip giải thích công thức hiện
+2. Tooltip cột hiện khoảng ngày, Sales, Transactions, Hoàn trả
+3. Tooltip ""Không khả dụng với kỳ đang chọn"" hiện",No,Not Run,
+TC-NFR-009,18. Phi chức năng,FR-SPM-010,Kiểm tra trạng thái cột biểu đồ phân biệt được khi không có màu (mô phỏng mù màu/grayscale),Accessibility,Positive,CL,P3,"1. Theo SETUP-01: đăng nhập U-CRM
+2. Theo SETUP-07: môi trường có dữ liệu ~100 store
+3. Theo SETUP-09: Rendering → Emulate vision deficiencies = Achromatopsia","Kỳ: Tháng này, đơn vị Tuần","1. Mở menu Dashboard, vào màn hình Dashboard Doanh thu & Đơn hàng
+2. Bấm ""Tháng này"", bấm nút Tuần
+3. Bật mô phỏng Achromatopsia",3. Cột Chưa kết thúc vẫn nhận biết bằng sọc chéo + viền nét đứt; cột cao nhất bằng viền; cột Bị cắt khác cột Đủ kỳ,No,Not Run,

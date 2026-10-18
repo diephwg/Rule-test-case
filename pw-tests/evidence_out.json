@@ -1,0 +1,340 @@
+{
+ "E01_thang_nay_all": {
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 6,
+    "new_store_customers": 3,
+    "existing_store_customers": 3,
+    "store_repeat_rate": 50,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": null
+   },
+   "as_of": 1792321981834
+  }
+ },
+ "E02_thang_truoc": {
+  "inputs": [
+   "01/09/2026",
+   "30/09/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 12,
+    "new_store_customers": 10,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 16.666666666666664,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "store_ids": null
+   },
+   "as_of": 1792321989949
+  }
+ },
+ "E03_tuan_nay": {
+  "inputs": [
+   "18/10/2026",
+   "18/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-10-18",
+    "date_to": "2026-10-18",
+    "store_ids": null
+   },
+   "as_of": 1792321995178
+  }
+ },
+ "E04_nam_nay": {
+  "inputs": [
+   "01/01/2026",
+   "18/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 15,
+    "new_store_customers": 13,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 13.333333333333334,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-01-01",
+    "date_to": "2026-10-18",
+    "store_ids": null
+   },
+   "as_of": 1792322000481
+  }
+ },
+ "E05_custom_thang3_2026": {
+  "inputs": [
+   "01/03/2026",
+   "31/03/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 1,
+    "new_store_customers": 0,
+    "existing_store_customers": 1,
+    "store_repeat_rate": 100,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-03-01",
+    "date_to": "2026-03-31",
+    "store_ids": null
+   },
+   "as_of": 1792322011994
+  }
+ },
+ "E06_custom_den_31_10_tuong_lai": {
+  "inputs": [
+   "01/10/2026",
+   "31/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 7,
+    "new_store_customers": 4,
+    "existing_store_customers": 3,
+    "store_repeat_rate": 42.857142857142854,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "store_ids": null
+   },
+   "as_of": 1792322024989
+  }
+ },
+ "E07_custom_1_ngay_30_09": {
+  "inputs": [
+   "30/09/2026",
+   "30/09/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 8,
+    "new_store_customers": 8,
+    "existing_store_customers": 0,
+    "store_repeat_rate": 0,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-09-30",
+    "date_to": "2026-09-30",
+    "store_ids": null
+   },
+   "as_of": 1792322036000
+  }
+ },
+ "E08_ky_rong_2020": {
+  "inputs": [
+   "01/01/2020",
+   "31/01/2020"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2020-01-01",
+    "date_to": "2020-01-31",
+    "store_ids": null
+   },
+   "as_of": 1792322047975
+  }
+ },
+ "E10_custom_366_ngay": {
+  "inputs": [
+   "01/03/2025",
+   "01/03/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 2,
+    "new_store_customers": 2,
+    "existing_store_customers": 0,
+    "store_repeat_rate": 0,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 4,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2025-03-01",
+    "date_to": "2026-03-01",
+    "store_ids": null
+   },
+   "as_of": 1792322060437
+  }
+ },
+ "E11_boss_only_oct": {
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 6,
+    "new_store_customers": 3,
+    "existing_store_customers": 3,
+    "store_repeat_rate": 50,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 0,
+    "existing_customers": 6,
+    "repeat_rate": 100
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792322079405
+  }
+ },
+ "E13_boss_only_sep": {
+  "inputs": [
+   "01/09/2026",
+   "30/09/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 12,
+    "new_store_customers": 10,
+    "existing_store_customers": 2,
+    "store_repeat_rate": 16.666666666666664,
+    "vic_customers": 0
+   },
+   "brand_metrics": {
+    "new_customers": 3,
+    "existing_customers": 9,
+    "repeat_rate": 75
+   },
+   "brand_scope": {
+    "brand_count": 1,
+    "is_multi_brand": false,
+    "brand_name": "BOSS"
+   },
+   "filters": {
+    "date_from": "2026-09-01",
+    "date_to": "2026-09-30",
+    "store_ids": [
+     136
+    ]
+   },
+   "as_of": 1792322085663
+  }
+ },
+ "E12_hermes_only_oct": {
+  "inputs": [
+   "01/10/2026",
+   "18/10/2026"
+  ],
+  "overview": {
+   "metrics": {
+    "total_customers": 0,
+    "new_store_customers": 0,
+    "existing_store_customers": 0,
+    "store_repeat_rate": null,
+    "vic_customers": 0
+   },
+   "brand_metrics": null,
+   "brand_scope": {
+    "brand_count": 3,
+    "is_multi_brand": true,
+    "brand_name": null
+   },
+   "filters": {
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-18",
+    "store_ids": [
+     142
+    ]
+   },
+   "as_of": 1792322101736
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run scripts/extract_doc.py:*)",
+      "Bash(uv run scripts/export_xlsx.py:*)",
+      "Bash(python3 scripts/validate_testcases.py:*)",
+      "Bash(pdftotext:*)",
+      "Bash(pandoc:*)",
+      "Read(input/**)",
+      "Edit(output/**)",
+      "Write(output/**)"
+    ],
+    "deny": [
+      "Edit(input/**)",
+      "Write(input/**)"
+    ]
+  }
+}

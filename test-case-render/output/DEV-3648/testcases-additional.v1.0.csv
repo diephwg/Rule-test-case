@@ -1,0 +1,18 @@
+﻿TC_ID,Module,Req_ID,Title,Test_Type,Scenario,Technique,Priority,Preconditions,Test_Data,Steps,Expected_Result,Automation,Status,Notes
+TC-CART-040,Giỏ hàng,AC08;BR-02;BR-03,Kiểm tra revalidate đồng thời sản phẩm hết hàng và sản phẩm thiếu số lượng trước Checkout,Functional,Negative,DT,P1,"1. Khách hàng đã đăng nhập tài khoản customer01@test.com.
+2. Admin chuẩn bị SP-A, SP-C, SP-E theo analysis §16, mỗi sản phẩm có Saleable Qty = 5.
+3. Cart chỉ có SP-A qty = 1, SP-C qty = 3, SP-E qty = 1; cả ba được tick.
+4. Đang mở Giỏ hàng; có phiên admin riêng để đổi tồn kho; không reload Cart trước bước 3.","SP-A: Saleable Qty 5 → 0, qty = 1; SP-C: Saleable Qty 5 → 2, qty = 3; SP-E: Saleable Qty = 5, qty = 1","1. Trong phiên admin, cập nhật Saleable Qty SP-A về 0.
+2. Trong phiên admin, cập nhật Saleable Qty SP-C về 2.
+3. Trong phiên khách hàng, nhấn nút ""Mua hàng"".","Sau bước 3: Cart được tải lại, hiển thị thông báo ""Sản phẩm vừa được cập nhật lại."", chưa chuyển sang Checkout.
+SP-A vẫn trong Cart, bỏ tick và checkbox Disable.
+SP-C có qty = 2, giữ tick và hiển thị thông báo ""Sản phẩm này chỉ còn số lượng là 2"".
+SP-E giữ qty = 1 và trạng thái được tick.",Candidate,Not Run,[Đề xuất review] DT2-R4 (rule đề xuất tại review.md §5). Kiểm tra AC08 xử lý đồng thời hai loại thay đổi tồn kho trên hai dòng khác nhau; không quyết định nội dung thông báo OOS đang chờ Q-01.
+TC-CART-041,Giỏ hàng,AC04;BR-01;AC08;BR-02,Kiểm tra Mua hàng bị Disable sau revalidate khi mọi sản phẩm được tick hết hàng và sản phẩm còn hàng bị bỏ tick,Functional,Negative,DT,P1,"1. Khách hàng đã đăng nhập tài khoản customer01@test.com.
+2. Admin chuẩn bị SP-A, SP-C theo analysis §16, mỗi sản phẩm có Saleable Qty = 5.
+3. Cart chỉ có SP-A qty = 1 được tick và SP-C qty = 1 bỏ tick.
+4. Đang mở Giỏ hàng, nút ""Mua hàng"" Enable; có phiên admin riêng; không reload Cart trước bước 2.","SP-A: Saleable Qty 5 → 0, qty = 1, được tick; SP-C: Saleable Qty = 5, qty = 1, bỏ tick","1. Trong phiên admin, cập nhật Saleable Qty SP-A về 0.
+2. Trong phiên khách hàng, nhấn nút ""Mua hàng"".","Sau bước 2: Cart được tải lại, hiển thị thông báo ""Sản phẩm vừa được cập nhật lại."", chưa chuyển sang Checkout.
+SP-A vẫn trong Cart, bỏ tick và checkbox Disable.
+SP-C giữ qty = 1, checkbox Enable và vẫn bỏ tick.
+Nút ""Mua hàng"" Disable vì không còn sản phẩm còn hàng nào được tick.",Candidate,Not Run,"[Đề xuất review] DT2-R2 kết hợp DT1-R2; kiểm tra trạng thái nút sau revalidate, khác TC-013 có Cart toàn OOS. Không quyết định nội dung thông báo OOS đang chờ Q-01."

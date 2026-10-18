@@ -1,0 +1,69 @@
+﻿TC_ID,Module,Req_ID,Title,Test_Type,Scenario,Technique,Priority,Preconditions,Test_Data,Steps,Expected_Result,Automation,Status,Notes
+TC-LOGIN-001,Đăng nhập,FR-01,Kiểm tra đăng nhập thành công với email và mật khẩu đúng,Functional,Positive,UC,P1,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Chuyển tới màn hình ""Trang chủ""",Candidate,Not Run,
+TC-LOGIN-002,Đăng nhập,FR-02,Kiểm tra hiển thị lỗi khi để trống ô Email,Validation,Negative,EP,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: (để trống); Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Email không đúng định dạng""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-003,Đăng nhập,FR-02,Kiểm tra hiển thị lỗi khi email thiếu ký tự @,Validation,Negative,EP,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Email không đúng định dạng""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-004,Đăng nhập,FR-03,Kiểm tra hiển thị lỗi khi để trống ô Mật khẩu,Validation,Negative,EP,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: (để trống),"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Mật khẩu phải từ 8 đến 32 ký tự""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-005,Đăng nhập,FR-03,Kiểm tra chặn đăng nhập khi mật khẩu có 7 ký tự (dưới biên min 8),Validation,Boundary,BVA,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@123 (7 ký tự),"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Mật khẩu phải từ 8 đến 32 ký tự""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-006,Đăng nhập,FR-03;FR-01,Kiểm tra đăng nhập thành công khi mật khẩu có đúng 8 ký tự (biên min),Validation,Boundary,BVA,P2,"1. Theo SETUP-02 (tài khoản user08@test.com)
+2. Đang ở màn hình Đăng nhập",Email: user08@test.com; Mật khẩu: Abc@1234 (8 ký tự),"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Chuyển tới màn hình ""Trang chủ""",Candidate,Not Run,
+TC-LOGIN-007,Đăng nhập,FR-03;FR-01,Kiểm tra đăng nhập thành công khi mật khẩu có đúng 32 ký tự (biên max),Validation,Boundary,BVA,P3,"1. Theo SETUP-02 (tài khoản user32@test.com)
+2. Đang ở màn hình Đăng nhập",Email: user32@test.com; Mật khẩu: Abc@1234Abc@1234Abc@1234Abc@1234 (32 ký tự),"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Chuyển tới màn hình ""Trang chủ""",Candidate,Not Run,
+TC-LOGIN-008,Đăng nhập,FR-03,Kiểm tra chặn đăng nhập khi mật khẩu có 33 ký tự (trên biên max 32),Validation,Boundary,BVA,P3,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@1234Abc@1234Abc@1234Abc@12345 (33 ký tự),"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Mật khẩu phải từ 8 đến 32 ký tự""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-009,Đăng nhập,FR-04,Kiểm tra hiển thị lỗi khi email chưa đăng ký,Functional,Negative,EP,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: notexist@test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Sai email hoặc mật khẩu""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-010,Đăng nhập,FR-04,Kiểm tra hiển thị lỗi khi mật khẩu sai với email đã đăng ký,Functional,Negative,EP,P1,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Wrong@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị lỗi ""Sai email hoặc mật khẩu""; vẫn ở màn hình Đăng nhập",Candidate,Not Run,
+TC-LOGIN-011,Đăng nhập,FR-05,Kiểm tra tài khoản chưa bị khoá sau 4 lần sai liên tiếp,Functional,Boundary,ST,P2,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu sai: Wrong@1234; Mật khẩu đúng: Abc@1234,"1. Đăng nhập với mật khẩu sai 4 lần liên tiếp
+2. Đăng nhập với mật khẩu đúng","1. Mỗi lần hiển thị lỗi ""Sai email hoặc mật khẩu""
+2. Chuyển tới màn hình ""Trang chủ""",Candidate,Not Run,
+TC-LOGIN-012,Đăng nhập,FR-05,Kiểm tra khoá tài khoản 15 phút khi sai mật khẩu lần thứ 5 liên tiếp,Functional,Boundary,ST,P1,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu sai: Wrong@1234,1. Đăng nhập với mật khẩu sai 5 lần liên tiếp,"1. Lần thứ 5 hiển thị thông báo ""Tài khoản bị khoá tạm thời""",Candidate,Not Run,
+TC-LOGIN-013,Đăng nhập,FR-05,Kiểm tra chặn đăng nhập bằng mật khẩu đúng khi tài khoản đang bị khoá,Functional,Negative,ST,P1,"1. Theo SETUP-01, sau đó đăng nhập sai 5 lần liên tiếp để khoá tài khoản; chạy case trong vòng 15 phút kể từ lúc khoá
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị thông báo ""Tài khoản bị khoá tạm thời""; không vào được Trang chủ",Candidate,Not Run,
+TC-LOGIN-014,Đăng nhập,FR-05,Kiểm tra đăng nhập lại được sau khi hết 15 phút khoá,Functional,Positive,ST,P2,"1. Theo SETUP-01, sau đó đăng nhập sai 5 lần liên tiếp để khoá tài khoản và chờ 16 phút
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Chuyển tới màn hình ""Trang chủ""",No,Not Run,
+TC-LOGIN-015,Đăng nhập,FR-05,Kiểm tra bộ đếm lần sai reset sau khi đăng nhập thành công,Functional,Edge,ST,P3,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu sai: Wrong@1234; Mật khẩu đúng: Abc@1234,"1. Đăng nhập sai 4 lần liên tiếp
+2. Đăng nhập đúng, sau đó đăng xuất
+3. Đăng nhập sai thêm 1 lần","3. Hiển thị lỗi ""Sai email hoặc mật khẩu""; tài khoản không bị khoá",Candidate,Not Run,[Giả định AS-01] [Cần xác nhận Q-02]
+TC-LOGIN-016,Đăng nhập,FR-06,Kiểm tra chặn đăng nhập với tài khoản trạng thái Inactive,Functional,Negative,ST,P1,"1. Theo SETUP-02 (tài khoản inactive01@test.com, Inactive)
+2. Đang ở màn hình Đăng nhập",Email: inactive01@test.com; Mật khẩu: Abc@1234,"1. Nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""",3. Không vào được Trang chủ; vẫn ở màn hình Đăng nhập,Candidate,Not Run,Tài liệu không nêu thông điệp lỗi cho Inactive [Cần xác nhận Q-03]
+TC-LOGIN-017,Đăng nhập,IMP-01,Kiểm tra mật khẩu hiển thị dạng ẩn khi nhập,UI,Positive,CL,P3,"1. Theo SETUP-01 (user01@test.com Active, bộ đếm sai = 0)
+2. Đang ở màn hình Đăng nhập",Mật khẩu: Abc@1234,"1. Nhập ""Abc@1234"" vào ô ""Mật khẩu""","1. Ô Mật khẩu hiển thị ký tự ẩn (••••••••), không hiển thị mật khẩu dạng rõ",No,Not Run,
+TC-LOGIN-018,Đăng nhập,FR-05,Kiểm tra tài khoản đang bị khoá cũng bị chặn khi đăng nhập từ trình duyệt khác,Functional,Negative,ST,P2,"1. Theo SETUP-01, sau đó đăng nhập sai 5 lần liên tiếp trên trình duyệt A để khoá tài khoản; chạy case trong vòng 15 phút kể từ lúc khoá
+2. Trình duyệt B (chưa từng đăng nhập user01@test.com) đang ở màn hình Đăng nhập",Email: user01@test.com; Mật khẩu: Abc@1234,"1. Trên trình duyệt B, nhập email theo Test_Data vào ô ""Email""
+2. Nhập mật khẩu theo Test_Data vào ô ""Mật khẩu""
+3. Nhấn nút ""Đăng nhập""","3. Hiển thị thông báo ""Tài khoản bị khoá tạm thời""; không vào được Trang chủ",Candidate,Not Run,"EV-02: khoá áp dụng cho tài khoản, không theo phiên/trình duyệt (FR-05 'khoá tài khoản')"
