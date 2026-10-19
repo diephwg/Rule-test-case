@@ -1,0 +1,60 @@
+﻿TC_ID,Module,Req_ID,Title,Test_Type,Scenario,Technique,Priority,Preconditions,Test_Data,Steps,Expected_Result,Automation,Status,Notes
+TC-FTB-001,Task First Time Buyer Reconnect,BR-FTB-FIRST-ORDER;BR-FTB-ASSIGNEE;FR-FTB-TASKDEF,Kiểm tra tạo 1 task đúng toàn bộ giá trị khi khách có đơn đầu tại Store 58 và đã có Active PIC,Integration,Positive,UC,P1,"Theo SETUP-01
+Theo SETUP-02
+1. Khách KH-A chưa có giao dịch tại Store 58 (first_transaction_date = null)
+2. Active PIC của KH-A tại Store 58 là CA Mai","Store: HAN.PIA.01 (store_id 58); Khách: Trần B; PIC: CA Mai; Đơn: ORD-001 hoàn thành 15/10/2026 14:30","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn ORD-001 tại store_id 58
+2. Truy vấn ts_tasks theo customer và rule_id RULE_FIRST_TIME_BUYER_RECONNECT_PIAGET","2. Có đúng 1 task với: title = ""1st Time Buyer Reconnect - Trần B""; priority = high; action_intent.suggested_channel = SMS; task_type = first_purchase_followup; trigger_source = system_event; assigned_by.user_id = ""system""; purpose.title = ""Chăm sóc sau mua hàng""; status = scheduled; is_overdue = false; assignee = original_pic = CA Mai; needs_reassignment = false; metadata.order_id = ORD-001; gift rỗng/null",Candidate,Not Run,
+TC-FTB-002,Task First Time Buyer Reconnect,BR-FTB-DUE;BR-FTB-TRIGGER,Kiểm tra due_date = thời điểm hoàn thành đơn + 48 giờ và giữ nguyên giờ 14:30 (không ép 09:00),Functional,Positive,DT,P1,"Theo SETUP-01
+Theo SETUP-02
+1. Khách chưa có giao dịch tại Store 58","Đơn hoàn thành 15/10/2026 14:30 (GMT+7)","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED với timestamp 15/10/2026 14:30 tại store_id 58
+2. Đọc due_date của task vừa tạo","2. due_date = 17/10/2026 14:30 (GMT+7), không phải 09:00",Candidate,Not Run,"AS-01; [Giả định AS-01] [Cần xác nhận Q-02]"
+TC-FTB-003,Task First Time Buyer Reconnect,BR-FTB-FIRST-ORDER,Kiểm tra không tạo task khi khách đã có first_transaction_date tại Store 58,Functional,Negative,DT,P1,"Theo SETUP-01
+Theo SETUP-02
+1. store_stats[58].first_transaction_date của KH-A đã có giá trị (đã mua trước đó tại Store 58)
+2. Đếm số task hiện có của KH-A theo rule = N","Store: HAN.PIA.01 (58); Đơn mới ORD-002","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn ORD-002 tại store_id 58
+2. Đếm lại số task của KH-A theo rule","2. Số task không đổi (vẫn là N); không có task mới cho ORD-002",Candidate,Not Run,
+TC-FTB-004,Task First Time Buyer Reconnect,BR-FTB-FIRST-ORDER,Kiểm tra tạo task riêng cho Store 202 khi khách đã có đơn đầu tại Store 58 nhưng chưa có tại Store 202,Functional,Positive,DT,P1,"Theo SETUP-01
+Theo SETUP-02
+1. KH-A có first_transaction_date tại Store 58 đã có giá trị
+2. KH-A có first_transaction_date tại Store 202 = null
+3. KH-A có Active PIC tại Store 202","Store: HCM.PIA.02 (202); Đơn: ORD-003","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn ORD-003 tại store_id 202
+2. Truy vấn task của KH-A theo rule
+3. Đọc store_stats[58] của KH-A","2. Có thêm 1 task mới với store.store_id = 202 và assignee = Active PIC của KH-A tại Store 202
+3. Task cũ (nếu có) của Store 58 và store_stats[58] không bị thay đổi",Candidate,Fail,"IX-01; Bug: bug-TC-FTB-004.md (không tạo task cho Store 202)"
+TC-FTB-005,Task First Time Buyer Reconnect,BR-FTB-TRIGGER,Kiểm tra tạo task khi đơn đầu phát sinh tại Store 202 (HCM.PIA.02) - Store đại diện trong danh sách 6 Store,Functional,Positive,EP,P2,"Theo SETUP-01
+Theo SETUP-02
+1. KH-A chưa có giao dịch tại Store 202","Store: HCM.PIA.02 (202); Đơn: ORD-004","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn ORD-004 tại store_id 202
+2. Truy vấn task của KH-A theo rule","2. Có đúng 1 task với store.store_id = 202 và store.store_name tương ứng HCM.PIA.02",Candidate,Not Run,"[Giả định AS-02] [Cần xác nhận Q-01]"
+TC-FTB-006,Task First Time Buyer Reconnect,BR-FTB-TRIGGER,Kiểm tra không tạo task khi đơn đầu phát sinh tại Store ngoài danh sách,Functional,Negative,EP,P1,"Theo SETUP-02
+1. Có khách KH-B chưa có giao dịch tại Store X
+2. Store X có store_id không thuộc {292, 34, 294, 58, 40, 202}","Store: store_id ngoài danh sách (vd. một Store khác trên môi trường); Đơn: ORD-005","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn ORD-005 tại Store X
+2. Truy vấn task của KH-B theo rule","2. Không có task nào được tạo cho KH-B",Candidate,Not Run,
+TC-FTB-007,Task First Time Buyer Reconnect,BR-FTB-ASSIGNEE,Kiểm tra gán Store Manager và needs_reassignment = true khi khách chưa có Active PIC tại Store,Functional,Positive,DT,P1,"Theo SETUP-01
+Theo SETUP-02
+1. KH-A chưa có giao dịch tại Store 202
+2. KH-A chưa có Active PIC tại Store 202
+3. Store Manager của Store 202 là SM Lan","Store: HCM.PIA.02 (202); SM: SM Lan","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED cho đơn đầu của KH-A tại store_id 202
+2. Đọc assignee, original_pic, needs_reassignment của task vừa tạo","2. assignee = SM Lan; original_pic = null; needs_reassignment = true",Candidate,Not Run,
+TC-FTB-008,Task First Time Buyer Reconnect,BR-FTB-DUE,Kiểm tra due_date = 17/10/2026 23:30 khi đơn hoàn thành lúc 23:30 (sát nửa đêm),Functional,Boundary,BVA,P2,"Theo SETUP-01
+Theo SETUP-02
+1. Khách chưa có giao dịch tại Store 58","Đơn hoàn thành 15/10/2026 23:30 (GMT+7)","1. Phát sinh sự kiện POS_PURCHASE_COMPLETED với timestamp 15/10/2026 23:30 tại store_id 58
+2. Đọc due_date của task","2. due_date = 17/10/2026 23:30 (GMT+7), không lệch sang ngày khác do múi giờ",Candidate,Not Run,"[Giả định AS-01] [Cần xác nhận Q-02]"
+TC-FTB-009,Task First Time Buyer Reconnect,FR-FTB-IDEMP,Kiểm tra chỉ sinh 1 task khi event POS_PURCHASE_COMPLETED cùng source_id được gửi lại 2 lần,Integration,Edge,EG,P1,"Theo SETUP-01
+Theo SETUP-02
+1. Khách chưa có giao dịch tại Store 58","Event: customer_id KH-A, store_id 58, source_id ORD-006, cùng payload","1. Publish event POS_PURCHASE_COMPLETED với source_id ORD-006
+2. Publish lại đúng event đó lần 2 (giả lập retry broker)
+3. Đếm task của KH-A theo rule","3. Có đúng 1 task, không có task trùng",Candidate,Not Run,EV-01
+TC-FTB-010,Task First Time Buyer Reconnect,BR-FTB-ORDER-VALID,Kiểm tra task giữ nguyên khi đơn gốc bị hủy hoặc khách trả hàng sau khi task đã tạo,Functional,Edge,ST,P2,"Theo SETUP-01
+Theo SETUP-02
+1. Task đã tạo từ đơn ORD-007 (Store 58, đơn 15/10/2026)
+2. Ghi lại status, due_date, assignee của task","Đơn: ORD-007","1. Hủy đơn ORD-007 (hoặc tạo giao dịch trả hàng cho ORD-007)
+2. Đọc lại task","2. status, due_date, assignee không đổi so với đã ghi; task không bị hủy, xóa hoặc tạo lại; không có task mới",Candidate,Not Run,IX-02
+TC-FTB-011,Task First Time Buyer Reconnect,BR-FTB-EDIT-SCOPE,"Kiểm tra CA nhận task không sửa được due_date, priority, purpose, kênh gợi ý nhưng vẫn hoàn thành/bình luận/đính kèm được",Functional,Negative,PERM,P2,"Theo SETUP-01
+Theo SETUP-02
+1. Task đã tạo cho CA Mai (assigned_by.user_id = system)
+2. Đăng nhập app bằng tài khoản CA Mai","Tài khoản: CA Mai","1. Mở task trên App và vào chế độ chỉnh sửa
+2. Thử sửa due_date, priority, purpose, kênh gợi ý, mô tả
+3. Thêm 1 bình luận và 1 tệp đính kèm
+4. Hoàn thành task","2. Các trường due_date, priority, purpose, kênh gợi ý, mô tả không sửa được
+3. Bình luận và tệp đính kèm được lưu
+4. Task chuyển sang trạng thái hoàn thành",Candidate,Not Run,
