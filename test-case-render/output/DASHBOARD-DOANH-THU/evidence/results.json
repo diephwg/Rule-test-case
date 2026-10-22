@@ -1,0 +1,417 @@
+{
+ "TC-CHART-001": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-002": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-003": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-004": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-005": {
+  "status": "Pass",
+  "actual": "09/08/2026–21/10/2026 12 cột",
+  "evidence": ""
+ },
+ "TC-CHART-006": {
+  "status": "Fail",
+  "actual": "Lệch: active Tuần ; cột 43 ; nhãn: 0,3 Tr,5 Tr,8 Tr,10 Tr,29/12,26/01,23/02,23/03,20/04,18/05,15/06,13/07,10/08,07/09,05/10",
+  "evidence": "evidence/TC-CHART-006.png"
+ },
+ "TC-CHART-007": {
+  "status": "Fail",
+  "actual": "Lệch: thiếu thông báo đúng nội dung",
+  "evidence": "evidence/TC-CHART-007.png"
+ },
+ "TC-CHART-008": {
+  "status": "Fail",
+  "actual": "Lệch: sau Năm này active Tuần",
+  "evidence": "evidence/TC-CHART-008.png"
+ },
+ "TC-CHART-009": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-010": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-011": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-012": {
+  "status": "Pass",
+  "actual": "tooltip trước: 01/10/2026 – 04/10/2026 Sales (sau thuế) 0 Transactions 0 Hoàn trả đã trừ 0 Bị cắt theo kỳ lọc | sau: 01/10/2026 – 04/10/2026 Sales (trước thuế) 0 Transactions 0 Hoàn trả đã trừ 0 Bị cắt theo kỳ lọc",
+  "evidence": ""
+ },
+ "TC-CHART-013": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-014": {
+  "status": "Fail",
+  "actual": "Lệch: Ngày bị khoá | AS-02",
+  "evidence": "evidence/TC-CHART-014.png"
+ },
+ "TC-CHART-015": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-016": {
+  "status": "Fail",
+  "actual": "Lệch: active Tuần ; cột 18 ; nhãn 0,27/04,11/05,25/05,08/06,22/06,06/07,20/07,03/08,17/08 ; T8 solid",
+  "evidence": "evidence/TC-CHART-016.png"
+ },
+ "TC-CHART-017": {
+  "status": "Fail",
+  "actual": "Lệch: cột 10 ; nhãn auto",
+  "evidence": "evidence/TC-CHART-017.png"
+ },
+ "TC-CHART-018": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-019": {
+  "status": "Fail",
+  "actual": "Lệch: Tuần/Tháng không khoá",
+  "evidence": "evidence/TC-CHART-019.png"
+ },
+ "TC-CHART-020": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-021": {
+  "status": "Fail",
+  "actual": "Lệch: Tuần không khoá ; active Tuần ; cột 54",
+  "evidence": "evidence/TC-CHART-021.png"
+ },
+ "TC-CHART-022": {
+  "status": "Fail",
+  "actual": "Lệch: bước 2 [true,true,false,false] ; tháng 2 solid,solid",
+  "evidence": "evidence/TC-CHART-022.png"
+ },
+ "TC-CHART-023": {
+  "status": "Fail",
+  "actual": "Lệch: active/cột Tuần/53 ; nhãn: 0,15/09,20/10,24/11,29/12,02/02,09/03,13/04,18/05,22/06,27/07,31/08 ; màu solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,solid,grey",
+  "evidence": "evidence/TC-CHART-023.png"
+ },
+ "TC-CHART-024": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-025": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-026": {
+  "status": "Pass",
+  "actual": "Chạy trên dữ liệu thật kỳ 01/10–16/10 (không dùng bộ SETUP-02)",
+  "evidence": ""
+ },
+ "TC-CHART-027": {
+  "status": "Pass",
+  "actual": "Chạy trên dữ liệu thật",
+  "evidence": ""
+ },
+ "TC-CHART-028": {
+  "status": "Pass",
+  "actual": "Kỳ Tháng này, số cột đạt max: 2, stroke mẫu: [[\"#D4AF37\",\"2\",null],[\"#1D1E25\",\"1\",\"3 2\"]]",
+  "evidence": ""
+ },
+ "TC-CHART-030": {
+  "status": "Pass",
+  "actual": "Kỳ 01–04/09 không phát sinh (toàn store quản lý)",
+  "evidence": ""
+ },
+ "TC-CHART-033": {
+  "status": "Fail",
+  "actual": "Lệch: bước chia trục Y không đều do làm tròn nhãn: 0, 3 Tr, 5 Tr, 8 Tr, 10 Tr | Chạy trên dữ liệu thật kỳ Tháng này (max ≈ 8.8 Tr, không có giá trị âm nên chỉ kiểm nhãn N Tr): 0, 3 Tr, 5 Tr, 8 Tr, 10 Tr",
+  "evidence": "evidence/TC-CHART-033.png"
+ },
+ "TC-CHART-039": {
+  "status": "Pass",
+  "actual": "chú giải: Top 1 | Bottom 1 | 1 | Boss 46 Tràng Tiền HN | 8 800 000 | Sau thuế · 2 store có phát sinh trong kỳ.",
+  "evidence": ""
+ },
+ "TC-CHART-040": {
+  "status": "Fail",
+  "actual": "Lệch: thiếu \"Chưa kết thúc — số có thể còn tăng\" | chú giải: XẾP HẠNG STORE THEO SALES | Top 1 | Bottom 1 | 1 | Boss 46 Tràng Tiền HN | 17 600 000 | Sau thuế · 2 store có phát sinh trong kỳ.",
+  "evidence": "evidence/TC-CHART-040.png"
+ },
+ "TC-CHART-041": {
+  "status": "Pass",
+  "actual": "nhãn hiển thị: 01/07,04/07,07/07,10/07,13/07,16/07,19/07,22/07,25/07,28/07,31/07",
+  "evidence": ""
+ },
+ "TC-CHART-042": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-044": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-045": {
+  "status": "Pass",
+  "actual": "21/10/2026 (T4) Sales (sau thuế) 8 800 000 Transactions 1 Hoàn trả đã trừ 0 Chưa kết thúc · số có thể còn tăng",
+  "evidence": ""
+ },
+ "TC-CHART-046": {
+  "status": "Fail",
+  "actual": "Lệch: tooltip cột cuối bị tràn khỏi khung biểu đồ: tooltip phải=1083 > mép khung=895 ; tooltip cột cuối không lật sang trái con trỏ (x=893, w=190, con trỏ x=879)",
+  "evidence": "evidence/TC-CHART-046.png"
+ },
+ "TC-CHART-047": {
+  "status": "Pass",
+  "actual": "Σ cột 0/0, 0/0, 8800000/1, 8800000/1 (dữ liệu thật kỳ 01–21/10)",
+  "evidence": ""
+ },
+ "TC-CHART-050": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-CHART-051": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-001": {
+  "status": "Fail",
+  "actual": "Lệch: KHÔNG có bộ lọc Client Advisor trong khối bộ lọc (khối chỉ có Kỳ xem, Từ ngày – Đến ngày, Store, Giá trị tiền)",
+  "evidence": "evidence/TC-FLT-001.png"
+ },
+ "TC-FLT-002": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-003": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-004": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-005": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-006": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-007": {
+  "status": "Blocked",
+  "actual": "Phần UI đạt (ô hiển thị 01/09/2026 – 30/09/2026, 30 cột). Chưa đối chiếu Sales/Transactions với truy vấn SETUP-08 (không có quyền DB)",
+  "evidence": ""
+ },
+ "TC-FLT-008": {
+  "status": "Fail",
+  "actual": "Lệch: đơn vị/cột: Tuần/53",
+  "evidence": "evidence/TC-FLT-008.png"
+ },
+ "TC-FLT-009": {
+  "status": "Fail",
+  "actual": "Lệch: ô ngày không giữ nguyên: 01/01/2025 – 02/01/2026 | Ô ngày sau khi nhập 01/01/2025–02/01/2026: 01/01/2025 – 02/01/2026; preset active: Tháng này",
+  "evidence": "evidence/TC-FLT-009.png"
+ },
+ "TC-FLT-010": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-011": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-FLT-012": {
+  "status": "Fail",
+  "actual": "Lệch: có 4 request API khi đổi thuế: stores?workspace_ids=4,8,18,20,sales-trend?workspace_ids=4,8,,store-ranking?workspace_ids=4,,store-ranking?workspace_ids=4,",
+  "evidence": "evidence/TC-FLT-012.png"
+ },
+ "TC-DISP-001": {
+  "status": "Fail",
+  "actual": "Lệch: tỷ lệ phải hiển thị — nhưng thực tế: Coupon %=0.0%, AOV=—, UPT=0.00, Frequency=0.00, Avg Spending=— ; bảng breakdown dòng Tổng hiển thị NaN ở AOV và Avg Spending: Tổng (mỗi đơn tính 1 lần) 0 0 NaN 0.00 0.0% 0 0.00 NaN Total Customers, Frequency và Avg S | kỳ 01–04/09/2026 không phát sinh, toàn bộ 8 store quản lý",
+  "evidence": "evidence/TC-DISP-001.png"
+ },
+ "TC-DISP-002": {
+  "status": "Pass",
+  "actual": "Dữ liệu thật Tháng này: UPT=2.00, Frequency=2.00 (2 chữ số thập phân, dấu chấm). Chưa kiểm giá trị 1.80/1.25 của bộ SETUP-02",
+  "evidence": ""
+ },
+ "TC-DISP-004": {
+  "status": "Pass",
+  "actual": "Dữ liệu thật: thẻ 17 600 000, 8 800 000, 17 600 000; bảng 17 600 000, 2, 8 800 000, 1, 17 600 000",
+  "evidence": ""
+ },
+ "TC-DISP-007": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-DISP-008": {
+  "status": "Pass",
+  "actual": "Năm này: Sales = 26 400 000",
+  "evidence": ""
+ },
+ "TC-DISP-010": {
+  "status": "Pass",
+  "actual": "Sau: {\"Sales\":\"17 600 000\",\"Transactions\":\"2\",\"Total Customers\":\"1\",\"Coupon %\":\"0.0%\",\"AOV\":\"8 800 000\",\"UPT\":\"2.00\",\"Frequency\":\"2.00\",\"Avg Spending / Customer\":\"17 600 000\"} / Trước: {\"Sales\":\"16 000 000\",\"Transactions\":\"2\",\"Total Customers\":\"1\",\"Coupon %\":\"0.0%\",\"AOV\":\"8 000 000\",\"UPT\":\"2.00\",\"Frequency\":\"2.00\",\"Avg Spending / Customer\":\"16 000 000\"}",
+  "evidence": ""
+ },
+ "TC-DISP-011": {
+  "status": "Pass",
+  "actual": "tooltip: [\"Sales = Σ giá phải trả đơn bán hợp lệ − Σ khoản hoàn đơn trả hoàn tất trong kỳ. Sau thuế = total; Trước thuế = total − tax_total. Đã trừ hàng trả, có thể âm.\",\"Transactions = số đơn bán hợp lệ có giá trị > 0. Không trừ đơn trả; không gồm đơn 0đ và đơn đã huỷ.\",\"Total Customers = số khách khác nhau có ≥1 đơn bán hợp lệ trong kỳ. Gồm Khách lẻ (1 tài khoản chung, đếm 1).\",\"Coupon % = số giao dịch có áp dụng voucher/coupon ÷ Transactions. 1 đơn dùng nhiều coupon vẫn đếm 1.\",\"AOV = Sales ÷ Transactions, cùng cách nhìn thuế với Sales. Kỳ có nhiều đơn trả sẽ kéo AOV xuống.\",\"UPT = số lượng sản phẩm bán ròng (đã trừ hàng trả) ÷ Transactions. Không có biến thể thuế.\",\"Frequency = Transactions ÷ Total Customers: số đơn trung bình mỗi khách trong kỳ.\",\"Avg Spending/Customer = Sales ÷ Total Customers, cùng cách nhìn thuế với Sales.\"]",
+  "evidence": ""
+ },
+ "TC-DISP-012": {
+  "status": "Needs Clarification",
+  "actual": "Nội dung tooltip/dòng mô tả khác câu chữ trong test case, nguyên văn chưa chốt (Q-01, Q-15). Tooltip Sales: \"Sales = Σ giá phải trả đơn bán hợp lệ − Σ khoản hoàn đơn trả hoàn tất trong kỳ. Sau thuế = total; Trước thuế = total − tax_total. Đã trừ hàng trả, có thể âm.\"; Transactions: \"Transactions = số đơn bán hợp lệ có giá trị > 0. Không trừ đơn trả; không gồm đơn 0đ và đơn đã huỷ.\"; Frequency: \"UPT = số lượng sản phẩm bán ròng (đã trừ hàng trả) ÷ Transactions. Không có biến thể thuế.\"; Avg Spending: \"Avg Spending/Customer = Sales ÷ Total Customers, cùng cách nhìn thuế với Sales.\". Dòng mô tả: Transactions \"giao dịch có giá trị > 0\" (loại đơn 0đ, lệch giả định AS-01 gồm đơn 0đ); Sales không nêu có/không gồm phí ship.",
+  "evidence": ""
+ },
+ "TC-DISP-013": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-STORE-004": {
+  "status": "Pass",
+  "actual": "Chỉ kiểm tìm theo tên store (tài khoản không có store mà Brand khác tên). Chưa kiểm tìm theo Brand.",
+  "evidence": ""
+ },
+ "TC-STORE-005": {
+  "status": "Fail",
+  "actual": "Lệch: nhãn nút khi còn 1 store: \"1/8 store đang chọn\" (1/8 store được chọn)",
+  "evidence": "evidence/TC-STORE-005.png"
+ },
+ "TC-STORE-006": {
+  "status": "Fail",
+  "actual": "Lệch: nhãn nút: \"3/8 store đang chọn\"",
+  "evidence": "evidence/TC-STORE-006.png"
+ },
+ "TC-STORE-007": {
+  "status": "Fail",
+  "actual": "Lệch: không có nút chọn tất cả / chip Brand trong bộ chọn Store; các nút hiện có: [\"Bỏ chọn (giữ 1 store)\",\"Xong\"] | Bộ chọn chỉ có ô tìm, danh sách checkbox, \"Bỏ chọn (giữ 1 store)\", \"Xong\"",
+  "evidence": "evidence/TC-STORE-007.png"
+ },
+ "TC-STORE-008": {
+  "status": "Fail",
+  "actual": "Lệch: còn tab Theo Store: Theo Store,Theo Client Advisor ; panel xếp hạng chưa chuyển sang Client Advisor: XẾP HẠNG STORE THEO SALES Top 1 Bottom 1 1 Boss 46 Tràng Tiền HN 17 600 000 Sau thuế · 2 store có phát sinh trong kỳ. Th | Trước: tab Theo Store,Theo Client Advisor; sau: tab Theo Store,Theo Client Advisor; Sales trước/sau: 17 600 000/17 600 000",
+  "evidence": "evidence/TC-STORE-008.png"
+ },
+ "TC-TABLE-008": {
+  "status": "Fail",
+  "actual": "Lệch: tab: Theo Store, Theo Client Advisor",
+  "evidence": "evidence/TC-TABLE-008.png"
+ },
+ "TC-RANK-001": {
+  "status": "Fail",
+  "actual": "Lệch: dòng xếp hạng không hiển thị Brand cạnh tên store: \"XẾP HẠNG STORE THEO SALES Top 1 Bottom 1 1 Boss 46 Tràng Tiền HN 17 600 000 Sau thuế · 2 store có phát sinh trong kỳ. Theo Store Theo Client Advisor \" | Dữ liệu thật chỉ có 1 store phát sinh nên chưa kiểm được 10 dòng/trùng thứ tự bảng",
+  "evidence": "evidence/TC-RANK-001.png"
+ },
+ "TC-RANK-003": {
+  "status": "Pass",
+  "actual": "Chỉ 1 store có dữ liệu nên chưa kiểm được thứ tự Top 10 trùng bảng",
+  "evidence": ""
+ },
+ "TC-RANK-004": {
+  "status": "Fail",
+  "actual": "Lệch: dòng chú thích panel: \"2 store có phát sinh\" nhưng chỉ xếp hạng 1 store; bảng breakdown ghi 1 store | Kỳ Tháng này; 7 store còn lại không xuất hiện (đúng), nhưng số \"có phát sinh\" lệch",
+  "evidence": "evidence/TC-RANK-004.png"
+ },
+ "TC-TABLE-010": {
+  "status": "Fail",
+  "actual": "Lệch: phạm vi 8 store thuộc nhiều Brand (Hanoia, Kenzo, Piaget, Hermès, Boss) nhưng bảng chỉ có tab: Theo Store, Theo Client Advisor",
+  "evidence": "evidence/TC-TABLE-010.png"
+ },
+ "TC-TABLE-012": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-TABLE-013": {
+  "status": "Needs Clarification",
+  "actual": "Bảng Tháng này chỉ có dòng Boss 46 (1 store), 7 store không phát sinh không có dòng (đúng). Không thấy ghi chú riêng về store không phát sinh trong kỳ; nội dung ghi chú chưa chốt (Q-24).",
+  "evidence": ""
+ },
+ "TC-TABLE-014": {
+  "status": "Pass",
+  "actual": "Chỉ kiểm tìm theo tên store (bảng không có cột Brand, dữ liệu chỉ 1 dòng)",
+  "evidence": ""
+ },
+ "TC-TABLE-018": {
+  "status": "Pass",
+  "actual": "Bảng chỉ có 1 dòng nên chưa kiểm được thứ tự/cột #",
+  "evidence": ""
+ },
+ "TC-NFR-001": {
+  "status": "Pass",
+  "actual": "Năm này; đo từ click đến khi số thẻ KPI/nhãn biểu đồ đổi: 17, 14, 17, 18, 18 ms (đo bằng script trong trình duyệt)",
+  "evidence": ""
+ },
+ "TC-NFR-002": {
+  "status": "Fail",
+  "actual": "Lệch: thời gian chọn/bỏ chọn 1 store đến khi KPI cập nhật (ms): 1373, 262, 206, 196, 187 | Đo từ click checkbox store đến khi API summary trả về + 2 frame vẽ lại (số KPI không đổi vì store thêm/bớt không có dữ liệu). Chưa đo chip Hermès (bộ chọn không có chip Brand).",
+  "evidence": "evidence/TC-NFR-002.png"
+ },
+ "TC-NFR-003": {
+  "status": "Fail",
+  "actual": "Lệch: tìm kiếm (ms): 191, 1494, 217; sắp xếp (ms): 64, 66, 66 | Bảng chỉ có 1 dòng; chưa đo chuyển trang 2 (chỉ 1 trang)",
+  "evidence": "evidence/TC-NFR-003.png"
+ },
+ "TC-NFR-004": {
+  "status": "Pass",
+  "actual": "Khớp expected",
+  "evidence": ""
+ },
+ "TC-NFR-005": {
+  "status": "Fail",
+  "actual": "Lệch: 1279px KPI mỗi hàng: 4,4 ; 1279px biểu đồ & xếp hạng không xếp chồng ; 1279px sidebar rộng 197px (cần chỉ icon) | 1279: {\"perRow\":[4,4],\"stacked\":false,\"sbw\":196.5625,\"labels\":12,\"hscroll\":false} | 768: {\"perRow\":[2,2,2,2],\"stacked\":true,\"sbw\":196.5625,\"labels\":11,\"hscroll\":false}",
+  "evidence": "evidence/TC-NFR-005.png"
+ },
+ "TC-NFR-007": {
+  "status": "Fail",
+  "actual": "Lệch: phần tử focus không có vòng nhìn rõ: Dashboard | Customers | Tasks | Appointments | Gifts | Stocks | Transactions | User Guides | FAQ | Settings | Từ ngày | Đến ngày | INPUT | thứ tự focus: MOSAIC\nGENERAL\nDashboard > Dashboard > Customers > Tasks > Appointments > Gifts > Stocks > Transactions > User Guides > FAQ > Settings > Select Store > Tab 1 of 7\nBusiness > KỲ XEM\nHôm nay\nTuần này\n > Hôm nay > Tuần này > Tháng này > Tháng trước > Năm này > Từ ngày > Đến ngày > Mở lịch > INPUT > INPUT > Store được quản lý · 8 s > Sau thuế > Trước thuế > I > I > I > I > I > I > I > I > Ngày > Tuần > 01/10/2026 (T5), Sales 0 > 02/10/2026 (T6), Sales 0 > 03/10/2026 (T7), Sales 0 > 04/10/2026 (CN), Sales 0 > 05/10/2026 (T2), Sales 0 > 06/10/2026 (T3), Sales 0 > 07/10/2026 (T4), Sales 0 > 08/10/2026 (T5), Sales 0",
+  "evidence": "evidence/TC-NFR-007.png"
+ },
+ "TC-NFR-008": {
+  "status": "Fail",
+  "actual": "Lệch: icon i: không hiện tooltip khi focus bằng bàn phím ; nút Tháng bị khoá (disabled) không nhận focus bàn phím nên không hiện tooltip: tooltip chỉ là thuộc tính title=\"Không khả dụng với kỳ đang chọn\"; trình duyệt không hiện title khi focus bằng bàn phím | icon=false, cột=true, nút khoá={\"dis\":true,\"title\":\"Không khả dụng với kỳ đang chọn\",\"tab\":0}",
+  "evidence": "evidence/TC-NFR-008.png"
+ },
+ "TC-NFR-009": {
+  "status": "Pass",
+  "actual": "Mô phỏng Achromatopsia: cột Chưa kết thúc dùng pattern sọc chéo + viền nét đứt (fill=url(#hatch), stroke-dasharray=3 2), cột Cao nhất có viền riêng (#D4AF37, 2px), cột Bị cắt xám (#8a8c8d) khác cột Đủ kỳ (#1D1E25) về độ sáng. Ảnh: evidence/TC-NFR-009-achromatopsia.png. Bars: [{\"fill\":\"#8a8c8d\",\"stroke\":null,\"dash\":null},{\"fill\":\"#1D1E25\",\"stroke\":null,\"dash\":null},{\"fill\":\"#1D1E25\",\"stroke\":null,\"dash\":null},{\"fill\":\"url(#hatch)\",\"stroke\":\"#1D1E25\",\"dash\":\"3 2\"}]",
+  "evidence": ""
+ }
+}

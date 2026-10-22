@@ -1,6 +1,6 @@
 # 04 — Checklist bao phủ theo thành phần
 
-Đây là danh sách **gợi ý điều kiện kiểm thử** cho mỗi màn hình / API — không phải danh sách bắt buộc. Với mỗi mục **liên quan và có rủi ro**, tạo điều kiện `CO-xx` trong `analysis.md`; mục liên quan nhưng không kiểm thử thì ghi `N/A - <lý do>`. Không tạo case chỉ để "đủ checklist".
+Đây là danh sách **gợi ý điều kiện kiểm thử** cho mỗi màn hình / API — không phải danh sách bắt buộc, **ngoại trừ** mục *Sự kiện kích hoạt & kênh* ở §B (bắt buộc xét, `rules/01` Bước 3.5). Với mỗi mục **liên quan và có rủi ro**, tạo điều kiện `CO-xx` trong `analysis.md`; mục liên quan nhưng không kiểm thử thì ghi `N/A - <lý do>`. Không tạo case chỉ để "đủ checklist".
 
 Mục đánh dấu ⚠ mà tài liệu không nêu rõ hành vi → **không tự quyết định kết quả**: tạo `Q-xx`; nếu cần tiếp tục, dùng `IMP-xx` (kỳ vọng đề xuất, có cơ sở) hoặc `AS-xx` (giả định tạm) theo `rules/01` §2 — case dựa trên chúng là *Needs Clarification*.
 

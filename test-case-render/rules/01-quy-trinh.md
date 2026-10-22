@@ -99,7 +99,7 @@ Dùng mẫu `templates/analysis-template.md`. Nội dung chính: tóm tắt, ph�
 2. **Tự review nghiệp vụ** theo checklist `rules/05` — phần validator không kiểm tra được: expected có nguồn và đúng, phép tính đúng, kỹ thuật áp dụng đủ, dữ liệu/setup tái tạo được, case độc lập, kết quả quan sát được.
 3. **Phản biện độc lập:** người review **không chung ngữ cảnh** với người sinh chạy quy trình skill `tc-review` trên tài liệu nguồn + `analysis.md` + `testcases.csv`, với nhiệm vụ chính: tìm **điều kiện còn thiếu** (mệnh đề, tương tác, tập phần tử, ô trạng thái, sự kiện × kênh) và **phụ thuộc chưa được đánh dấu**.
    - Có subagent (Claude Code `Agent`, Codex sub-agent) → dùng một subagent **mới**, chỉ truyền đường dẫn file, không truyền kết luận của người sinh.
-   - Không có subagent → chạy `tc-review` trong một lượt riêng, bắt đầu bằng việc **đọc lại nguồn** trước khi đọc `analysis.md`.
+   - Không có subagent → chạy `tc-review` trong một lượt riêng, bắt đầu bằng việc **đọc lại nguồn** trước khi đọc `analysis.md`. Cách này độc lập yếu hơn (cùng ngữ cảnh/model) — `report.md` phải ghi rõ đã dùng cách nào.
    - Người sinh xử lý từng phát hiện: *Đã sửa* / *Từ chối — lý do*. Ghi vào `report.md` mục *Phản biện độc lập*. Sửa xong chạy lại validator.
 
 **Gate 5:** 0 ERROR; mọi WARNING đã xử lý hoặc giải trình; đã tự review; mọi phát hiện của phản biện độc lập đã có kết luận.

@@ -17,7 +17,7 @@ File chuẩn: `output/<FEATURE>/testcases.csv` — UTF-8 (có BOM để Excel đ
 | 9 | `Preconditions` | (nên có) | Trạng thái hệ thống/dữ liệu/tài khoản **trước** khi chạy, tái tạo được; hoặc `Theo SETUP-xx` + phần khác biệt. Nhiều ý → đánh số `1.` `2.` |
 | 10 | `Test_Data` | | Giá trị cụ thể: `Email: user01@test.com; Mật khẩu: Abc@1234` |
 | 11 | `Steps` | ✔ | Đánh số `1.` `2.` … mỗi dòng **một hành động**, câu mệnh lệnh |
-| 12 | `Expected_Result` | ✔ | Kết quả quan sát được. Nhiều điểm kiểm tra → đánh số theo bước: `3. Hiển thị ...` |
+| 12 | `Expected_Result` | ✔ | Kết quả quan sát được. Nhiều điểm kiểm tra → đánh số theo bước: `3. Hiển thị ...`. Mỗi số bước xuất hiện **một** dòng, tăng dần; nhiều assertion ở cùng một bước thì gộp trên một dòng, ngăn cách bằng `;` (validator WARN khi số lặp) |
 | 13 | `Automation` | | `Yes` · `No` · `Candidate` |
 | 14 | `Status` | | Kết quả **thực thi**: `Not Run` (mặc định) · `Pass` · `Fail` · `Blocked` · `Skipped` · `Obsolete`. Không dùng để ghi mức sẵn sàng thiết kế |
 | 15 | `Notes` | | Đánh dấu phụ thuộc (§Notes), rule DT, ghi chú cập nhật, regression bug |
@@ -65,7 +65,7 @@ Phân bổ Priority chỉ là **thống kê hỗ trợ review**. **Không tăng/
 
 ## Văn phong
 
-**Ngoặc kép chỉ dùng cho văn bản nguyên văn từ nguồn** (nhãn UI, thông điệp, mã lỗi). Validator đối chiếu các chuỗi trong ngoặc kép ở `Expected_Result` với tài liệu đã trích xuất. Thông điệp chưa biết nguyên văn → mô tả không ngoặc kép + `[Cần xác nhận Q-xx]`. Dữ liệu test trong Expected (vd. mật khẩu đã nhập) không đặt trong ngoặc kép — tham chiếu `Test_Data`.
+**Trong `Expected_Result`, ngoặc kép chỉ dùng cho văn bản nguyên văn từ nguồn** (nhãn UI, thông điệp, mã lỗi). Validator đối chiếu các chuỗi trong ngoặc kép ở `Expected_Result` với tài liệu đã trích xuất. Ở `Steps`, ngoặc kép dùng được cho nhãn UI (nguyên văn) và giá trị nhập (dữ liệu test) — validator **không** đối chiếu `Steps`. Thông điệp chưa biết nguyên văn → mô tả không ngoặc kép + `[Cần xác nhận Q-xx]`. Dữ liệu test trong Expected (vd. mật khẩu đã nhập) không đặt trong ngoặc kép — tham chiếu `Test_Data`.
 
 **Title** — `Kiểm tra <hành vi> khi <điều kiện>`:
 - ✅ `Kiểm tra hiển thị lỗi "Email không đúng định dạng" khi nhập email thiếu ký tự @`
@@ -103,7 +103,7 @@ Case **không phụ thuộc** việc chạy case khác trước. Dữ liệu min
 ## ID — duy nhất và ổn định
 
 - `TC_ID` duy nhất, **không tái sử dụng**, **không đánh số lại**, **không lấp khoảng trống**.
-- Case mới dùng **số tiếp theo theo lịch sử ID của module** (kể cả ID đã Obsolete).
+- Case mới dùng **số tiếp theo theo lịch sử ID của module** (kể cả ID đã Obsolete và ID trong `testcases-additional`). Validator chỉ đối chiếu với `--previous`; phần lịch sử ID ngoài file đó do người sinh tự rà.
 - Case bị loại giữ ID, `Status = Obsolete`, `Notes` ghi lý do + phiên bản.
 - Khoảng trống số thứ tự là bình thường.
 

@@ -22,7 +22,7 @@
 - [ ] Đã review nghiệp vụ theo §Review
 - [ ] Đã chạy phản biện độc lập; mọi phát hiện có kết luận *Đã sửa / Từ chối — lý do*
 - [ ] Mọi `SETUP-xx` có trạng thái; SETUP *Chưa rõ cách làm* được liệt kê trong report kèm người cần cung cấp
-- [ ] `report.md` nêu 4 chỉ số bao phủ (§Chỉ số) và mức sẵn sàng; đã xuất `testcases.xlsx`
+- [ ] `report.md` nêu 5 chỉ số bao phủ (§Chỉ số) và mức sẵn sàng; đã xuất `testcases.xlsx`
 
 Bộ test có case *Needs Clarification* / *Blocked* hoặc điều kiện *Pending* **vẫn bàn giao được** dưới dạng bản nháp có ích — miễn là báo cáo nói rõ phần nào sẵn sàng và phần nào đang chờ. Không gọi cả bộ là "hoàn chỉnh" khi còn phần chờ.
 
@@ -35,6 +35,8 @@ Bộ test có case *Needs Clarification* / *Blocked* hoặc điều kiện *Pend
 | 3 | Điều kiện kiểm thử có case | `CO-xx` trừ N/A và Pending | Validator |
 | 4 | Bao phủ theo kỹ thuật (phân vùng, biên, rule DT, chuyển trạng thái… đã chọn) và theo nguồn mở rộng (`IX`, `EV` có kết luận) | `CO-xx` theo cột *Kỹ thuật*; dòng IX / EV | Validator |
 | 5 | Phần đang chờ | Số `CO` Pending, case Needs Clarification / Blocked, Q mở, AS/IMP chưa xác nhận, SETUP *Chưa rõ cách làm* | Validator |
+
+Chỉ số 3 và 4 có mẫu số do người thiết kế tự đặt, và Gate 4 buộc mọi `CO-xx` (không N/A / Pending) có case — nên sau gate chúng gần như luôn đạt 100%. Coi đây là **kiểm tra nhất quán nội bộ**, không phải bằng chứng bao phủ nguồn. Chỉ số 4 theo kỹ thuật còn bị lệch vì mỗi CO / case chỉ ghi **một** kỹ thuật chính dù thực tế có thể kết hợp.
 
 Chỉ số 1 **không** chứng minh mọi mệnh đề của yêu cầu đã được kiểm tra — đó là việc của chỉ số 2. Chỉ số 2 dùng mẫu số tách từ nguồn nên khách quan hơn chỉ số 3 (mẫu số do người thiết kế tự đặt); khi hai chỉ số lệch nhau, tin chỉ số 2. Chỉ công bố phần trăm khi mẫu số đã rõ; chỉ số chưa đo được ghi **"chưa đánh giá"**.
 
